@@ -1,9 +1,11 @@
 # Build results
 [Bb]in/
 [Oo]bj/
+Output/
 
 # Visual Studio cache/options directory
 .vs/
+
 
 # Temporarily exclude app.confug until secrets are moved out
 App.config
