@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CheckmarxTool.CxSDKWebService {
+namespace Checkmary.CxSDKWebService {
     using System.Runtime.Serialization;
     using System;
     
@@ -23,10 +23,10 @@ namespace CheckmarxTool.CxSDKWebService {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.ProjectSettings PrjSettingsField;
+        private Checkmary.CxSDKWebService.ProjectSettings PrjSettingsField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.SourceCodeSettings SrcCodeSettingsField;
+        private Checkmary.CxSDKWebService.SourceCodeSettings SrcCodeSettingsField;
         
         private bool IsPrivateScanField;
         
@@ -37,7 +37,7 @@ namespace CheckmarxTool.CxSDKWebService {
         
         private bool IgnoreScanWithUnchangedCodeField;
         
-        private CheckmarxTool.CxSDKWebService.CxClientType ClientOriginField;
+        private Checkmary.CxSDKWebService.CxClientType ClientOriginField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -50,7 +50,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
-        public CheckmarxTool.CxSDKWebService.ProjectSettings PrjSettings {
+        public Checkmary.CxSDKWebService.ProjectSettings PrjSettings {
             get {
                 return this.PrjSettingsField;
             }
@@ -63,7 +63,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
-        public CheckmarxTool.CxSDKWebService.SourceCodeSettings SrcCodeSettings {
+        public Checkmary.CxSDKWebService.SourceCodeSettings SrcCodeSettings {
             get {
                 return this.SrcCodeSettingsField;
             }
@@ -128,7 +128,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=6)]
-        public CheckmarxTool.CxSDKWebService.CxClientType ClientOrigin {
+        public Checkmary.CxSDKWebService.CxClientType ClientOrigin {
             get {
                 return this.ClientOriginField;
             }
@@ -180,9 +180,9 @@ namespace CheckmarxTool.CxSDKWebService {
         private bool IsPublicField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.ProjectSharedLocation OpenSourceSettingsField;
+        private Checkmary.CxSDKWebService.ProjectSharedLocation OpenSourceSettingsField;
         
-        private CheckmarxTool.CxSDKWebService.ProjectOrigin OpenSourceAnalysisOriginField;
+        private Checkmary.CxSDKWebService.ProjectOrigin OpenSourceAnalysisOriginField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -299,7 +299,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=8)]
-        public CheckmarxTool.CxSDKWebService.ProjectSharedLocation OpenSourceSettings {
+        public Checkmary.CxSDKWebService.ProjectSharedLocation OpenSourceSettings {
             get {
                 return this.OpenSourceSettingsField;
             }
@@ -312,7 +312,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=9)]
-        public CheckmarxTool.CxSDKWebService.ProjectOrigin OpenSourceAnalysisOrigin {
+        public Checkmary.CxSDKWebService.ProjectOrigin OpenSourceAnalysisOrigin {
             get {
                 return this.OpenSourceAnalysisOriginField;
             }
@@ -343,25 +343,25 @@ namespace CheckmarxTool.CxSDKWebService {
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        private CheckmarxTool.CxSDKWebService.SourceLocationType SourceOriginField;
+        private Checkmary.CxSDKWebService.SourceLocationType SourceOriginField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.Credentials UserCredentialsField;
+        private Checkmary.CxSDKWebService.Credentials UserCredentialsField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.ScanPath[] PathListField;
+        private Checkmary.CxSDKWebService.ScanPath[] PathListField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.SourceControlSettings SourceControlSettingField;
+        private Checkmary.CxSDKWebService.SourceControlSettings SourceControlSettingField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.LocalCodeContainer PackagedCodeField;
+        private Checkmary.CxSDKWebService.LocalCodeContainer PackagedCodeField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string SourcePullingActionField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.SourceFilterPatterns SourceFilterListsField;
+        private Checkmary.CxSDKWebService.SourceFilterPatterns SourceFilterListsField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -374,7 +374,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public CheckmarxTool.CxSDKWebService.SourceLocationType SourceOrigin {
+        public Checkmary.CxSDKWebService.SourceLocationType SourceOrigin {
             get {
                 return this.SourceOriginField;
             }
@@ -387,7 +387,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
-        public CheckmarxTool.CxSDKWebService.Credentials UserCredentials {
+        public Checkmary.CxSDKWebService.Credentials UserCredentials {
             get {
                 return this.UserCredentialsField;
             }
@@ -400,7 +400,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public CheckmarxTool.CxSDKWebService.ScanPath[] PathList {
+        public Checkmary.CxSDKWebService.ScanPath[] PathList {
             get {
                 return this.PathListField;
             }
@@ -413,7 +413,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
-        public CheckmarxTool.CxSDKWebService.SourceControlSettings SourceControlSetting {
+        public Checkmary.CxSDKWebService.SourceControlSettings SourceControlSetting {
             get {
                 return this.SourceControlSettingField;
             }
@@ -426,7 +426,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
-        public CheckmarxTool.CxSDKWebService.LocalCodeContainer PackagedCode {
+        public Checkmary.CxSDKWebService.LocalCodeContainer PackagedCode {
             get {
                 return this.PackagedCodeField;
             }
@@ -452,7 +452,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=6)]
-        public CheckmarxTool.CxSDKWebService.SourceFilterPatterns SourceFilterLists {
+        public Checkmary.CxSDKWebService.SourceFilterPatterns SourceFilterLists {
             get {
                 return this.SourceFilterListsField;
             }
@@ -528,10 +528,10 @@ namespace CheckmarxTool.CxSDKWebService {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.ArrayOfString PathField;
+        private Checkmary.CxSDKWebService.ArrayOfString PathField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.Credentials CredentialsField;
+        private Checkmary.CxSDKWebService.Credentials CredentialsField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -544,7 +544,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
-        public CheckmarxTool.CxSDKWebService.ArrayOfString Path {
+        public Checkmary.CxSDKWebService.ArrayOfString Path {
             get {
                 return this.PathField;
             }
@@ -557,7 +557,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public CheckmarxTool.CxSDKWebService.Credentials Credentials {
+        public Checkmary.CxSDKWebService.Credentials Credentials {
             get {
                 return this.CredentialsField;
             }
@@ -694,12 +694,12 @@ namespace CheckmarxTool.CxSDKWebService {
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string ServerNameField;
         
-        private CheckmarxTool.CxSDKWebService.RepositoryType RepositoryField;
+        private Checkmary.CxSDKWebService.RepositoryType RepositoryField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.Credentials UserCredentialsField;
+        private Checkmary.CxSDKWebService.Credentials UserCredentialsField;
         
-        private CheckmarxTool.CxSDKWebService.SourceControlProtocolType ProtocolField;
+        private Checkmary.CxSDKWebService.SourceControlProtocolType ProtocolField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string RepositoryNameField;
@@ -710,7 +710,7 @@ namespace CheckmarxTool.CxSDKWebService {
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string GITBranchField;
         
-        private CheckmarxTool.CxSDKWebService.GitLsRemoteViewType GitLsViewTypeField;
+        private Checkmary.CxSDKWebService.GitLsRemoteViewType GitLsViewTypeField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string SSHPublicKeyField;
@@ -719,9 +719,9 @@ namespace CheckmarxTool.CxSDKWebService {
         private string SSHPrivateKeyField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.GitHubIntegrationSettings GitHubSettingsField;
+        private Checkmary.CxSDKWebService.GitHubIntegrationSettings GitHubSettingsField;
         
-        private CheckmarxTool.CxSDKWebService.CxWSPerforceBrowsingMode PerforceBrowsingModeField;
+        private Checkmary.CxSDKWebService.CxWSPerforceBrowsingMode PerforceBrowsingModeField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -786,7 +786,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=4)]
-        public CheckmarxTool.CxSDKWebService.RepositoryType Repository {
+        public Checkmary.CxSDKWebService.RepositoryType Repository {
             get {
                 return this.RepositoryField;
             }
@@ -799,7 +799,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
-        public CheckmarxTool.CxSDKWebService.Credentials UserCredentials {
+        public Checkmary.CxSDKWebService.Credentials UserCredentials {
             get {
                 return this.UserCredentialsField;
             }
@@ -812,7 +812,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=6)]
-        public CheckmarxTool.CxSDKWebService.SourceControlProtocolType Protocol {
+        public Checkmary.CxSDKWebService.SourceControlProtocolType Protocol {
             get {
                 return this.ProtocolField;
             }
@@ -864,7 +864,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=10)]
-        public CheckmarxTool.CxSDKWebService.GitLsRemoteViewType GitLsViewType {
+        public Checkmary.CxSDKWebService.GitLsRemoteViewType GitLsViewType {
             get {
                 return this.GitLsViewTypeField;
             }
@@ -903,7 +903,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=13)]
-        public CheckmarxTool.CxSDKWebService.GitHubIntegrationSettings GitHubSettings {
+        public Checkmary.CxSDKWebService.GitHubIntegrationSettings GitHubSettings {
             get {
                 return this.GitHubSettingsField;
             }
@@ -916,7 +916,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=14)]
-        public CheckmarxTool.CxSDKWebService.CxWSPerforceBrowsingMode PerforceBrowsingMode {
+        public Checkmary.CxSDKWebService.CxWSPerforceBrowsingMode PerforceBrowsingMode {
             get {
                 return this.PerforceBrowsingModeField;
             }
@@ -1147,10 +1147,10 @@ namespace CheckmarxTool.CxSDKWebService {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.Credentials ContributorCredentialsField;
+        private Checkmary.CxSDKWebService.Credentials ContributorCredentialsField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.Credentials OwnerCredentialsField;
+        private Checkmary.CxSDKWebService.Credentials OwnerCredentialsField;
         
         private int EventsThresholdField;
         
@@ -1165,7 +1165,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
-        public CheckmarxTool.CxSDKWebService.Credentials ContributorCredentials {
+        public Checkmary.CxSDKWebService.Credentials ContributorCredentials {
             get {
                 return this.ContributorCredentialsField;
             }
@@ -1178,7 +1178,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
-        public CheckmarxTool.CxSDKWebService.Credentials OwnerCredentials {
+        public Checkmary.CxSDKWebService.Credentials OwnerCredentials {
             get {
                 return this.OwnerCredentialsField;
             }
@@ -1288,23 +1288,23 @@ namespace CheckmarxTool.CxSDKWebService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="CxWSBasicRepsonse", Namespace="http://Checkmarx.com/v7")]
     [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSResponsePresetList))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSResponseConfigSetList))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSResponseProjectsDisplayData))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSResponseProjectScannedDisplayData))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSResponseProjectConfig))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSResponseSessionID))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSResponseLoginData))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSResponseGroupList))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSResponseScanStatus))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSResponseScansDisplayData))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSResponseScanSummary))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSResponseUserData))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSCreateReportResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSReportStatusResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSResponseScanResults))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSResponseTeamLdapGroupMappingData))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSResponseRunID))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSResponsePresetList))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSResponseConfigSetList))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSResponseProjectsDisplayData))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSResponseProjectScannedDisplayData))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSResponseProjectConfig))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSResponseSessionID))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSResponseLoginData))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSResponseGroupList))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSResponseScanStatus))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSResponseScansDisplayData))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSResponseScanSummary))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSResponseUserData))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSCreateReportResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSReportStatusResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSResponseScanResults))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSResponseTeamLdapGroupMappingData))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSResponseRunID))]
     public partial class CxWSBasicRepsonse : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
@@ -1365,13 +1365,13 @@ namespace CheckmarxTool.CxSDKWebService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="CxWSResponsePresetList", Namespace="http://Checkmarx.com/v7")]
     [System.SerializableAttribute()]
-    public partial class CxWSResponsePresetList : CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse {
+    public partial class CxWSResponsePresetList : Checkmary.CxSDKWebService.CxWSBasicRepsonse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.Preset[] PresetListField;
+        private Checkmary.CxSDKWebService.Preset[] PresetListField;
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
-        public CheckmarxTool.CxSDKWebService.Preset[] PresetList {
+        public Checkmary.CxSDKWebService.Preset[] PresetList {
             get {
                 return this.PresetListField;
             }
@@ -1388,13 +1388,13 @@ namespace CheckmarxTool.CxSDKWebService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="CxWSResponseConfigSetList", Namespace="http://Checkmarx.com/v7")]
     [System.SerializableAttribute()]
-    public partial class CxWSResponseConfigSetList : CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse {
+    public partial class CxWSResponseConfigSetList : Checkmary.CxSDKWebService.CxWSBasicRepsonse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.ConfigurationSet[] ConfigSetListField;
+        private Checkmary.CxSDKWebService.ConfigurationSet[] ConfigSetListField;
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
-        public CheckmarxTool.CxSDKWebService.ConfigurationSet[] ConfigSetList {
+        public Checkmary.CxSDKWebService.ConfigurationSet[] ConfigSetList {
             get {
                 return this.ConfigSetListField;
             }
@@ -1411,13 +1411,13 @@ namespace CheckmarxTool.CxSDKWebService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="CxWSResponseProjectsDisplayData", Namespace="http://Checkmarx.com/v7")]
     [System.SerializableAttribute()]
-    public partial class CxWSResponseProjectsDisplayData : CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse {
+    public partial class CxWSResponseProjectsDisplayData : Checkmary.CxSDKWebService.CxWSBasicRepsonse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.ProjectDisplayData[] projectListField;
+        private Checkmary.CxSDKWebService.ProjectDisplayData[] projectListField;
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
-        public CheckmarxTool.CxSDKWebService.ProjectDisplayData[] projectList {
+        public Checkmary.CxSDKWebService.ProjectDisplayData[] projectList {
             get {
                 return this.projectListField;
             }
@@ -1434,13 +1434,13 @@ namespace CheckmarxTool.CxSDKWebService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="CxWSResponseProjectScannedDisplayData", Namespace="http://Checkmarx.com/v7")]
     [System.SerializableAttribute()]
-    public partial class CxWSResponseProjectScannedDisplayData : CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse {
+    public partial class CxWSResponseProjectScannedDisplayData : Checkmary.CxSDKWebService.CxWSBasicRepsonse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.ProjectScannedDisplayData[] ProjectScannedListField;
+        private Checkmary.CxSDKWebService.ProjectScannedDisplayData[] ProjectScannedListField;
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
-        public CheckmarxTool.CxSDKWebService.ProjectScannedDisplayData[] ProjectScannedList {
+        public Checkmary.CxSDKWebService.ProjectScannedDisplayData[] ProjectScannedList {
             get {
                 return this.ProjectScannedListField;
             }
@@ -1457,16 +1457,16 @@ namespace CheckmarxTool.CxSDKWebService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="CxWSResponseProjectConfig", Namespace="http://Checkmarx.com/v7")]
     [System.SerializableAttribute()]
-    public partial class CxWSResponseProjectConfig : CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse {
+    public partial class CxWSResponseProjectConfig : Checkmary.CxSDKWebService.CxWSBasicRepsonse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.ProjectConfiguration ProjectConfigField;
+        private Checkmary.CxSDKWebService.ProjectConfiguration ProjectConfigField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.UserPermission PermissionField;
+        private Checkmary.CxSDKWebService.UserPermission PermissionField;
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
-        public CheckmarxTool.CxSDKWebService.ProjectConfiguration ProjectConfig {
+        public Checkmary.CxSDKWebService.ProjectConfiguration ProjectConfig {
             get {
                 return this.ProjectConfigField;
             }
@@ -1479,7 +1479,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public CheckmarxTool.CxSDKWebService.UserPermission Permission {
+        public Checkmary.CxSDKWebService.UserPermission Permission {
             get {
                 return this.PermissionField;
             }
@@ -1496,8 +1496,8 @@ namespace CheckmarxTool.CxSDKWebService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="CxWSResponseSessionID", Namespace="http://Checkmarx.com/v7")]
     [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSResponseLoginData))]
-    public partial class CxWSResponseSessionID : CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse {
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSResponseLoginData))]
+    public partial class CxWSResponseSessionID : Checkmary.CxSDKWebService.CxWSBasicRepsonse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string SessionIdField;
@@ -1520,7 +1520,7 @@ namespace CheckmarxTool.CxSDKWebService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="CxWSResponseLoginData", Namespace="http://Checkmarx.com/v7")]
     [System.SerializableAttribute()]
-    public partial class CxWSResponseLoginData : CheckmarxTool.CxSDKWebService.CxWSResponseSessionID {
+    public partial class CxWSResponseLoginData : Checkmary.CxSDKWebService.CxWSResponseSessionID {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string FamilyNameField;
@@ -1951,13 +1951,13 @@ namespace CheckmarxTool.CxSDKWebService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="CxWSResponseGroupList", Namespace="http://Checkmarx.com/v7")]
     [System.SerializableAttribute()]
-    public partial class CxWSResponseGroupList : CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse {
+    public partial class CxWSResponseGroupList : Checkmary.CxSDKWebService.CxWSBasicRepsonse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.Group[] GroupListField;
+        private Checkmary.CxSDKWebService.Group[] GroupListField;
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
-        public CheckmarxTool.CxSDKWebService.Group[] GroupList {
+        public Checkmary.CxSDKWebService.Group[] GroupList {
             get {
                 return this.GroupListField;
             }
@@ -1974,7 +1974,7 @@ namespace CheckmarxTool.CxSDKWebService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="CxWSResponseScanStatus", Namespace="http://Checkmarx.com/v7")]
     [System.SerializableAttribute()]
-    public partial class CxWSResponseScanStatus : CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse {
+    public partial class CxWSResponseScanStatus : Checkmary.CxSDKWebService.CxWSBasicRepsonse {
         
         private int CurrentStageField;
         
@@ -2022,18 +2022,18 @@ namespace CheckmarxTool.CxSDKWebService {
         private long LOCField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.CxDateTime TimeScheduledField;
+        private Checkmary.CxSDKWebService.CxDateTime TimeScheduledField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.CxDateTime ElapsedTimeField;
+        private Checkmary.CxSDKWebService.CxDateTime ElapsedTimeField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.CxDateTime TimeFinishedField;
+        private Checkmary.CxSDKWebService.CxDateTime TimeFinishedField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.CxDateTime TimeBeginWorkingField;
+        private Checkmary.CxSDKWebService.CxDateTime TimeBeginWorkingField;
         
-        private CheckmarxTool.CxSDKWebService.CurrentStatusEnum CurrentStatusField;
+        private Checkmary.CxSDKWebService.CurrentStatusEnum CurrentStatusField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string ServerNameField;
@@ -2280,7 +2280,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=18)]
-        public CheckmarxTool.CxSDKWebService.CxDateTime TimeScheduled {
+        public Checkmary.CxSDKWebService.CxDateTime TimeScheduled {
             get {
                 return this.TimeScheduledField;
             }
@@ -2293,7 +2293,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=19)]
-        public CheckmarxTool.CxSDKWebService.CxDateTime ElapsedTime {
+        public Checkmary.CxSDKWebService.CxDateTime ElapsedTime {
             get {
                 return this.ElapsedTimeField;
             }
@@ -2306,7 +2306,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=20)]
-        public CheckmarxTool.CxSDKWebService.CxDateTime TimeFinished {
+        public Checkmary.CxSDKWebService.CxDateTime TimeFinished {
             get {
                 return this.TimeFinishedField;
             }
@@ -2319,7 +2319,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=21)]
-        public CheckmarxTool.CxSDKWebService.CxDateTime TimeBeginWorking {
+        public Checkmary.CxSDKWebService.CxDateTime TimeBeginWorking {
             get {
                 return this.TimeBeginWorkingField;
             }
@@ -2332,7 +2332,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=22)]
-        public CheckmarxTool.CxSDKWebService.CurrentStatusEnum CurrentStatus {
+        public Checkmary.CxSDKWebService.CurrentStatusEnum CurrentStatus {
             get {
                 return this.CurrentStatusField;
             }
@@ -2401,13 +2401,13 @@ namespace CheckmarxTool.CxSDKWebService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="CxWSResponseScansDisplayData", Namespace="http://Checkmarx.com/v7")]
     [System.SerializableAttribute()]
-    public partial class CxWSResponseScansDisplayData : CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse {
+    public partial class CxWSResponseScansDisplayData : Checkmary.CxSDKWebService.CxWSBasicRepsonse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.ScanDisplayData[] ScanListField;
+        private Checkmary.CxSDKWebService.ScanDisplayData[] ScanListField;
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
-        public CheckmarxTool.CxSDKWebService.ScanDisplayData[] ScanList {
+        public Checkmary.CxSDKWebService.ScanDisplayData[] ScanList {
             get {
                 return this.ScanListField;
             }
@@ -2424,13 +2424,13 @@ namespace CheckmarxTool.CxSDKWebService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="CxWSResponseScanSummary", Namespace="http://Checkmarx.com/v7")]
     [System.SerializableAttribute()]
-    public partial class CxWSResponseScanSummary : CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse {
+    public partial class CxWSResponseScanSummary : Checkmary.CxSDKWebService.CxWSBasicRepsonse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.CxDateTime StartedField;
+        private Checkmary.CxSDKWebService.CxDateTime StartedField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.CxDateTime FinishedField;
+        private Checkmary.CxSDKWebService.CxDateTime FinishedField;
         
         private int ScanRiskField;
         
@@ -2461,24 +2461,24 @@ namespace CheckmarxTool.CxSDKWebService {
         
         private bool IsIncrementalField;
         
-        private CheckmarxTool.CxSDKWebService.ScanType ScanTypeField;
+        private Checkmary.CxSDKWebService.ScanType ScanTypeField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.CxWSQueryLanguageState[] ScanLanguageStateCollectionField;
+        private Checkmary.CxSDKWebService.CxWSQueryLanguageState[] ScanLanguageStateCollectionField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.CxDateTime EngineStartField;
+        private Checkmary.CxSDKWebService.CxDateTime EngineStartField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.CxDateTime EngineFinishField;
+        private Checkmary.CxSDKWebService.CxDateTime EngineFinishField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.CxDateTime ScanQueuedField;
+        private Checkmary.CxSDKWebService.CxDateTime ScanQueuedField;
         
         private long TotalScanTimeField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.CxDateTime StatisticsCalculationDateField;
+        private Checkmary.CxSDKWebService.CxDateTime StatisticsCalculationDateField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string ProjectNameField;
@@ -2487,7 +2487,7 @@ namespace CheckmarxTool.CxSDKWebService {
         private string TeamNameField;
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
-        public CheckmarxTool.CxSDKWebService.CxDateTime Started {
+        public Checkmary.CxSDKWebService.CxDateTime Started {
             get {
                 return this.StartedField;
             }
@@ -2500,7 +2500,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public CheckmarxTool.CxSDKWebService.CxDateTime Finished {
+        public Checkmary.CxSDKWebService.CxDateTime Finished {
             get {
                 return this.FinishedField;
             }
@@ -2682,7 +2682,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=15)]
-        public CheckmarxTool.CxSDKWebService.ScanType ScanType {
+        public Checkmary.CxSDKWebService.ScanType ScanType {
             get {
                 return this.ScanTypeField;
             }
@@ -2695,7 +2695,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=16)]
-        public CheckmarxTool.CxSDKWebService.CxWSQueryLanguageState[] ScanLanguageStateCollection {
+        public Checkmary.CxSDKWebService.CxWSQueryLanguageState[] ScanLanguageStateCollection {
             get {
                 return this.ScanLanguageStateCollectionField;
             }
@@ -2708,7 +2708,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=17)]
-        public CheckmarxTool.CxSDKWebService.CxDateTime EngineStart {
+        public Checkmary.CxSDKWebService.CxDateTime EngineStart {
             get {
                 return this.EngineStartField;
             }
@@ -2721,7 +2721,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=18)]
-        public CheckmarxTool.CxSDKWebService.CxDateTime EngineFinish {
+        public Checkmary.CxSDKWebService.CxDateTime EngineFinish {
             get {
                 return this.EngineFinishField;
             }
@@ -2734,7 +2734,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=19)]
-        public CheckmarxTool.CxSDKWebService.CxDateTime ScanQueued {
+        public Checkmary.CxSDKWebService.CxDateTime ScanQueued {
             get {
                 return this.ScanQueuedField;
             }
@@ -2760,7 +2760,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=21)]
-        public CheckmarxTool.CxSDKWebService.CxDateTime StatisticsCalculationDate {
+        public Checkmary.CxSDKWebService.CxDateTime StatisticsCalculationDate {
             get {
                 return this.StatisticsCalculationDateField;
             }
@@ -2803,13 +2803,13 @@ namespace CheckmarxTool.CxSDKWebService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="CxWSResponseUserData", Namespace="http://Checkmarx.com/v7")]
     [System.SerializableAttribute()]
-    public partial class CxWSResponseUserData : CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse {
+    public partial class CxWSResponseUserData : Checkmary.CxSDKWebService.CxWSBasicRepsonse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.UserData[] UserDataListField;
+        private Checkmary.CxSDKWebService.UserData[] UserDataListField;
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
-        public CheckmarxTool.CxSDKWebService.UserData[] UserDataList {
+        public Checkmary.CxSDKWebService.UserData[] UserDataList {
             get {
                 return this.UserDataListField;
             }
@@ -2826,7 +2826,7 @@ namespace CheckmarxTool.CxSDKWebService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="CxWSCreateReportResponse", Namespace="http://Checkmarx.com/v7")]
     [System.SerializableAttribute()]
-    public partial class CxWSCreateReportResponse : CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse {
+    public partial class CxWSCreateReportResponse : Checkmary.CxSDKWebService.CxWSBasicRepsonse {
         
         private long IDField;
         
@@ -2848,7 +2848,7 @@ namespace CheckmarxTool.CxSDKWebService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="CxWSReportStatusResponse", Namespace="http://Checkmarx.com/v7")]
     [System.SerializableAttribute()]
-    public partial class CxWSReportStatusResponse : CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse {
+    public partial class CxWSReportStatusResponse : Checkmary.CxSDKWebService.CxWSBasicRepsonse {
         
         private bool IsReadyField;
         
@@ -2885,7 +2885,7 @@ namespace CheckmarxTool.CxSDKWebService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="CxWSResponseScanResults", Namespace="http://Checkmarx.com/v7")]
     [System.SerializableAttribute()]
-    public partial class CxWSResponseScanResults : CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse {
+    public partial class CxWSResponseScanResults : Checkmary.CxSDKWebService.CxWSBasicRepsonse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private byte[] ScanResultsField;
@@ -2923,13 +2923,13 @@ namespace CheckmarxTool.CxSDKWebService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="CxWSResponseTeamLdapGroupMappingData", Namespace="http://Checkmarx.com/v7")]
     [System.SerializableAttribute()]
-    public partial class CxWSResponseTeamLdapGroupMappingData : CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse {
+    public partial class CxWSResponseTeamLdapGroupMappingData : Checkmary.CxSDKWebService.CxWSBasicRepsonse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string TeamIdField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.CxWSLdapGroupMapping[] LdapGroupsField;
+        private Checkmary.CxSDKWebService.CxWSLdapGroupMapping[] LdapGroupsField;
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
         public string TeamId {
@@ -2945,7 +2945,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public CheckmarxTool.CxSDKWebService.CxWSLdapGroupMapping[] LdapGroups {
+        public Checkmary.CxSDKWebService.CxWSLdapGroupMapping[] LdapGroups {
             get {
                 return this.LdapGroupsField;
             }
@@ -2962,7 +2962,7 @@ namespace CheckmarxTool.CxSDKWebService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="CxWSResponseRunID", Namespace="http://Checkmarx.com/v7")]
     [System.SerializableAttribute()]
-    public partial class CxWSResponseRunID : CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse {
+    public partial class CxWSResponseRunID : Checkmary.CxSDKWebService.CxWSBasicRepsonse {
         
         private long ProjectIDField;
         
@@ -3172,7 +3172,7 @@ namespace CheckmarxTool.CxSDKWebService {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.UserPermission PermissionField;
+        private Checkmary.CxSDKWebService.UserPermission PermissionField;
         
         private long projectIDField;
         
@@ -3195,7 +3195,7 @@ namespace CheckmarxTool.CxSDKWebService {
         private string PresetField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.CxDateTime LastScanDateField;
+        private Checkmary.CxSDKWebService.CxDateTime LastScanDateField;
         
         private int TotalScansField;
         
@@ -3214,7 +3214,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
-        public CheckmarxTool.CxSDKWebService.UserPermission Permission {
+        public Checkmary.CxSDKWebService.UserPermission Permission {
             get {
                 return this.PermissionField;
             }
@@ -3318,7 +3318,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=8)]
-        public CheckmarxTool.CxSDKWebService.CxDateTime LastScanDate {
+        public Checkmary.CxSDKWebService.CxDateTime LastScanDate {
             get {
                 return this.LastScanDateField;
             }
@@ -3869,25 +3869,25 @@ namespace CheckmarxTool.CxSDKWebService {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.ProjectSettings ProjectSettingsField;
+        private Checkmary.CxSDKWebService.ProjectSettings ProjectSettingsField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.SourceCodeSettings SourceCodeSettingsField;
+        private Checkmary.CxSDKWebService.SourceCodeSettings SourceCodeSettingsField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.ScheduleSettings ScheduleSettingsField;
+        private Checkmary.CxSDKWebService.ScheduleSettings ScheduleSettingsField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.ScanActionSettings ScanActionSettingsField;
+        private Checkmary.CxSDKWebService.ScanActionSettings ScanActionSettingsField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.CxWSProjectIssueTrackingSettings ProjectIssueTrackingSettingsField;
+        private Checkmary.CxSDKWebService.CxWSProjectIssueTrackingSettings ProjectIssueTrackingSettingsField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.CxWSProjectCustomField[] CustomFieldsField;
+        private Checkmary.CxSDKWebService.CxWSProjectCustomField[] CustomFieldsField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.DataRetentionSettings DataRetentionSettingsField;
+        private Checkmary.CxSDKWebService.DataRetentionSettings DataRetentionSettingsField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -3900,7 +3900,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
-        public CheckmarxTool.CxSDKWebService.ProjectSettings ProjectSettings {
+        public Checkmary.CxSDKWebService.ProjectSettings ProjectSettings {
             get {
                 return this.ProjectSettingsField;
             }
@@ -3913,7 +3913,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
-        public CheckmarxTool.CxSDKWebService.SourceCodeSettings SourceCodeSettings {
+        public Checkmary.CxSDKWebService.SourceCodeSettings SourceCodeSettings {
             get {
                 return this.SourceCodeSettingsField;
             }
@@ -3926,7 +3926,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public CheckmarxTool.CxSDKWebService.ScheduleSettings ScheduleSettings {
+        public Checkmary.CxSDKWebService.ScheduleSettings ScheduleSettings {
             get {
                 return this.ScheduleSettingsField;
             }
@@ -3939,7 +3939,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
-        public CheckmarxTool.CxSDKWebService.ScanActionSettings ScanActionSettings {
+        public Checkmary.CxSDKWebService.ScanActionSettings ScanActionSettings {
             get {
                 return this.ScanActionSettingsField;
             }
@@ -3952,7 +3952,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
-        public CheckmarxTool.CxSDKWebService.CxWSProjectIssueTrackingSettings ProjectIssueTrackingSettings {
+        public Checkmary.CxSDKWebService.CxWSProjectIssueTrackingSettings ProjectIssueTrackingSettings {
             get {
                 return this.ProjectIssueTrackingSettingsField;
             }
@@ -3965,7 +3965,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
-        public CheckmarxTool.CxSDKWebService.CxWSProjectCustomField[] CustomFields {
+        public Checkmary.CxSDKWebService.CxWSProjectCustomField[] CustomFields {
             get {
                 return this.CustomFieldsField;
             }
@@ -3978,7 +3978,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=6)]
-        public CheckmarxTool.CxSDKWebService.DataRetentionSettings DataRetentionSettings {
+        public Checkmary.CxSDKWebService.DataRetentionSettings DataRetentionSettings {
             get {
                 return this.DataRetentionSettingsField;
             }
@@ -4009,19 +4009,19 @@ namespace CheckmarxTool.CxSDKWebService {
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        private CheckmarxTool.CxSDKWebService.ScheduleType ScheduleField;
+        private Checkmary.CxSDKWebService.ScheduleType ScheduleField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.DayOfWeek[] ScheduledDaysField;
+        private Checkmary.CxSDKWebService.DayOfWeek[] ScheduledDaysField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.CxDateTime TimeField;
+        private Checkmary.CxSDKWebService.CxDateTime TimeField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.CxDateTime StartSchedulingPeriodField;
+        private Checkmary.CxSDKWebService.CxDateTime StartSchedulingPeriodField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.CxDateTime EndSchedulingPeriodField;
+        private Checkmary.CxSDKWebService.CxDateTime EndSchedulingPeriodField;
         
         private int SchedulingFrequencyField;
         
@@ -4036,7 +4036,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public CheckmarxTool.CxSDKWebService.ScheduleType Schedule {
+        public Checkmary.CxSDKWebService.ScheduleType Schedule {
             get {
                 return this.ScheduleField;
             }
@@ -4049,7 +4049,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
-        public CheckmarxTool.CxSDKWebService.DayOfWeek[] ScheduledDays {
+        public Checkmary.CxSDKWebService.DayOfWeek[] ScheduledDays {
             get {
                 return this.ScheduledDaysField;
             }
@@ -4062,7 +4062,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
-        public CheckmarxTool.CxSDKWebService.CxDateTime Time {
+        public Checkmary.CxSDKWebService.CxDateTime Time {
             get {
                 return this.TimeField;
             }
@@ -4075,7 +4075,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
-        public CheckmarxTool.CxSDKWebService.CxDateTime StartSchedulingPeriod {
+        public Checkmary.CxSDKWebService.CxDateTime StartSchedulingPeriod {
             get {
                 return this.StartSchedulingPeriodField;
             }
@@ -4088,7 +4088,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
-        public CheckmarxTool.CxSDKWebService.CxDateTime EndSchedulingPeriod {
+        public Checkmary.CxSDKWebService.CxDateTime EndSchedulingPeriod {
             get {
                 return this.EndSchedulingPeriodField;
             }
@@ -4133,7 +4133,7 @@ namespace CheckmarxTool.CxSDKWebService {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.ScanAction[] ScanActionListField;
+        private Checkmary.CxSDKWebService.ScanAction[] ScanActionListField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -4146,7 +4146,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
-        public CheckmarxTool.CxSDKWebService.ScanAction[] ScanActionList {
+        public Checkmary.CxSDKWebService.ScanAction[] ScanActionList {
             get {
                 return this.ScanActionListField;
             }
@@ -4180,7 +4180,7 @@ namespace CheckmarxTool.CxSDKWebService {
         private long TrackingSystemIDField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.CxWSIssueTrackingParam[] ParamsField;
+        private Checkmary.CxSDKWebService.CxWSIssueTrackingParam[] ParamsField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -4206,7 +4206,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public CheckmarxTool.CxSDKWebService.CxWSIssueTrackingParam[] Params {
+        public Checkmary.CxSDKWebService.CxWSIssueTrackingParam[] Params {
             get {
                 return this.ParamsField;
             }
@@ -4382,11 +4382,11 @@ namespace CheckmarxTool.CxSDKWebService {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.ArrayOfString ParametersField;
+        private Checkmary.CxSDKWebService.ArrayOfString ParametersField;
         
-        private CheckmarxTool.CxSDKWebService.ScanEventType TriggerField;
+        private Checkmary.CxSDKWebService.ScanEventType TriggerField;
         
-        private CheckmarxTool.CxSDKWebService.ScanActionType ActionField;
+        private Checkmary.CxSDKWebService.ScanActionType ActionField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -4399,7 +4399,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
-        public CheckmarxTool.CxSDKWebService.ArrayOfString Parameters {
+        public Checkmary.CxSDKWebService.ArrayOfString Parameters {
             get {
                 return this.ParametersField;
             }
@@ -4412,7 +4412,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public CheckmarxTool.CxSDKWebService.ScanEventType Trigger {
+        public Checkmary.CxSDKWebService.ScanEventType Trigger {
             get {
                 return this.TriggerField;
             }
@@ -4425,7 +4425,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=2)]
-        public CheckmarxTool.CxSDKWebService.ScanActionType Action {
+        public Checkmary.CxSDKWebService.ScanActionType Action {
             get {
                 return this.ActionField;
             }
@@ -4476,97 +4476,97 @@ namespace CheckmarxTool.CxSDKWebService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="CxWSIssueTrackingParam", Namespace="http://Checkmarx.com/v7")]
     [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CliScanArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.ProjectSettings))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.ProjectSharedLocation))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.ArrayOfString))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.Credentials))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.ProjectOrigin))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.SourceCodeSettings))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.SourceLocationType))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.ScanPath[]))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.ScanPath))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.SourceControlSettings))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.RepositoryType))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.SourceControlProtocolType))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.GitLsRemoteViewType))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.GitHubIntegrationSettings))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSPerforceBrowsingMode))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.LocalCodeContainer))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.SourceFilterPatterns))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxClientType))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSResponseRunID))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.ArrayOfLong))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSResponsePresetList))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.Preset[]))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.Preset))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSResponseConfigSetList))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.ConfigurationSet[]))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.ConfigurationSet))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSResponseProjectsDisplayData))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.ProjectDisplayData[]))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.ProjectDisplayData))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.UserPermission))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxDateTime))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSResponseProjectScannedDisplayData))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.ProjectScannedDisplayData[]))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.ProjectScannedDisplayData))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSResponseProjectConfig))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.ProjectConfiguration))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.ScheduleSettings))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.ScheduleType))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.DayOfWeek[]))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.DayOfWeek))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.ScanActionSettings))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.ScanAction[]))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.ScanAction))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.ScanEventType))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.ScanActionType))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSProjectIssueTrackingSettings))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSIssueTrackingParam[]))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSProjectCustomField[]))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSProjectCustomField))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.DataRetentionSettings))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.ArrayOfAnyType))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSResponseLoginData))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSResponseSessionID))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.Group))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.GroupType))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.Group[]))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSResponseGroupList))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSResponseScanStatus))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CurrentStatusEnum))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.ScanDisplayData))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.ScanType))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.ScanDisplayData[]))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSResponseScansDisplayData))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSQueryLanguageState))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSQueryLanguageState[]))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSResponseScanSummary))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSItemAndCRUD))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSItemTypeEnum))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSEnableCRUDAction[]))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSEnableCRUDAction))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSCrudEnum))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.Role))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSRoleWithUserPrivileges))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSItemAndCRUD[]))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.WebClientUser))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.UserData))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.UserData[]))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSResponseUserData))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSReportRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSReportType))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSCreateReportResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSReportStatusResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSResponseScanResults))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxDataRetentionConfiguration))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxDataRetentionType))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSLdapGroupMapping))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSLdapGroup))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSLdapGroupMapping[]))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSResponseTeamLdapGroupMappingData))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CliScanArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.ProjectSettings))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.ProjectSharedLocation))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.ArrayOfString))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.Credentials))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.ProjectOrigin))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.SourceCodeSettings))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.SourceLocationType))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.ScanPath[]))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.ScanPath))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.SourceControlSettings))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.RepositoryType))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.SourceControlProtocolType))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.GitLsRemoteViewType))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.GitHubIntegrationSettings))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSPerforceBrowsingMode))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.LocalCodeContainer))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.SourceFilterPatterns))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxClientType))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSResponseRunID))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSBasicRepsonse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.ArrayOfLong))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSResponsePresetList))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.Preset[]))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.Preset))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSResponseConfigSetList))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.ConfigurationSet[]))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.ConfigurationSet))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSResponseProjectsDisplayData))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.ProjectDisplayData[]))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.ProjectDisplayData))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.UserPermission))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxDateTime))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSResponseProjectScannedDisplayData))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.ProjectScannedDisplayData[]))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.ProjectScannedDisplayData))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSResponseProjectConfig))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.ProjectConfiguration))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.ScheduleSettings))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.ScheduleType))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.DayOfWeek[]))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.DayOfWeek))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.ScanActionSettings))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.ScanAction[]))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.ScanAction))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.ScanEventType))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.ScanActionType))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSProjectIssueTrackingSettings))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSIssueTrackingParam[]))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSProjectCustomField[]))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSProjectCustomField))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.DataRetentionSettings))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.ArrayOfAnyType))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSResponseLoginData))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSResponseSessionID))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.Group))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.GroupType))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.Group[]))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSResponseGroupList))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSResponseScanStatus))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CurrentStatusEnum))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.ScanDisplayData))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.ScanType))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.ScanDisplayData[]))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSResponseScansDisplayData))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSQueryLanguageState))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSQueryLanguageState[]))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSResponseScanSummary))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSItemAndCRUD))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSItemTypeEnum))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSEnableCRUDAction[]))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSEnableCRUDAction))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSCrudEnum))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.Role))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSRoleWithUserPrivileges))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSItemAndCRUD[]))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.WebClientUser))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.UserData))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.UserData[]))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSResponseUserData))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSReportRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSReportType))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSCreateReportResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSReportStatusResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSResponseScanResults))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxDataRetentionConfiguration))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxDataRetentionType))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSLdapGroupMapping))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSLdapGroup))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSLdapGroupMapping[]))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSResponseTeamLdapGroupMappingData))]
     public partial class CxWSIssueTrackingParam : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
@@ -4669,7 +4669,7 @@ namespace CheckmarxTool.CxSDKWebService {
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string IDField;
         
-        private CheckmarxTool.CxSDKWebService.GroupType TypeField;
+        private Checkmary.CxSDKWebService.GroupType TypeField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string GuidField;
@@ -4717,7 +4717,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public CheckmarxTool.CxSDKWebService.GroupType Type {
+        public Checkmary.CxSDKWebService.GroupType Type {
             get {
                 return this.TypeField;
             }
@@ -4841,12 +4841,12 @@ namespace CheckmarxTool.CxSDKWebService {
         private bool IsAllowedToDeleteField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.CxDateTime QueuedDateTimeField;
+        private Checkmary.CxSDKWebService.CxDateTime QueuedDateTimeField;
         
         private int RiskLevelScoreField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.CxDateTime FinishedDateTimeField;
+        private Checkmary.CxSDKWebService.CxDateTime FinishedDateTimeField;
         
         private long ProjectIdField;
         
@@ -4875,7 +4875,7 @@ namespace CheckmarxTool.CxSDKWebService {
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string CommentsField;
         
-        private CheckmarxTool.CxSDKWebService.ScanType ScanDisplayTypeField;
+        private Checkmary.CxSDKWebService.ScanType ScanDisplayTypeField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string ServerNameField;
@@ -4887,7 +4887,7 @@ namespace CheckmarxTool.CxSDKWebService {
         private string FailedLOCField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.CxDateTime StatisticsCalculationDateField;
+        private Checkmary.CxSDKWebService.CxDateTime StatisticsCalculationDateField;
         
         private bool IsPublicField;
         
@@ -4930,7 +4930,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public CheckmarxTool.CxSDKWebService.CxDateTime QueuedDateTime {
+        public Checkmary.CxSDKWebService.CxDateTime QueuedDateTime {
             get {
                 return this.QueuedDateTimeField;
             }
@@ -4956,7 +4956,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
-        public CheckmarxTool.CxSDKWebService.CxDateTime FinishedDateTime {
+        public Checkmary.CxSDKWebService.CxDateTime FinishedDateTime {
             get {
                 return this.FinishedDateTimeField;
             }
@@ -5112,7 +5112,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=16)]
-        public CheckmarxTool.CxSDKWebService.ScanType ScanDisplayType {
+        public Checkmary.CxSDKWebService.ScanType ScanDisplayType {
             get {
                 return this.ScanDisplayTypeField;
             }
@@ -5164,7 +5164,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=20)]
-        public CheckmarxTool.CxSDKWebService.CxDateTime StatisticsCalculationDate {
+        public Checkmary.CxSDKWebService.CxDateTime StatisticsCalculationDate {
             get {
                 return this.StatisticsCalculationDateField;
             }
@@ -5335,10 +5335,10 @@ namespace CheckmarxTool.CxSDKWebService {
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        private CheckmarxTool.CxSDKWebService.CxWSItemTypeEnum TypeField;
+        private Checkmary.CxSDKWebService.CxWSItemTypeEnum TypeField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.CxWSEnableCRUDAction[] CRUDActionListField;
+        private Checkmary.CxSDKWebService.CxWSEnableCRUDAction[] CRUDActionListField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -5351,7 +5351,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public CheckmarxTool.CxSDKWebService.CxWSItemTypeEnum Type {
+        public Checkmary.CxSDKWebService.CxWSItemTypeEnum Type {
             get {
                 return this.TypeField;
             }
@@ -5364,7 +5364,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public CheckmarxTool.CxSDKWebService.CxWSEnableCRUDAction[] CRUDActionList {
+        public Checkmary.CxSDKWebService.CxWSEnableCRUDAction[] CRUDActionList {
             get {
                 return this.CRUDActionListField;
             }
@@ -5442,7 +5442,7 @@ namespace CheckmarxTool.CxSDKWebService {
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        private CheckmarxTool.CxSDKWebService.CxWSCrudEnum TypeField;
+        private Checkmary.CxSDKWebService.CxWSCrudEnum TypeField;
         
         private bool EnableField;
         
@@ -5457,7 +5457,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public CheckmarxTool.CxSDKWebService.CxWSCrudEnum Type {
+        public Checkmary.CxSDKWebService.CxWSCrudEnum Type {
             get {
                 return this.TypeField;
             }
@@ -5519,7 +5519,7 @@ namespace CheckmarxTool.CxSDKWebService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="Role", Namespace="http://Checkmarx.com/v7")]
     [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.CxWSRoleWithUserPrivileges))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.CxWSRoleWithUserPrivileges))]
     public partial class Role : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
@@ -5581,13 +5581,13 @@ namespace CheckmarxTool.CxSDKWebService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="CxWSRoleWithUserPrivileges", Namespace="http://Checkmarx.com/v7")]
     [System.SerializableAttribute()]
-    public partial class CxWSRoleWithUserPrivileges : CheckmarxTool.CxSDKWebService.Role {
+    public partial class CxWSRoleWithUserPrivileges : Checkmary.CxSDKWebService.Role {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.CxWSItemAndCRUD[] ItemsCRUDField;
+        private Checkmary.CxSDKWebService.CxWSItemAndCRUD[] ItemsCRUDField;
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
-        public CheckmarxTool.CxSDKWebService.CxWSItemAndCRUD[] ItemsCRUD {
+        public Checkmary.CxSDKWebService.CxWSItemAndCRUD[] ItemsCRUD {
             get {
                 return this.ItemsCRUDField;
             }
@@ -5604,7 +5604,7 @@ namespace CheckmarxTool.CxSDKWebService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="WebClientUser", Namespace="http://Checkmarx.com/v7")]
     [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxSDKWebService.UserData))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxSDKWebService.UserData))]
     public partial class WebClientUser : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
@@ -5661,14 +5661,14 @@ namespace CheckmarxTool.CxSDKWebService {
         private bool AuditUserField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.Group[] GroupListField;
+        private Checkmary.CxSDKWebService.Group[] GroupListField;
         
         private System.DateTime LastLoginDateField;
         
         private bool LimitAccessByIPAddressField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.ArrayOfString AllowedIPsField;
+        private Checkmary.CxSDKWebService.ArrayOfString AllowedIPsField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -5915,7 +5915,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=18)]
-        public CheckmarxTool.CxSDKWebService.Group[] GroupList {
+        public Checkmary.CxSDKWebService.Group[] GroupList {
             get {
                 return this.GroupListField;
             }
@@ -5954,7 +5954,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=21)]
-        public CheckmarxTool.CxSDKWebService.ArrayOfString AllowedIPs {
+        public Checkmary.CxSDKWebService.ArrayOfString AllowedIPs {
             get {
                 return this.AllowedIPsField;
             }
@@ -5980,12 +5980,12 @@ namespace CheckmarxTool.CxSDKWebService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UserData", Namespace="http://Checkmarx.com/v7")]
     [System.SerializableAttribute()]
-    public partial class UserData : CheckmarxTool.CxSDKWebService.WebClientUser {
+    public partial class UserData : Checkmary.CxSDKWebService.WebClientUser {
         
         private bool IsActiveField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.Role RoleDataField;
+        private Checkmary.CxSDKWebService.Role RoleDataField;
         
         [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
         public bool IsActive {
@@ -6001,7 +6001,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
-        public CheckmarxTool.CxSDKWebService.Role RoleData {
+        public Checkmary.CxSDKWebService.Role RoleData {
             get {
                 return this.RoleDataField;
             }
@@ -6023,7 +6023,7 @@ namespace CheckmarxTool.CxSDKWebService {
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        private CheckmarxTool.CxSDKWebService.CxWSReportType TypeField;
+        private Checkmary.CxSDKWebService.CxWSReportType TypeField;
         
         private long ScanIDField;
         
@@ -6038,7 +6038,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public CheckmarxTool.CxSDKWebService.CxWSReportType Type {
+        public Checkmary.CxSDKWebService.CxWSReportType Type {
             get {
                 return this.TypeField;
             }
@@ -6099,7 +6099,7 @@ namespace CheckmarxTool.CxSDKWebService {
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        private CheckmarxTool.CxSDKWebService.CxDataRetentionType DataRetentionTypeField;
+        private Checkmary.CxSDKWebService.CxDataRetentionType DataRetentionTypeField;
         
         private int NumOfScansToPreserveField;
         
@@ -6120,7 +6120,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public CheckmarxTool.CxSDKWebService.CxDataRetentionType DataRetentionType {
+        public Checkmary.CxSDKWebService.CxDataRetentionType DataRetentionType {
             get {
                 return this.DataRetentionTypeField;
             }
@@ -6217,7 +6217,7 @@ namespace CheckmarxTool.CxSDKWebService {
         private int LdapServerIdField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private CheckmarxTool.CxSDKWebService.CxWSLdapGroup LdapGroupField;
+        private Checkmary.CxSDKWebService.CxWSLdapGroup LdapGroupField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -6243,7 +6243,7 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public CheckmarxTool.CxSDKWebService.CxWSLdapGroup LdapGroup {
+        public Checkmary.CxSDKWebService.CxWSLdapGroup LdapGroup {
             get {
                 return this.LdapGroupField;
             }
@@ -6332,227 +6332,227 @@ namespace CheckmarxTool.CxSDKWebService {
         
         // CODEGEN: Generating message contract since element name sessionId from namespace http://Checkmarx.com/v7 is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/Scan", ReplyAction="*")]
-        CheckmarxTool.CxSDKWebService.ScanResponse Scan(CheckmarxTool.CxSDKWebService.ScanRequest request);
+        Checkmary.CxSDKWebService.ScanResponse Scan(Checkmary.CxSDKWebService.ScanRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/Scan", ReplyAction="*")]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.ScanResponse> ScanAsync(CheckmarxTool.CxSDKWebService.ScanRequest request);
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.ScanResponse> ScanAsync(Checkmary.CxSDKWebService.ScanRequest request);
         
         // CODEGEN: Generating message contract since element name sessionId from namespace http://Checkmarx.com/v7 is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/BranchProjectById", ReplyAction="*")]
-        CheckmarxTool.CxSDKWebService.BranchProjectByIdResponse BranchProjectById(CheckmarxTool.CxSDKWebService.BranchProjectByIdRequest request);
+        Checkmary.CxSDKWebService.BranchProjectByIdResponse BranchProjectById(Checkmary.CxSDKWebService.BranchProjectByIdRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/BranchProjectById", ReplyAction="*")]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.BranchProjectByIdResponse> BranchProjectByIdAsync(CheckmarxTool.CxSDKWebService.BranchProjectByIdRequest request);
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.BranchProjectByIdResponse> BranchProjectByIdAsync(Checkmary.CxSDKWebService.BranchProjectByIdRequest request);
         
         // CODEGEN: Generating message contract since element name sessionId from namespace http://Checkmarx.com/v7 is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/ScanWithOriginName", ReplyAction="*")]
-        CheckmarxTool.CxSDKWebService.ScanWithOriginNameResponse ScanWithOriginName(CheckmarxTool.CxSDKWebService.ScanWithOriginNameRequest request);
+        Checkmary.CxSDKWebService.ScanWithOriginNameResponse ScanWithOriginName(Checkmary.CxSDKWebService.ScanWithOriginNameRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/ScanWithOriginName", ReplyAction="*")]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.ScanWithOriginNameResponse> ScanWithOriginNameAsync(CheckmarxTool.CxSDKWebService.ScanWithOriginNameRequest request);
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.ScanWithOriginNameResponse> ScanWithOriginNameAsync(Checkmary.CxSDKWebService.ScanWithOriginNameRequest request);
         
         // CODEGEN: Generating message contract since element name sessionID from namespace http://Checkmarx.com/v7 is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/CancelScan", ReplyAction="*")]
-        CheckmarxTool.CxSDKWebService.CancelScanResponse CancelScan(CheckmarxTool.CxSDKWebService.CancelScanRequest request);
+        Checkmary.CxSDKWebService.CancelScanResponse CancelScan(Checkmary.CxSDKWebService.CancelScanRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/CancelScan", ReplyAction="*")]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.CancelScanResponse> CancelScanAsync(CheckmarxTool.CxSDKWebService.CancelScanRequest request);
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.CancelScanResponse> CancelScanAsync(Checkmary.CxSDKWebService.CancelScanRequest request);
         
         // CODEGEN: Generating message contract since element name sessionID from namespace http://Checkmarx.com/v7 is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/DeleteProjects", ReplyAction="*")]
-        CheckmarxTool.CxSDKWebService.DeleteProjectsResponse DeleteProjects(CheckmarxTool.CxSDKWebService.DeleteProjectsRequest request);
+        Checkmary.CxSDKWebService.DeleteProjectsResponse DeleteProjects(Checkmary.CxSDKWebService.DeleteProjectsRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/DeleteProjects", ReplyAction="*")]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.DeleteProjectsResponse> DeleteProjectsAsync(CheckmarxTool.CxSDKWebService.DeleteProjectsRequest request);
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.DeleteProjectsResponse> DeleteProjectsAsync(Checkmary.CxSDKWebService.DeleteProjectsRequest request);
         
         // CODEGEN: Generating message contract since element name sessionID from namespace http://Checkmarx.com/v7 is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/DeleteScans", ReplyAction="*")]
-        CheckmarxTool.CxSDKWebService.DeleteScansResponse DeleteScans(CheckmarxTool.CxSDKWebService.DeleteScansRequest request);
+        Checkmary.CxSDKWebService.DeleteScansResponse DeleteScans(Checkmary.CxSDKWebService.DeleteScansRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/DeleteScans", ReplyAction="*")]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.DeleteScansResponse> DeleteScansAsync(CheckmarxTool.CxSDKWebService.DeleteScansRequest request);
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.DeleteScansResponse> DeleteScansAsync(Checkmary.CxSDKWebService.DeleteScansRequest request);
         
         // CODEGEN: Generating message contract since element name sessionId from namespace http://Checkmarx.com/v7 is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/ScanWithScheduling", ReplyAction="*")]
-        CheckmarxTool.CxSDKWebService.ScanWithSchedulingResponse ScanWithScheduling(CheckmarxTool.CxSDKWebService.ScanWithSchedulingRequest request);
+        Checkmary.CxSDKWebService.ScanWithSchedulingResponse ScanWithScheduling(Checkmary.CxSDKWebService.ScanWithSchedulingRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/ScanWithScheduling", ReplyAction="*")]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.ScanWithSchedulingResponse> ScanWithSchedulingAsync(CheckmarxTool.CxSDKWebService.ScanWithSchedulingRequest request);
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.ScanWithSchedulingResponse> ScanWithSchedulingAsync(Checkmary.CxSDKWebService.ScanWithSchedulingRequest request);
         
         // CODEGEN: Generating message contract since element name sessionId from namespace http://Checkmarx.com/v7 is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/ScanWithSchedulingWithCron", ReplyAction="*")]
-        CheckmarxTool.CxSDKWebService.ScanWithSchedulingWithCronResponse ScanWithSchedulingWithCron(CheckmarxTool.CxSDKWebService.ScanWithSchedulingWithCronRequest request);
+        Checkmary.CxSDKWebService.ScanWithSchedulingWithCronResponse ScanWithSchedulingWithCron(Checkmary.CxSDKWebService.ScanWithSchedulingWithCronRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/ScanWithSchedulingWithCron", ReplyAction="*")]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.ScanWithSchedulingWithCronResponse> ScanWithSchedulingWithCronAsync(CheckmarxTool.CxSDKWebService.ScanWithSchedulingWithCronRequest request);
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.ScanWithSchedulingWithCronResponse> ScanWithSchedulingWithCronAsync(Checkmary.CxSDKWebService.ScanWithSchedulingWithCronRequest request);
         
         // CODEGEN: Generating message contract since element name sessionID from namespace http://Checkmarx.com/v7 is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/UpdateScanComment", ReplyAction="*")]
-        CheckmarxTool.CxSDKWebService.UpdateScanCommentResponse UpdateScanComment(CheckmarxTool.CxSDKWebService.UpdateScanCommentRequest request);
+        Checkmary.CxSDKWebService.UpdateScanCommentResponse UpdateScanComment(Checkmary.CxSDKWebService.UpdateScanCommentRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/UpdateScanComment", ReplyAction="*")]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.UpdateScanCommentResponse> UpdateScanCommentAsync(CheckmarxTool.CxSDKWebService.UpdateScanCommentRequest request);
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.UpdateScanCommentResponse> UpdateScanCommentAsync(Checkmary.CxSDKWebService.UpdateScanCommentRequest request);
         
         // CODEGEN: Generating message contract since element name SessionID from namespace http://Checkmarx.com/v7 is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/GetPresetList", ReplyAction="*")]
-        CheckmarxTool.CxSDKWebService.GetPresetListResponse GetPresetList(CheckmarxTool.CxSDKWebService.GetPresetListRequest request);
+        Checkmary.CxSDKWebService.GetPresetListResponse GetPresetList(Checkmary.CxSDKWebService.GetPresetListRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/GetPresetList", ReplyAction="*")]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.GetPresetListResponse> GetPresetListAsync(CheckmarxTool.CxSDKWebService.GetPresetListRequest request);
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.GetPresetListResponse> GetPresetListAsync(Checkmary.CxSDKWebService.GetPresetListRequest request);
         
         // CODEGEN: Generating message contract since element name SessionID from namespace http://Checkmarx.com/v7 is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/GetConfigurationSetList", ReplyAction="*")]
-        CheckmarxTool.CxSDKWebService.GetConfigurationSetListResponse GetConfigurationSetList(CheckmarxTool.CxSDKWebService.GetConfigurationSetListRequest request);
+        Checkmary.CxSDKWebService.GetConfigurationSetListResponse GetConfigurationSetList(Checkmary.CxSDKWebService.GetConfigurationSetListRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/GetConfigurationSetList", ReplyAction="*")]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.GetConfigurationSetListResponse> GetConfigurationSetListAsync(CheckmarxTool.CxSDKWebService.GetConfigurationSetListRequest request);
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.GetConfigurationSetListResponse> GetConfigurationSetListAsync(Checkmary.CxSDKWebService.GetConfigurationSetListRequest request);
         
         // CODEGEN: Generating message contract since element name sessionID from namespace http://Checkmarx.com/v7 is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/GetProjectsDisplayData", ReplyAction="*")]
-        CheckmarxTool.CxSDKWebService.GetProjectsDisplayDataResponse GetProjectsDisplayData(CheckmarxTool.CxSDKWebService.GetProjectsDisplayDataRequest request);
+        Checkmary.CxSDKWebService.GetProjectsDisplayDataResponse GetProjectsDisplayData(Checkmary.CxSDKWebService.GetProjectsDisplayDataRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/GetProjectsDisplayData", ReplyAction="*")]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.GetProjectsDisplayDataResponse> GetProjectsDisplayDataAsync(CheckmarxTool.CxSDKWebService.GetProjectsDisplayDataRequest request);
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.GetProjectsDisplayDataResponse> GetProjectsDisplayDataAsync(Checkmary.CxSDKWebService.GetProjectsDisplayDataRequest request);
         
         // CODEGEN: Generating message contract since element name sessionID from namespace http://Checkmarx.com/v7 is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/GetProjectScannedDisplayData", ReplyAction="*")]
-        CheckmarxTool.CxSDKWebService.GetProjectScannedDisplayDataResponse GetProjectScannedDisplayData(CheckmarxTool.CxSDKWebService.GetProjectScannedDisplayDataRequest request);
+        Checkmary.CxSDKWebService.GetProjectScannedDisplayDataResponse GetProjectScannedDisplayData(Checkmary.CxSDKWebService.GetProjectScannedDisplayDataRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/GetProjectScannedDisplayData", ReplyAction="*")]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.GetProjectScannedDisplayDataResponse> GetProjectScannedDisplayDataAsync(CheckmarxTool.CxSDKWebService.GetProjectScannedDisplayDataRequest request);
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.GetProjectScannedDisplayDataResponse> GetProjectScannedDisplayDataAsync(Checkmary.CxSDKWebService.GetProjectScannedDisplayDataRequest request);
         
         // CODEGEN: Generating message contract since element name sessionID from namespace http://Checkmarx.com/v7 is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/GetProjectConfiguration", ReplyAction="*")]
-        CheckmarxTool.CxSDKWebService.GetProjectConfigurationResponse GetProjectConfiguration(CheckmarxTool.CxSDKWebService.GetProjectConfigurationRequest request);
+        Checkmary.CxSDKWebService.GetProjectConfigurationResponse GetProjectConfiguration(Checkmary.CxSDKWebService.GetProjectConfigurationRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/GetProjectConfiguration", ReplyAction="*")]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.GetProjectConfigurationResponse> GetProjectConfigurationAsync(CheckmarxTool.CxSDKWebService.GetProjectConfigurationRequest request);
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.GetProjectConfigurationResponse> GetProjectConfigurationAsync(Checkmary.CxSDKWebService.GetProjectConfigurationRequest request);
         
         // CODEGEN: Generating message contract since element name sessionID from namespace http://Checkmarx.com/v7 is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/UpdateProjectIncrementalConfiguration", ReplyAction="*")]
-        CheckmarxTool.CxSDKWebService.UpdateProjectIncrementalConfigurationResponse UpdateProjectIncrementalConfiguration(CheckmarxTool.CxSDKWebService.UpdateProjectIncrementalConfigurationRequest request);
+        Checkmary.CxSDKWebService.UpdateProjectIncrementalConfigurationResponse UpdateProjectIncrementalConfiguration(Checkmary.CxSDKWebService.UpdateProjectIncrementalConfigurationRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/UpdateProjectIncrementalConfiguration", ReplyAction="*")]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.UpdateProjectIncrementalConfigurationResponse> UpdateProjectIncrementalConfigurationAsync(CheckmarxTool.CxSDKWebService.UpdateProjectIncrementalConfigurationRequest request);
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.UpdateProjectIncrementalConfigurationResponse> UpdateProjectIncrementalConfigurationAsync(Checkmary.CxSDKWebService.UpdateProjectIncrementalConfigurationRequest request);
         
         // CODEGEN: Generating message contract since element name applicationCredentials from namespace http://Checkmarx.com/v7 is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/Login", ReplyAction="*")]
-        CheckmarxTool.CxSDKWebService.LoginResponse Login(CheckmarxTool.CxSDKWebService.LoginRequest request);
+        Checkmary.CxSDKWebService.LoginResponse Login(Checkmary.CxSDKWebService.LoginRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/Login", ReplyAction="*")]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.LoginResponse> LoginAsync(CheckmarxTool.CxSDKWebService.LoginRequest request);
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.LoginResponse> LoginAsync(Checkmary.CxSDKWebService.LoginRequest request);
         
         // CODEGEN: Generating message contract since element name token from namespace http://Checkmarx.com/v7 is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/LoginWithToken", ReplyAction="*")]
-        CheckmarxTool.CxSDKWebService.LoginWithTokenResponse LoginWithToken(CheckmarxTool.CxSDKWebService.LoginWithTokenRequest request);
+        Checkmary.CxSDKWebService.LoginWithTokenResponse LoginWithToken(Checkmary.CxSDKWebService.LoginWithTokenRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/LoginWithToken", ReplyAction="*")]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.LoginWithTokenResponse> LoginWithTokenAsync(CheckmarxTool.CxSDKWebService.LoginWithTokenRequest request);
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.LoginWithTokenResponse> LoginWithTokenAsync(Checkmary.CxSDKWebService.LoginWithTokenRequest request);
         
         // CODEGEN: Generating message contract since element name sessionID from namespace http://Checkmarx.com/v7 is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/Logout", ReplyAction="*")]
-        CheckmarxTool.CxSDKWebService.LogoutResponse Logout(CheckmarxTool.CxSDKWebService.LogoutRequest request);
+        Checkmary.CxSDKWebService.LogoutResponse Logout(Checkmary.CxSDKWebService.LogoutRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/Logout", ReplyAction="*")]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.LogoutResponse> LogoutAsync(CheckmarxTool.CxSDKWebService.LogoutRequest request);
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.LogoutResponse> LogoutAsync(Checkmary.CxSDKWebService.LogoutRequest request);
         
         // CODEGEN: Generating message contract since element name SessionID from namespace http://Checkmarx.com/v7 is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/GetAssociatedGroupsList", ReplyAction="*")]
-        CheckmarxTool.CxSDKWebService.GetAssociatedGroupsListResponse GetAssociatedGroupsList(CheckmarxTool.CxSDKWebService.GetAssociatedGroupsListRequest request);
+        Checkmary.CxSDKWebService.GetAssociatedGroupsListResponse GetAssociatedGroupsList(Checkmary.CxSDKWebService.GetAssociatedGroupsListRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/GetAssociatedGroupsList", ReplyAction="*")]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.GetAssociatedGroupsListResponse> GetAssociatedGroupsListAsync(CheckmarxTool.CxSDKWebService.GetAssociatedGroupsListRequest request);
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.GetAssociatedGroupsListResponse> GetAssociatedGroupsListAsync(Checkmary.CxSDKWebService.GetAssociatedGroupsListRequest request);
         
         // CODEGEN: Generating message contract since element name sessionID from namespace http://Checkmarx.com/v7 is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/GetStatusOfSingleScan", ReplyAction="*")]
-        CheckmarxTool.CxSDKWebService.GetStatusOfSingleScanResponse GetStatusOfSingleScan(CheckmarxTool.CxSDKWebService.GetStatusOfSingleScanRequest request);
+        Checkmary.CxSDKWebService.GetStatusOfSingleScanResponse GetStatusOfSingleScan(Checkmary.CxSDKWebService.GetStatusOfSingleScanRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/GetStatusOfSingleScan", ReplyAction="*")]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.GetStatusOfSingleScanResponse> GetStatusOfSingleScanAsync(CheckmarxTool.CxSDKWebService.GetStatusOfSingleScanRequest request);
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.GetStatusOfSingleScanResponse> GetStatusOfSingleScanAsync(Checkmary.CxSDKWebService.GetStatusOfSingleScanRequest request);
         
         // CODEGEN: Generating message contract since element name sessionID from namespace http://Checkmarx.com/v7 is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/GetScansDisplayDataForAllProjects", ReplyAction="*")]
-        CheckmarxTool.CxSDKWebService.GetScansDisplayDataForAllProjectsResponse GetScansDisplayDataForAllProjects(CheckmarxTool.CxSDKWebService.GetScansDisplayDataForAllProjectsRequest request);
+        Checkmary.CxSDKWebService.GetScansDisplayDataForAllProjectsResponse GetScansDisplayDataForAllProjects(Checkmary.CxSDKWebService.GetScansDisplayDataForAllProjectsRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/GetScansDisplayDataForAllProjects", ReplyAction="*")]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.GetScansDisplayDataForAllProjectsResponse> GetScansDisplayDataForAllProjectsAsync(CheckmarxTool.CxSDKWebService.GetScansDisplayDataForAllProjectsRequest request);
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.GetScansDisplayDataForAllProjectsResponse> GetScansDisplayDataForAllProjectsAsync(Checkmary.CxSDKWebService.GetScansDisplayDataForAllProjectsRequest request);
         
         // CODEGEN: Generating message contract since element name SessionID from namespace http://Checkmarx.com/v7 is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/GetScanSummary", ReplyAction="*")]
-        CheckmarxTool.CxSDKWebService.GetScanSummaryResponse GetScanSummary(CheckmarxTool.CxSDKWebService.GetScanSummaryRequest request);
+        Checkmary.CxSDKWebService.GetScanSummaryResponse GetScanSummary(Checkmary.CxSDKWebService.GetScanSummaryRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/GetScanSummary", ReplyAction="*")]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.GetScanSummaryResponse> GetScanSummaryAsync(CheckmarxTool.CxSDKWebService.GetScanSummaryRequest request);
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.GetScanSummaryResponse> GetScanSummaryAsync(Checkmary.CxSDKWebService.GetScanSummaryRequest request);
         
         // CODEGEN: Generating message contract since element name sessionID from namespace http://Checkmarx.com/v7 is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/UpdateProjectConfiguration", ReplyAction="*")]
-        CheckmarxTool.CxSDKWebService.UpdateProjectConfigurationResponse UpdateProjectConfiguration(CheckmarxTool.CxSDKWebService.UpdateProjectConfigurationRequest request);
+        Checkmary.CxSDKWebService.UpdateProjectConfigurationResponse UpdateProjectConfiguration(Checkmary.CxSDKWebService.UpdateProjectConfigurationRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/UpdateProjectConfiguration", ReplyAction="*")]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.UpdateProjectConfigurationResponse> UpdateProjectConfigurationAsync(CheckmarxTool.CxSDKWebService.UpdateProjectConfigurationRequest request);
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.UpdateProjectConfigurationResponse> UpdateProjectConfigurationAsync(Checkmary.CxSDKWebService.UpdateProjectConfigurationRequest request);
         
         // CODEGEN: Generating message contract since element name sessionID from namespace http://Checkmarx.com/v7 is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/DeleteUser", ReplyAction="*")]
-        CheckmarxTool.CxSDKWebService.DeleteUserResponse DeleteUser(CheckmarxTool.CxSDKWebService.DeleteUserRequest request);
+        Checkmary.CxSDKWebService.DeleteUserResponse DeleteUser(Checkmary.CxSDKWebService.DeleteUserRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/DeleteUser", ReplyAction="*")]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.DeleteUserResponse> DeleteUserAsync(CheckmarxTool.CxSDKWebService.DeleteUserRequest request);
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.DeleteUserResponse> DeleteUserAsync(Checkmary.CxSDKWebService.DeleteUserRequest request);
         
         // CODEGEN: Generating message contract since element name sessionID from namespace http://Checkmarx.com/v7 is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/GetAllUsers", ReplyAction="*")]
-        CheckmarxTool.CxSDKWebService.GetAllUsersResponse GetAllUsers(CheckmarxTool.CxSDKWebService.GetAllUsersRequest request);
+        Checkmary.CxSDKWebService.GetAllUsersResponse GetAllUsers(Checkmary.CxSDKWebService.GetAllUsersRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/GetAllUsers", ReplyAction="*")]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.GetAllUsersResponse> GetAllUsersAsync(CheckmarxTool.CxSDKWebService.GetAllUsersRequest request);
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.GetAllUsersResponse> GetAllUsersAsync(Checkmary.CxSDKWebService.GetAllUsersRequest request);
         
         // CODEGEN: Generating message contract since element name sessionID from namespace http://Checkmarx.com/v7 is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/CreateScanReport", ReplyAction="*")]
-        CheckmarxTool.CxSDKWebService.CreateScanReportResponse CreateScanReport(CheckmarxTool.CxSDKWebService.CreateScanReportRequest request);
+        Checkmary.CxSDKWebService.CreateScanReportResponse CreateScanReport(Checkmary.CxSDKWebService.CreateScanReportRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/CreateScanReport", ReplyAction="*")]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.CreateScanReportResponse> CreateScanReportAsync(CheckmarxTool.CxSDKWebService.CreateScanReportRequest request);
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.CreateScanReportResponse> CreateScanReportAsync(Checkmary.CxSDKWebService.CreateScanReportRequest request);
         
         // CODEGEN: Generating message contract since element name SessionID from namespace http://Checkmarx.com/v7 is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/GetScanReportStatus", ReplyAction="*")]
-        CheckmarxTool.CxSDKWebService.GetScanReportStatusResponse GetScanReportStatus(CheckmarxTool.CxSDKWebService.GetScanReportStatusRequest request);
+        Checkmary.CxSDKWebService.GetScanReportStatusResponse GetScanReportStatus(Checkmary.CxSDKWebService.GetScanReportStatusRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/GetScanReportStatus", ReplyAction="*")]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.GetScanReportStatusResponse> GetScanReportStatusAsync(CheckmarxTool.CxSDKWebService.GetScanReportStatusRequest request);
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.GetScanReportStatusResponse> GetScanReportStatusAsync(Checkmary.CxSDKWebService.GetScanReportStatusRequest request);
         
         // CODEGEN: Generating message contract since element name SessionID from namespace http://Checkmarx.com/v7 is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/GetScanReport", ReplyAction="*")]
-        CheckmarxTool.CxSDKWebService.GetScanReportResponse GetScanReport(CheckmarxTool.CxSDKWebService.GetScanReportRequest request);
+        Checkmary.CxSDKWebService.GetScanReportResponse GetScanReport(Checkmary.CxSDKWebService.GetScanReportRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/GetScanReport", ReplyAction="*")]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.GetScanReportResponse> GetScanReportAsync(CheckmarxTool.CxSDKWebService.GetScanReportRequest request);
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.GetScanReportResponse> GetScanReportAsync(Checkmary.CxSDKWebService.GetScanReportRequest request);
         
         // CODEGEN: Generating message contract since element name SessionID from namespace http://Checkmarx.com/v7 is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/ExecuteDataRetention", ReplyAction="*")]
-        CheckmarxTool.CxSDKWebService.ExecuteDataRetentionResponse ExecuteDataRetention(CheckmarxTool.CxSDKWebService.ExecuteDataRetentionRequest request);
+        Checkmary.CxSDKWebService.ExecuteDataRetentionResponse ExecuteDataRetention(Checkmary.CxSDKWebService.ExecuteDataRetentionRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/ExecuteDataRetention", ReplyAction="*")]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.ExecuteDataRetentionResponse> ExecuteDataRetentionAsync(CheckmarxTool.CxSDKWebService.ExecuteDataRetentionRequest request);
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.ExecuteDataRetentionResponse> ExecuteDataRetentionAsync(Checkmary.CxSDKWebService.ExecuteDataRetentionRequest request);
         
         // CODEGEN: Generating message contract since element name SessionID from namespace http://Checkmarx.com/v7 is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/StopDataRetention", ReplyAction="*")]
-        CheckmarxTool.CxSDKWebService.StopDataRetentionResponse StopDataRetention(CheckmarxTool.CxSDKWebService.StopDataRetentionRequest request);
+        Checkmary.CxSDKWebService.StopDataRetentionResponse StopDataRetention(Checkmary.CxSDKWebService.StopDataRetentionRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/StopDataRetention", ReplyAction="*")]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.StopDataRetentionResponse> StopDataRetentionAsync(CheckmarxTool.CxSDKWebService.StopDataRetentionRequest request);
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.StopDataRetentionResponse> StopDataRetentionAsync(Checkmary.CxSDKWebService.StopDataRetentionRequest request);
         
         // CODEGEN: Generating message contract since element name sessionId from namespace http://Checkmarx.com/v7 is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/GetTeamLdapGroupsMapping", ReplyAction="*")]
-        CheckmarxTool.CxSDKWebService.GetTeamLdapGroupsMappingResponse GetTeamLdapGroupsMapping(CheckmarxTool.CxSDKWebService.GetTeamLdapGroupsMappingRequest request);
+        Checkmary.CxSDKWebService.GetTeamLdapGroupsMappingResponse GetTeamLdapGroupsMapping(Checkmary.CxSDKWebService.GetTeamLdapGroupsMappingRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/GetTeamLdapGroupsMapping", ReplyAction="*")]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.GetTeamLdapGroupsMappingResponse> GetTeamLdapGroupsMappingAsync(CheckmarxTool.CxSDKWebService.GetTeamLdapGroupsMappingRequest request);
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.GetTeamLdapGroupsMappingResponse> GetTeamLdapGroupsMappingAsync(Checkmary.CxSDKWebService.GetTeamLdapGroupsMappingRequest request);
         
         // CODEGEN: Generating message contract since element name sessionId from namespace http://Checkmarx.com/v7 is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/SetTeamLdapGroupsMapping", ReplyAction="*")]
-        CheckmarxTool.CxSDKWebService.SetTeamLdapGroupsMappingResponse SetTeamLdapGroupsMapping(CheckmarxTool.CxSDKWebService.SetTeamLdapGroupsMappingRequest request);
+        Checkmary.CxSDKWebService.SetTeamLdapGroupsMappingResponse SetTeamLdapGroupsMapping(Checkmary.CxSDKWebService.SetTeamLdapGroupsMappingRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/v7/SetTeamLdapGroupsMapping", ReplyAction="*")]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.SetTeamLdapGroupsMappingResponse> SetTeamLdapGroupsMappingAsync(CheckmarxTool.CxSDKWebService.SetTeamLdapGroupsMappingRequest request);
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.SetTeamLdapGroupsMappingResponse> SetTeamLdapGroupsMappingAsync(Checkmary.CxSDKWebService.SetTeamLdapGroupsMappingRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -6562,12 +6562,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class ScanRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="Scan", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.ScanRequestBody Body;
+        public Checkmary.CxSDKWebService.ScanRequestBody Body;
         
         public ScanRequest() {
         }
         
-        public ScanRequest(CheckmarxTool.CxSDKWebService.ScanRequestBody Body) {
+        public ScanRequest(Checkmary.CxSDKWebService.ScanRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -6582,12 +6582,12 @@ namespace CheckmarxTool.CxSDKWebService {
         public string sessionId;
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public CheckmarxTool.CxSDKWebService.CliScanArgs args;
+        public Checkmary.CxSDKWebService.CliScanArgs args;
         
         public ScanRequestBody() {
         }
         
-        public ScanRequestBody(string sessionId, CheckmarxTool.CxSDKWebService.CliScanArgs args) {
+        public ScanRequestBody(string sessionId, Checkmary.CxSDKWebService.CliScanArgs args) {
             this.sessionId = sessionId;
             this.args = args;
         }
@@ -6600,12 +6600,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class ScanResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="ScanResponse", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.ScanResponseBody Body;
+        public Checkmary.CxSDKWebService.ScanResponseBody Body;
         
         public ScanResponse() {
         }
         
-        public ScanResponse(CheckmarxTool.CxSDKWebService.ScanResponseBody Body) {
+        public ScanResponse(Checkmary.CxSDKWebService.ScanResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -6617,12 +6617,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class ScanResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CheckmarxTool.CxSDKWebService.CxWSResponseRunID ScanResult;
+        public Checkmary.CxSDKWebService.CxWSResponseRunID ScanResult;
         
         public ScanResponseBody() {
         }
         
-        public ScanResponseBody(CheckmarxTool.CxSDKWebService.CxWSResponseRunID ScanResult) {
+        public ScanResponseBody(Checkmary.CxSDKWebService.CxWSResponseRunID ScanResult) {
             this.ScanResult = ScanResult;
         }
     }
@@ -6634,12 +6634,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class BranchProjectByIdRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="BranchProjectById", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.BranchProjectByIdRequestBody Body;
+        public Checkmary.CxSDKWebService.BranchProjectByIdRequestBody Body;
         
         public BranchProjectByIdRequest() {
         }
         
-        public BranchProjectByIdRequest(CheckmarxTool.CxSDKWebService.BranchProjectByIdRequestBody Body) {
+        public BranchProjectByIdRequest(Checkmary.CxSDKWebService.BranchProjectByIdRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -6676,12 +6676,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class BranchProjectByIdResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="BranchProjectByIdResponse", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.BranchProjectByIdResponseBody Body;
+        public Checkmary.CxSDKWebService.BranchProjectByIdResponseBody Body;
         
         public BranchProjectByIdResponse() {
         }
         
-        public BranchProjectByIdResponse(CheckmarxTool.CxSDKWebService.BranchProjectByIdResponseBody Body) {
+        public BranchProjectByIdResponse(Checkmary.CxSDKWebService.BranchProjectByIdResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -6693,12 +6693,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class BranchProjectByIdResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CheckmarxTool.CxSDKWebService.CxWSResponseRunID BranchProjectByIdResult;
+        public Checkmary.CxSDKWebService.CxWSResponseRunID BranchProjectByIdResult;
         
         public BranchProjectByIdResponseBody() {
         }
         
-        public BranchProjectByIdResponseBody(CheckmarxTool.CxSDKWebService.CxWSResponseRunID BranchProjectByIdResult) {
+        public BranchProjectByIdResponseBody(Checkmary.CxSDKWebService.CxWSResponseRunID BranchProjectByIdResult) {
             this.BranchProjectByIdResult = BranchProjectByIdResult;
         }
     }
@@ -6710,12 +6710,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class ScanWithOriginNameRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="ScanWithOriginName", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.ScanWithOriginNameRequestBody Body;
+        public Checkmary.CxSDKWebService.ScanWithOriginNameRequestBody Body;
         
         public ScanWithOriginNameRequest() {
         }
         
-        public ScanWithOriginNameRequest(CheckmarxTool.CxSDKWebService.ScanWithOriginNameRequestBody Body) {
+        public ScanWithOriginNameRequest(Checkmary.CxSDKWebService.ScanWithOriginNameRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -6730,7 +6730,7 @@ namespace CheckmarxTool.CxSDKWebService {
         public string sessionId;
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public CheckmarxTool.CxSDKWebService.CliScanArgs args;
+        public Checkmary.CxSDKWebService.CliScanArgs args;
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
         public string origName;
@@ -6738,7 +6738,7 @@ namespace CheckmarxTool.CxSDKWebService {
         public ScanWithOriginNameRequestBody() {
         }
         
-        public ScanWithOriginNameRequestBody(string sessionId, CheckmarxTool.CxSDKWebService.CliScanArgs args, string origName) {
+        public ScanWithOriginNameRequestBody(string sessionId, Checkmary.CxSDKWebService.CliScanArgs args, string origName) {
             this.sessionId = sessionId;
             this.args = args;
             this.origName = origName;
@@ -6752,12 +6752,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class ScanWithOriginNameResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="ScanWithOriginNameResponse", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.ScanWithOriginNameResponseBody Body;
+        public Checkmary.CxSDKWebService.ScanWithOriginNameResponseBody Body;
         
         public ScanWithOriginNameResponse() {
         }
         
-        public ScanWithOriginNameResponse(CheckmarxTool.CxSDKWebService.ScanWithOriginNameResponseBody Body) {
+        public ScanWithOriginNameResponse(Checkmary.CxSDKWebService.ScanWithOriginNameResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -6769,12 +6769,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class ScanWithOriginNameResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CheckmarxTool.CxSDKWebService.CxWSResponseRunID ScanWithOriginNameResult;
+        public Checkmary.CxSDKWebService.CxWSResponseRunID ScanWithOriginNameResult;
         
         public ScanWithOriginNameResponseBody() {
         }
         
-        public ScanWithOriginNameResponseBody(CheckmarxTool.CxSDKWebService.CxWSResponseRunID ScanWithOriginNameResult) {
+        public ScanWithOriginNameResponseBody(Checkmary.CxSDKWebService.CxWSResponseRunID ScanWithOriginNameResult) {
             this.ScanWithOriginNameResult = ScanWithOriginNameResult;
         }
     }
@@ -6786,12 +6786,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class CancelScanRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="CancelScan", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.CancelScanRequestBody Body;
+        public Checkmary.CxSDKWebService.CancelScanRequestBody Body;
         
         public CancelScanRequest() {
         }
         
-        public CancelScanRequest(CheckmarxTool.CxSDKWebService.CancelScanRequestBody Body) {
+        public CancelScanRequest(Checkmary.CxSDKWebService.CancelScanRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -6824,12 +6824,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class CancelScanResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="CancelScanResponse", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.CancelScanResponseBody Body;
+        public Checkmary.CxSDKWebService.CancelScanResponseBody Body;
         
         public CancelScanResponse() {
         }
         
-        public CancelScanResponse(CheckmarxTool.CxSDKWebService.CancelScanResponseBody Body) {
+        public CancelScanResponse(Checkmary.CxSDKWebService.CancelScanResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -6841,12 +6841,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class CancelScanResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse CancelScanResult;
+        public Checkmary.CxSDKWebService.CxWSBasicRepsonse CancelScanResult;
         
         public CancelScanResponseBody() {
         }
         
-        public CancelScanResponseBody(CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse CancelScanResult) {
+        public CancelScanResponseBody(Checkmary.CxSDKWebService.CxWSBasicRepsonse CancelScanResult) {
             this.CancelScanResult = CancelScanResult;
         }
     }
@@ -6858,12 +6858,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class DeleteProjectsRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="DeleteProjects", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.DeleteProjectsRequestBody Body;
+        public Checkmary.CxSDKWebService.DeleteProjectsRequestBody Body;
         
         public DeleteProjectsRequest() {
         }
         
-        public DeleteProjectsRequest(CheckmarxTool.CxSDKWebService.DeleteProjectsRequestBody Body) {
+        public DeleteProjectsRequest(Checkmary.CxSDKWebService.DeleteProjectsRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -6878,12 +6878,12 @@ namespace CheckmarxTool.CxSDKWebService {
         public string sessionID;
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public CheckmarxTool.CxSDKWebService.ArrayOfLong projectIDs;
+        public Checkmary.CxSDKWebService.ArrayOfLong projectIDs;
         
         public DeleteProjectsRequestBody() {
         }
         
-        public DeleteProjectsRequestBody(string sessionID, CheckmarxTool.CxSDKWebService.ArrayOfLong projectIDs) {
+        public DeleteProjectsRequestBody(string sessionID, Checkmary.CxSDKWebService.ArrayOfLong projectIDs) {
             this.sessionID = sessionID;
             this.projectIDs = projectIDs;
         }
@@ -6896,12 +6896,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class DeleteProjectsResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="DeleteProjectsResponse", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.DeleteProjectsResponseBody Body;
+        public Checkmary.CxSDKWebService.DeleteProjectsResponseBody Body;
         
         public DeleteProjectsResponse() {
         }
         
-        public DeleteProjectsResponse(CheckmarxTool.CxSDKWebService.DeleteProjectsResponseBody Body) {
+        public DeleteProjectsResponse(Checkmary.CxSDKWebService.DeleteProjectsResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -6913,12 +6913,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class DeleteProjectsResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse DeleteProjectsResult;
+        public Checkmary.CxSDKWebService.CxWSBasicRepsonse DeleteProjectsResult;
         
         public DeleteProjectsResponseBody() {
         }
         
-        public DeleteProjectsResponseBody(CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse DeleteProjectsResult) {
+        public DeleteProjectsResponseBody(Checkmary.CxSDKWebService.CxWSBasicRepsonse DeleteProjectsResult) {
             this.DeleteProjectsResult = DeleteProjectsResult;
         }
     }
@@ -6930,12 +6930,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class DeleteScansRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="DeleteScans", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.DeleteScansRequestBody Body;
+        public Checkmary.CxSDKWebService.DeleteScansRequestBody Body;
         
         public DeleteScansRequest() {
         }
         
-        public DeleteScansRequest(CheckmarxTool.CxSDKWebService.DeleteScansRequestBody Body) {
+        public DeleteScansRequest(Checkmary.CxSDKWebService.DeleteScansRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -6950,12 +6950,12 @@ namespace CheckmarxTool.CxSDKWebService {
         public string sessionID;
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public CheckmarxTool.CxSDKWebService.ArrayOfLong scanIDs;
+        public Checkmary.CxSDKWebService.ArrayOfLong scanIDs;
         
         public DeleteScansRequestBody() {
         }
         
-        public DeleteScansRequestBody(string sessionID, CheckmarxTool.CxSDKWebService.ArrayOfLong scanIDs) {
+        public DeleteScansRequestBody(string sessionID, Checkmary.CxSDKWebService.ArrayOfLong scanIDs) {
             this.sessionID = sessionID;
             this.scanIDs = scanIDs;
         }
@@ -6968,12 +6968,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class DeleteScansResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="DeleteScansResponse", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.DeleteScansResponseBody Body;
+        public Checkmary.CxSDKWebService.DeleteScansResponseBody Body;
         
         public DeleteScansResponse() {
         }
         
-        public DeleteScansResponse(CheckmarxTool.CxSDKWebService.DeleteScansResponseBody Body) {
+        public DeleteScansResponse(Checkmary.CxSDKWebService.DeleteScansResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -6985,12 +6985,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class DeleteScansResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse DeleteScansResult;
+        public Checkmary.CxSDKWebService.CxWSBasicRepsonse DeleteScansResult;
         
         public DeleteScansResponseBody() {
         }
         
-        public DeleteScansResponseBody(CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse DeleteScansResult) {
+        public DeleteScansResponseBody(Checkmary.CxSDKWebService.CxWSBasicRepsonse DeleteScansResult) {
             this.DeleteScansResult = DeleteScansResult;
         }
     }
@@ -7002,12 +7002,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class ScanWithSchedulingRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="ScanWithScheduling", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.ScanWithSchedulingRequestBody Body;
+        public Checkmary.CxSDKWebService.ScanWithSchedulingRequestBody Body;
         
         public ScanWithSchedulingRequest() {
         }
         
-        public ScanWithSchedulingRequest(CheckmarxTool.CxSDKWebService.ScanWithSchedulingRequestBody Body) {
+        public ScanWithSchedulingRequest(Checkmary.CxSDKWebService.ScanWithSchedulingRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -7022,7 +7022,7 @@ namespace CheckmarxTool.CxSDKWebService {
         public string sessionId;
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public CheckmarxTool.CxSDKWebService.CliScanArgs args;
+        public Checkmary.CxSDKWebService.CliScanArgs args;
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
         public string schedulingData;
@@ -7030,7 +7030,7 @@ namespace CheckmarxTool.CxSDKWebService {
         public ScanWithSchedulingRequestBody() {
         }
         
-        public ScanWithSchedulingRequestBody(string sessionId, CheckmarxTool.CxSDKWebService.CliScanArgs args, string schedulingData) {
+        public ScanWithSchedulingRequestBody(string sessionId, Checkmary.CxSDKWebService.CliScanArgs args, string schedulingData) {
             this.sessionId = sessionId;
             this.args = args;
             this.schedulingData = schedulingData;
@@ -7044,12 +7044,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class ScanWithSchedulingResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="ScanWithSchedulingResponse", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.ScanWithSchedulingResponseBody Body;
+        public Checkmary.CxSDKWebService.ScanWithSchedulingResponseBody Body;
         
         public ScanWithSchedulingResponse() {
         }
         
-        public ScanWithSchedulingResponse(CheckmarxTool.CxSDKWebService.ScanWithSchedulingResponseBody Body) {
+        public ScanWithSchedulingResponse(Checkmary.CxSDKWebService.ScanWithSchedulingResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -7061,12 +7061,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class ScanWithSchedulingResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CheckmarxTool.CxSDKWebService.CxWSResponseRunID ScanWithSchedulingResult;
+        public Checkmary.CxSDKWebService.CxWSResponseRunID ScanWithSchedulingResult;
         
         public ScanWithSchedulingResponseBody() {
         }
         
-        public ScanWithSchedulingResponseBody(CheckmarxTool.CxSDKWebService.CxWSResponseRunID ScanWithSchedulingResult) {
+        public ScanWithSchedulingResponseBody(Checkmary.CxSDKWebService.CxWSResponseRunID ScanWithSchedulingResult) {
             this.ScanWithSchedulingResult = ScanWithSchedulingResult;
         }
     }
@@ -7078,12 +7078,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class ScanWithSchedulingWithCronRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="ScanWithSchedulingWithCron", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.ScanWithSchedulingWithCronRequestBody Body;
+        public Checkmary.CxSDKWebService.ScanWithSchedulingWithCronRequestBody Body;
         
         public ScanWithSchedulingWithCronRequest() {
         }
         
-        public ScanWithSchedulingWithCronRequest(CheckmarxTool.CxSDKWebService.ScanWithSchedulingWithCronRequestBody Body) {
+        public ScanWithSchedulingWithCronRequest(Checkmary.CxSDKWebService.ScanWithSchedulingWithCronRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -7098,7 +7098,7 @@ namespace CheckmarxTool.CxSDKWebService {
         public string sessionId;
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public CheckmarxTool.CxSDKWebService.CliScanArgs args;
+        public Checkmary.CxSDKWebService.CliScanArgs args;
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
         public string cronString;
@@ -7112,7 +7112,7 @@ namespace CheckmarxTool.CxSDKWebService {
         public ScanWithSchedulingWithCronRequestBody() {
         }
         
-        public ScanWithSchedulingWithCronRequestBody(string sessionId, CheckmarxTool.CxSDKWebService.CliScanArgs args, string cronString, long utcEpochStartTime, long utcEpochEndTime) {
+        public ScanWithSchedulingWithCronRequestBody(string sessionId, Checkmary.CxSDKWebService.CliScanArgs args, string cronString, long utcEpochStartTime, long utcEpochEndTime) {
             this.sessionId = sessionId;
             this.args = args;
             this.cronString = cronString;
@@ -7128,12 +7128,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class ScanWithSchedulingWithCronResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="ScanWithSchedulingWithCronResponse", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.ScanWithSchedulingWithCronResponseBody Body;
+        public Checkmary.CxSDKWebService.ScanWithSchedulingWithCronResponseBody Body;
         
         public ScanWithSchedulingWithCronResponse() {
         }
         
-        public ScanWithSchedulingWithCronResponse(CheckmarxTool.CxSDKWebService.ScanWithSchedulingWithCronResponseBody Body) {
+        public ScanWithSchedulingWithCronResponse(Checkmary.CxSDKWebService.ScanWithSchedulingWithCronResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -7145,12 +7145,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class ScanWithSchedulingWithCronResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CheckmarxTool.CxSDKWebService.CxWSResponseRunID ScanWithSchedulingWithCronResult;
+        public Checkmary.CxSDKWebService.CxWSResponseRunID ScanWithSchedulingWithCronResult;
         
         public ScanWithSchedulingWithCronResponseBody() {
         }
         
-        public ScanWithSchedulingWithCronResponseBody(CheckmarxTool.CxSDKWebService.CxWSResponseRunID ScanWithSchedulingWithCronResult) {
+        public ScanWithSchedulingWithCronResponseBody(Checkmary.CxSDKWebService.CxWSResponseRunID ScanWithSchedulingWithCronResult) {
             this.ScanWithSchedulingWithCronResult = ScanWithSchedulingWithCronResult;
         }
     }
@@ -7162,12 +7162,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class UpdateScanCommentRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="UpdateScanComment", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.UpdateScanCommentRequestBody Body;
+        public Checkmary.CxSDKWebService.UpdateScanCommentRequestBody Body;
         
         public UpdateScanCommentRequest() {
         }
         
-        public UpdateScanCommentRequest(CheckmarxTool.CxSDKWebService.UpdateScanCommentRequestBody Body) {
+        public UpdateScanCommentRequest(Checkmary.CxSDKWebService.UpdateScanCommentRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -7204,12 +7204,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class UpdateScanCommentResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="UpdateScanCommentResponse", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.UpdateScanCommentResponseBody Body;
+        public Checkmary.CxSDKWebService.UpdateScanCommentResponseBody Body;
         
         public UpdateScanCommentResponse() {
         }
         
-        public UpdateScanCommentResponse(CheckmarxTool.CxSDKWebService.UpdateScanCommentResponseBody Body) {
+        public UpdateScanCommentResponse(Checkmary.CxSDKWebService.UpdateScanCommentResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -7221,12 +7221,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class UpdateScanCommentResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse UpdateScanCommentResult;
+        public Checkmary.CxSDKWebService.CxWSBasicRepsonse UpdateScanCommentResult;
         
         public UpdateScanCommentResponseBody() {
         }
         
-        public UpdateScanCommentResponseBody(CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse UpdateScanCommentResult) {
+        public UpdateScanCommentResponseBody(Checkmary.CxSDKWebService.CxWSBasicRepsonse UpdateScanCommentResult) {
             this.UpdateScanCommentResult = UpdateScanCommentResult;
         }
     }
@@ -7238,12 +7238,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class GetPresetListRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetPresetList", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.GetPresetListRequestBody Body;
+        public Checkmary.CxSDKWebService.GetPresetListRequestBody Body;
         
         public GetPresetListRequest() {
         }
         
-        public GetPresetListRequest(CheckmarxTool.CxSDKWebService.GetPresetListRequestBody Body) {
+        public GetPresetListRequest(Checkmary.CxSDKWebService.GetPresetListRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -7272,12 +7272,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class GetPresetListResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetPresetListResponse", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.GetPresetListResponseBody Body;
+        public Checkmary.CxSDKWebService.GetPresetListResponseBody Body;
         
         public GetPresetListResponse() {
         }
         
-        public GetPresetListResponse(CheckmarxTool.CxSDKWebService.GetPresetListResponseBody Body) {
+        public GetPresetListResponse(Checkmary.CxSDKWebService.GetPresetListResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -7289,12 +7289,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class GetPresetListResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CheckmarxTool.CxSDKWebService.CxWSResponsePresetList GetPresetListResult;
+        public Checkmary.CxSDKWebService.CxWSResponsePresetList GetPresetListResult;
         
         public GetPresetListResponseBody() {
         }
         
-        public GetPresetListResponseBody(CheckmarxTool.CxSDKWebService.CxWSResponsePresetList GetPresetListResult) {
+        public GetPresetListResponseBody(Checkmary.CxSDKWebService.CxWSResponsePresetList GetPresetListResult) {
             this.GetPresetListResult = GetPresetListResult;
         }
     }
@@ -7306,12 +7306,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class GetConfigurationSetListRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetConfigurationSetList", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.GetConfigurationSetListRequestBody Body;
+        public Checkmary.CxSDKWebService.GetConfigurationSetListRequestBody Body;
         
         public GetConfigurationSetListRequest() {
         }
         
-        public GetConfigurationSetListRequest(CheckmarxTool.CxSDKWebService.GetConfigurationSetListRequestBody Body) {
+        public GetConfigurationSetListRequest(Checkmary.CxSDKWebService.GetConfigurationSetListRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -7340,12 +7340,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class GetConfigurationSetListResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetConfigurationSetListResponse", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.GetConfigurationSetListResponseBody Body;
+        public Checkmary.CxSDKWebService.GetConfigurationSetListResponseBody Body;
         
         public GetConfigurationSetListResponse() {
         }
         
-        public GetConfigurationSetListResponse(CheckmarxTool.CxSDKWebService.GetConfigurationSetListResponseBody Body) {
+        public GetConfigurationSetListResponse(Checkmary.CxSDKWebService.GetConfigurationSetListResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -7357,12 +7357,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class GetConfigurationSetListResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CheckmarxTool.CxSDKWebService.CxWSResponseConfigSetList GetConfigurationSetListResult;
+        public Checkmary.CxSDKWebService.CxWSResponseConfigSetList GetConfigurationSetListResult;
         
         public GetConfigurationSetListResponseBody() {
         }
         
-        public GetConfigurationSetListResponseBody(CheckmarxTool.CxSDKWebService.CxWSResponseConfigSetList GetConfigurationSetListResult) {
+        public GetConfigurationSetListResponseBody(Checkmary.CxSDKWebService.CxWSResponseConfigSetList GetConfigurationSetListResult) {
             this.GetConfigurationSetListResult = GetConfigurationSetListResult;
         }
     }
@@ -7374,12 +7374,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class GetProjectsDisplayDataRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetProjectsDisplayData", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.GetProjectsDisplayDataRequestBody Body;
+        public Checkmary.CxSDKWebService.GetProjectsDisplayDataRequestBody Body;
         
         public GetProjectsDisplayDataRequest() {
         }
         
-        public GetProjectsDisplayDataRequest(CheckmarxTool.CxSDKWebService.GetProjectsDisplayDataRequestBody Body) {
+        public GetProjectsDisplayDataRequest(Checkmary.CxSDKWebService.GetProjectsDisplayDataRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -7408,12 +7408,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class GetProjectsDisplayDataResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetProjectsDisplayDataResponse", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.GetProjectsDisplayDataResponseBody Body;
+        public Checkmary.CxSDKWebService.GetProjectsDisplayDataResponseBody Body;
         
         public GetProjectsDisplayDataResponse() {
         }
         
-        public GetProjectsDisplayDataResponse(CheckmarxTool.CxSDKWebService.GetProjectsDisplayDataResponseBody Body) {
+        public GetProjectsDisplayDataResponse(Checkmary.CxSDKWebService.GetProjectsDisplayDataResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -7425,12 +7425,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class GetProjectsDisplayDataResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CheckmarxTool.CxSDKWebService.CxWSResponseProjectsDisplayData GetProjectsDisplayDataResult;
+        public Checkmary.CxSDKWebService.CxWSResponseProjectsDisplayData GetProjectsDisplayDataResult;
         
         public GetProjectsDisplayDataResponseBody() {
         }
         
-        public GetProjectsDisplayDataResponseBody(CheckmarxTool.CxSDKWebService.CxWSResponseProjectsDisplayData GetProjectsDisplayDataResult) {
+        public GetProjectsDisplayDataResponseBody(Checkmary.CxSDKWebService.CxWSResponseProjectsDisplayData GetProjectsDisplayDataResult) {
             this.GetProjectsDisplayDataResult = GetProjectsDisplayDataResult;
         }
     }
@@ -7442,12 +7442,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class GetProjectScannedDisplayDataRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetProjectScannedDisplayData", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.GetProjectScannedDisplayDataRequestBody Body;
+        public Checkmary.CxSDKWebService.GetProjectScannedDisplayDataRequestBody Body;
         
         public GetProjectScannedDisplayDataRequest() {
         }
         
-        public GetProjectScannedDisplayDataRequest(CheckmarxTool.CxSDKWebService.GetProjectScannedDisplayDataRequestBody Body) {
+        public GetProjectScannedDisplayDataRequest(Checkmary.CxSDKWebService.GetProjectScannedDisplayDataRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -7476,12 +7476,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class GetProjectScannedDisplayDataResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetProjectScannedDisplayDataResponse", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.GetProjectScannedDisplayDataResponseBody Body;
+        public Checkmary.CxSDKWebService.GetProjectScannedDisplayDataResponseBody Body;
         
         public GetProjectScannedDisplayDataResponse() {
         }
         
-        public GetProjectScannedDisplayDataResponse(CheckmarxTool.CxSDKWebService.GetProjectScannedDisplayDataResponseBody Body) {
+        public GetProjectScannedDisplayDataResponse(Checkmary.CxSDKWebService.GetProjectScannedDisplayDataResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -7493,12 +7493,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class GetProjectScannedDisplayDataResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CheckmarxTool.CxSDKWebService.CxWSResponseProjectScannedDisplayData GetProjectScannedDisplayDataResult;
+        public Checkmary.CxSDKWebService.CxWSResponseProjectScannedDisplayData GetProjectScannedDisplayDataResult;
         
         public GetProjectScannedDisplayDataResponseBody() {
         }
         
-        public GetProjectScannedDisplayDataResponseBody(CheckmarxTool.CxSDKWebService.CxWSResponseProjectScannedDisplayData GetProjectScannedDisplayDataResult) {
+        public GetProjectScannedDisplayDataResponseBody(Checkmary.CxSDKWebService.CxWSResponseProjectScannedDisplayData GetProjectScannedDisplayDataResult) {
             this.GetProjectScannedDisplayDataResult = GetProjectScannedDisplayDataResult;
         }
     }
@@ -7510,12 +7510,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class GetProjectConfigurationRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetProjectConfiguration", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.GetProjectConfigurationRequestBody Body;
+        public Checkmary.CxSDKWebService.GetProjectConfigurationRequestBody Body;
         
         public GetProjectConfigurationRequest() {
         }
         
-        public GetProjectConfigurationRequest(CheckmarxTool.CxSDKWebService.GetProjectConfigurationRequestBody Body) {
+        public GetProjectConfigurationRequest(Checkmary.CxSDKWebService.GetProjectConfigurationRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -7548,12 +7548,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class GetProjectConfigurationResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetProjectConfigurationResponse", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.GetProjectConfigurationResponseBody Body;
+        public Checkmary.CxSDKWebService.GetProjectConfigurationResponseBody Body;
         
         public GetProjectConfigurationResponse() {
         }
         
-        public GetProjectConfigurationResponse(CheckmarxTool.CxSDKWebService.GetProjectConfigurationResponseBody Body) {
+        public GetProjectConfigurationResponse(Checkmary.CxSDKWebService.GetProjectConfigurationResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -7565,12 +7565,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class GetProjectConfigurationResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CheckmarxTool.CxSDKWebService.CxWSResponseProjectConfig GetProjectConfigurationResult;
+        public Checkmary.CxSDKWebService.CxWSResponseProjectConfig GetProjectConfigurationResult;
         
         public GetProjectConfigurationResponseBody() {
         }
         
-        public GetProjectConfigurationResponseBody(CheckmarxTool.CxSDKWebService.CxWSResponseProjectConfig GetProjectConfigurationResult) {
+        public GetProjectConfigurationResponseBody(Checkmary.CxSDKWebService.CxWSResponseProjectConfig GetProjectConfigurationResult) {
             this.GetProjectConfigurationResult = GetProjectConfigurationResult;
         }
     }
@@ -7582,12 +7582,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class UpdateProjectIncrementalConfigurationRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="UpdateProjectIncrementalConfiguration", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.UpdateProjectIncrementalConfigurationRequestBody Body;
+        public Checkmary.CxSDKWebService.UpdateProjectIncrementalConfigurationRequestBody Body;
         
         public UpdateProjectIncrementalConfigurationRequest() {
         }
         
-        public UpdateProjectIncrementalConfigurationRequest(CheckmarxTool.CxSDKWebService.UpdateProjectIncrementalConfigurationRequestBody Body) {
+        public UpdateProjectIncrementalConfigurationRequest(Checkmary.CxSDKWebService.UpdateProjectIncrementalConfigurationRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -7605,12 +7605,12 @@ namespace CheckmarxTool.CxSDKWebService {
         public long projectID;
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public CheckmarxTool.CxSDKWebService.ProjectConfiguration projectConfiguration;
+        public Checkmary.CxSDKWebService.ProjectConfiguration projectConfiguration;
         
         public UpdateProjectIncrementalConfigurationRequestBody() {
         }
         
-        public UpdateProjectIncrementalConfigurationRequestBody(string sessionID, long projectID, CheckmarxTool.CxSDKWebService.ProjectConfiguration projectConfiguration) {
+        public UpdateProjectIncrementalConfigurationRequestBody(string sessionID, long projectID, Checkmary.CxSDKWebService.ProjectConfiguration projectConfiguration) {
             this.sessionID = sessionID;
             this.projectID = projectID;
             this.projectConfiguration = projectConfiguration;
@@ -7624,12 +7624,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class UpdateProjectIncrementalConfigurationResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="UpdateProjectIncrementalConfigurationResponse", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.UpdateProjectIncrementalConfigurationResponseBody Body;
+        public Checkmary.CxSDKWebService.UpdateProjectIncrementalConfigurationResponseBody Body;
         
         public UpdateProjectIncrementalConfigurationResponse() {
         }
         
-        public UpdateProjectIncrementalConfigurationResponse(CheckmarxTool.CxSDKWebService.UpdateProjectIncrementalConfigurationResponseBody Body) {
+        public UpdateProjectIncrementalConfigurationResponse(Checkmary.CxSDKWebService.UpdateProjectIncrementalConfigurationResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -7641,12 +7641,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class UpdateProjectIncrementalConfigurationResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse UpdateProjectIncrementalConfigurationResult;
+        public Checkmary.CxSDKWebService.CxWSBasicRepsonse UpdateProjectIncrementalConfigurationResult;
         
         public UpdateProjectIncrementalConfigurationResponseBody() {
         }
         
-        public UpdateProjectIncrementalConfigurationResponseBody(CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse UpdateProjectIncrementalConfigurationResult) {
+        public UpdateProjectIncrementalConfigurationResponseBody(Checkmary.CxSDKWebService.CxWSBasicRepsonse UpdateProjectIncrementalConfigurationResult) {
             this.UpdateProjectIncrementalConfigurationResult = UpdateProjectIncrementalConfigurationResult;
         }
     }
@@ -7658,12 +7658,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class LoginRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="Login", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.LoginRequestBody Body;
+        public Checkmary.CxSDKWebService.LoginRequestBody Body;
         
         public LoginRequest() {
         }
         
-        public LoginRequest(CheckmarxTool.CxSDKWebService.LoginRequestBody Body) {
+        public LoginRequest(Checkmary.CxSDKWebService.LoginRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -7675,7 +7675,7 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class LoginRequestBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CheckmarxTool.CxSDKWebService.Credentials applicationCredentials;
+        public Checkmary.CxSDKWebService.Credentials applicationCredentials;
         
         [System.Runtime.Serialization.DataMemberAttribute(Order=1)]
         public int lcid;
@@ -7683,7 +7683,7 @@ namespace CheckmarxTool.CxSDKWebService {
         public LoginRequestBody() {
         }
         
-        public LoginRequestBody(CheckmarxTool.CxSDKWebService.Credentials applicationCredentials, int lcid) {
+        public LoginRequestBody(Checkmary.CxSDKWebService.Credentials applicationCredentials, int lcid) {
             this.applicationCredentials = applicationCredentials;
             this.lcid = lcid;
         }
@@ -7696,12 +7696,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class LoginResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="LoginResponse", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.LoginResponseBody Body;
+        public Checkmary.CxSDKWebService.LoginResponseBody Body;
         
         public LoginResponse() {
         }
         
-        public LoginResponse(CheckmarxTool.CxSDKWebService.LoginResponseBody Body) {
+        public LoginResponse(Checkmary.CxSDKWebService.LoginResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -7713,12 +7713,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class LoginResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CheckmarxTool.CxSDKWebService.CxWSResponseLoginData LoginResult;
+        public Checkmary.CxSDKWebService.CxWSResponseLoginData LoginResult;
         
         public LoginResponseBody() {
         }
         
-        public LoginResponseBody(CheckmarxTool.CxSDKWebService.CxWSResponseLoginData LoginResult) {
+        public LoginResponseBody(Checkmary.CxSDKWebService.CxWSResponseLoginData LoginResult) {
             this.LoginResult = LoginResult;
         }
     }
@@ -7730,12 +7730,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class LoginWithTokenRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="LoginWithToken", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.LoginWithTokenRequestBody Body;
+        public Checkmary.CxSDKWebService.LoginWithTokenRequestBody Body;
         
         public LoginWithTokenRequest() {
         }
         
-        public LoginWithTokenRequest(CheckmarxTool.CxSDKWebService.LoginWithTokenRequestBody Body) {
+        public LoginWithTokenRequest(Checkmary.CxSDKWebService.LoginWithTokenRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -7768,12 +7768,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class LoginWithTokenResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="LoginWithTokenResponse", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.LoginWithTokenResponseBody Body;
+        public Checkmary.CxSDKWebService.LoginWithTokenResponseBody Body;
         
         public LoginWithTokenResponse() {
         }
         
-        public LoginWithTokenResponse(CheckmarxTool.CxSDKWebService.LoginWithTokenResponseBody Body) {
+        public LoginWithTokenResponse(Checkmary.CxSDKWebService.LoginWithTokenResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -7785,12 +7785,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class LoginWithTokenResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CheckmarxTool.CxSDKWebService.CxWSResponseLoginData LoginWithTokenResult;
+        public Checkmary.CxSDKWebService.CxWSResponseLoginData LoginWithTokenResult;
         
         public LoginWithTokenResponseBody() {
         }
         
-        public LoginWithTokenResponseBody(CheckmarxTool.CxSDKWebService.CxWSResponseLoginData LoginWithTokenResult) {
+        public LoginWithTokenResponseBody(Checkmary.CxSDKWebService.CxWSResponseLoginData LoginWithTokenResult) {
             this.LoginWithTokenResult = LoginWithTokenResult;
         }
     }
@@ -7802,12 +7802,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class LogoutRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="Logout", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.LogoutRequestBody Body;
+        public Checkmary.CxSDKWebService.LogoutRequestBody Body;
         
         public LogoutRequest() {
         }
         
-        public LogoutRequest(CheckmarxTool.CxSDKWebService.LogoutRequestBody Body) {
+        public LogoutRequest(Checkmary.CxSDKWebService.LogoutRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -7836,12 +7836,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class LogoutResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="LogoutResponse", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.LogoutResponseBody Body;
+        public Checkmary.CxSDKWebService.LogoutResponseBody Body;
         
         public LogoutResponse() {
         }
         
-        public LogoutResponse(CheckmarxTool.CxSDKWebService.LogoutResponseBody Body) {
+        public LogoutResponse(Checkmary.CxSDKWebService.LogoutResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -7853,12 +7853,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class LogoutResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse LogoutResult;
+        public Checkmary.CxSDKWebService.CxWSBasicRepsonse LogoutResult;
         
         public LogoutResponseBody() {
         }
         
-        public LogoutResponseBody(CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse LogoutResult) {
+        public LogoutResponseBody(Checkmary.CxSDKWebService.CxWSBasicRepsonse LogoutResult) {
             this.LogoutResult = LogoutResult;
         }
     }
@@ -7870,12 +7870,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class GetAssociatedGroupsListRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetAssociatedGroupsList", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.GetAssociatedGroupsListRequestBody Body;
+        public Checkmary.CxSDKWebService.GetAssociatedGroupsListRequestBody Body;
         
         public GetAssociatedGroupsListRequest() {
         }
         
-        public GetAssociatedGroupsListRequest(CheckmarxTool.CxSDKWebService.GetAssociatedGroupsListRequestBody Body) {
+        public GetAssociatedGroupsListRequest(Checkmary.CxSDKWebService.GetAssociatedGroupsListRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -7904,12 +7904,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class GetAssociatedGroupsListResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetAssociatedGroupsListResponse", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.GetAssociatedGroupsListResponseBody Body;
+        public Checkmary.CxSDKWebService.GetAssociatedGroupsListResponseBody Body;
         
         public GetAssociatedGroupsListResponse() {
         }
         
-        public GetAssociatedGroupsListResponse(CheckmarxTool.CxSDKWebService.GetAssociatedGroupsListResponseBody Body) {
+        public GetAssociatedGroupsListResponse(Checkmary.CxSDKWebService.GetAssociatedGroupsListResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -7921,12 +7921,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class GetAssociatedGroupsListResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CheckmarxTool.CxSDKWebService.CxWSResponseGroupList GetAssociatedGroupsListResult;
+        public Checkmary.CxSDKWebService.CxWSResponseGroupList GetAssociatedGroupsListResult;
         
         public GetAssociatedGroupsListResponseBody() {
         }
         
-        public GetAssociatedGroupsListResponseBody(CheckmarxTool.CxSDKWebService.CxWSResponseGroupList GetAssociatedGroupsListResult) {
+        public GetAssociatedGroupsListResponseBody(Checkmary.CxSDKWebService.CxWSResponseGroupList GetAssociatedGroupsListResult) {
             this.GetAssociatedGroupsListResult = GetAssociatedGroupsListResult;
         }
     }
@@ -7938,12 +7938,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class GetStatusOfSingleScanRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetStatusOfSingleScan", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.GetStatusOfSingleScanRequestBody Body;
+        public Checkmary.CxSDKWebService.GetStatusOfSingleScanRequestBody Body;
         
         public GetStatusOfSingleScanRequest() {
         }
         
-        public GetStatusOfSingleScanRequest(CheckmarxTool.CxSDKWebService.GetStatusOfSingleScanRequestBody Body) {
+        public GetStatusOfSingleScanRequest(Checkmary.CxSDKWebService.GetStatusOfSingleScanRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -7976,12 +7976,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class GetStatusOfSingleScanResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetStatusOfSingleScanResponse", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.GetStatusOfSingleScanResponseBody Body;
+        public Checkmary.CxSDKWebService.GetStatusOfSingleScanResponseBody Body;
         
         public GetStatusOfSingleScanResponse() {
         }
         
-        public GetStatusOfSingleScanResponse(CheckmarxTool.CxSDKWebService.GetStatusOfSingleScanResponseBody Body) {
+        public GetStatusOfSingleScanResponse(Checkmary.CxSDKWebService.GetStatusOfSingleScanResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -7993,12 +7993,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class GetStatusOfSingleScanResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CheckmarxTool.CxSDKWebService.CxWSResponseScanStatus GetStatusOfSingleScanResult;
+        public Checkmary.CxSDKWebService.CxWSResponseScanStatus GetStatusOfSingleScanResult;
         
         public GetStatusOfSingleScanResponseBody() {
         }
         
-        public GetStatusOfSingleScanResponseBody(CheckmarxTool.CxSDKWebService.CxWSResponseScanStatus GetStatusOfSingleScanResult) {
+        public GetStatusOfSingleScanResponseBody(Checkmary.CxSDKWebService.CxWSResponseScanStatus GetStatusOfSingleScanResult) {
             this.GetStatusOfSingleScanResult = GetStatusOfSingleScanResult;
         }
     }
@@ -8010,12 +8010,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class GetScansDisplayDataForAllProjectsRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetScansDisplayDataForAllProjects", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.GetScansDisplayDataForAllProjectsRequestBody Body;
+        public Checkmary.CxSDKWebService.GetScansDisplayDataForAllProjectsRequestBody Body;
         
         public GetScansDisplayDataForAllProjectsRequest() {
         }
         
-        public GetScansDisplayDataForAllProjectsRequest(CheckmarxTool.CxSDKWebService.GetScansDisplayDataForAllProjectsRequestBody Body) {
+        public GetScansDisplayDataForAllProjectsRequest(Checkmary.CxSDKWebService.GetScansDisplayDataForAllProjectsRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -8044,12 +8044,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class GetScansDisplayDataForAllProjectsResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetScansDisplayDataForAllProjectsResponse", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.GetScansDisplayDataForAllProjectsResponseBody Body;
+        public Checkmary.CxSDKWebService.GetScansDisplayDataForAllProjectsResponseBody Body;
         
         public GetScansDisplayDataForAllProjectsResponse() {
         }
         
-        public GetScansDisplayDataForAllProjectsResponse(CheckmarxTool.CxSDKWebService.GetScansDisplayDataForAllProjectsResponseBody Body) {
+        public GetScansDisplayDataForAllProjectsResponse(Checkmary.CxSDKWebService.GetScansDisplayDataForAllProjectsResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -8061,12 +8061,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class GetScansDisplayDataForAllProjectsResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CheckmarxTool.CxSDKWebService.CxWSResponseScansDisplayData GetScansDisplayDataForAllProjectsResult;
+        public Checkmary.CxSDKWebService.CxWSResponseScansDisplayData GetScansDisplayDataForAllProjectsResult;
         
         public GetScansDisplayDataForAllProjectsResponseBody() {
         }
         
-        public GetScansDisplayDataForAllProjectsResponseBody(CheckmarxTool.CxSDKWebService.CxWSResponseScansDisplayData GetScansDisplayDataForAllProjectsResult) {
+        public GetScansDisplayDataForAllProjectsResponseBody(Checkmary.CxSDKWebService.CxWSResponseScansDisplayData GetScansDisplayDataForAllProjectsResult) {
             this.GetScansDisplayDataForAllProjectsResult = GetScansDisplayDataForAllProjectsResult;
         }
     }
@@ -8078,12 +8078,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class GetScanSummaryRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetScanSummary", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.GetScanSummaryRequestBody Body;
+        public Checkmary.CxSDKWebService.GetScanSummaryRequestBody Body;
         
         public GetScanSummaryRequest() {
         }
         
-        public GetScanSummaryRequest(CheckmarxTool.CxSDKWebService.GetScanSummaryRequestBody Body) {
+        public GetScanSummaryRequest(Checkmary.CxSDKWebService.GetScanSummaryRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -8116,12 +8116,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class GetScanSummaryResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetScanSummaryResponse", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.GetScanSummaryResponseBody Body;
+        public Checkmary.CxSDKWebService.GetScanSummaryResponseBody Body;
         
         public GetScanSummaryResponse() {
         }
         
-        public GetScanSummaryResponse(CheckmarxTool.CxSDKWebService.GetScanSummaryResponseBody Body) {
+        public GetScanSummaryResponse(Checkmary.CxSDKWebService.GetScanSummaryResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -8133,12 +8133,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class GetScanSummaryResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CheckmarxTool.CxSDKWebService.CxWSResponseScanSummary GetScanSummaryResult;
+        public Checkmary.CxSDKWebService.CxWSResponseScanSummary GetScanSummaryResult;
         
         public GetScanSummaryResponseBody() {
         }
         
-        public GetScanSummaryResponseBody(CheckmarxTool.CxSDKWebService.CxWSResponseScanSummary GetScanSummaryResult) {
+        public GetScanSummaryResponseBody(Checkmary.CxSDKWebService.CxWSResponseScanSummary GetScanSummaryResult) {
             this.GetScanSummaryResult = GetScanSummaryResult;
         }
     }
@@ -8150,12 +8150,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class UpdateProjectConfigurationRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="UpdateProjectConfiguration", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.UpdateProjectConfigurationRequestBody Body;
+        public Checkmary.CxSDKWebService.UpdateProjectConfigurationRequestBody Body;
         
         public UpdateProjectConfigurationRequest() {
         }
         
-        public UpdateProjectConfigurationRequest(CheckmarxTool.CxSDKWebService.UpdateProjectConfigurationRequestBody Body) {
+        public UpdateProjectConfigurationRequest(Checkmary.CxSDKWebService.UpdateProjectConfigurationRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -8173,12 +8173,12 @@ namespace CheckmarxTool.CxSDKWebService {
         public long projectID;
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public CheckmarxTool.CxSDKWebService.ProjectConfiguration projectConfiguration;
+        public Checkmary.CxSDKWebService.ProjectConfiguration projectConfiguration;
         
         public UpdateProjectConfigurationRequestBody() {
         }
         
-        public UpdateProjectConfigurationRequestBody(string sessionID, long projectID, CheckmarxTool.CxSDKWebService.ProjectConfiguration projectConfiguration) {
+        public UpdateProjectConfigurationRequestBody(string sessionID, long projectID, Checkmary.CxSDKWebService.ProjectConfiguration projectConfiguration) {
             this.sessionID = sessionID;
             this.projectID = projectID;
             this.projectConfiguration = projectConfiguration;
@@ -8192,12 +8192,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class UpdateProjectConfigurationResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="UpdateProjectConfigurationResponse", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.UpdateProjectConfigurationResponseBody Body;
+        public Checkmary.CxSDKWebService.UpdateProjectConfigurationResponseBody Body;
         
         public UpdateProjectConfigurationResponse() {
         }
         
-        public UpdateProjectConfigurationResponse(CheckmarxTool.CxSDKWebService.UpdateProjectConfigurationResponseBody Body) {
+        public UpdateProjectConfigurationResponse(Checkmary.CxSDKWebService.UpdateProjectConfigurationResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -8209,12 +8209,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class UpdateProjectConfigurationResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse UpdateProjectConfigurationResult;
+        public Checkmary.CxSDKWebService.CxWSBasicRepsonse UpdateProjectConfigurationResult;
         
         public UpdateProjectConfigurationResponseBody() {
         }
         
-        public UpdateProjectConfigurationResponseBody(CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse UpdateProjectConfigurationResult) {
+        public UpdateProjectConfigurationResponseBody(Checkmary.CxSDKWebService.CxWSBasicRepsonse UpdateProjectConfigurationResult) {
             this.UpdateProjectConfigurationResult = UpdateProjectConfigurationResult;
         }
     }
@@ -8226,12 +8226,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class DeleteUserRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="DeleteUser", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.DeleteUserRequestBody Body;
+        public Checkmary.CxSDKWebService.DeleteUserRequestBody Body;
         
         public DeleteUserRequest() {
         }
         
-        public DeleteUserRequest(CheckmarxTool.CxSDKWebService.DeleteUserRequestBody Body) {
+        public DeleteUserRequest(Checkmary.CxSDKWebService.DeleteUserRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -8264,12 +8264,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class DeleteUserResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="DeleteUserResponse", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.DeleteUserResponseBody Body;
+        public Checkmary.CxSDKWebService.DeleteUserResponseBody Body;
         
         public DeleteUserResponse() {
         }
         
-        public DeleteUserResponse(CheckmarxTool.CxSDKWebService.DeleteUserResponseBody Body) {
+        public DeleteUserResponse(Checkmary.CxSDKWebService.DeleteUserResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -8281,12 +8281,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class DeleteUserResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse DeleteUserResult;
+        public Checkmary.CxSDKWebService.CxWSBasicRepsonse DeleteUserResult;
         
         public DeleteUserResponseBody() {
         }
         
-        public DeleteUserResponseBody(CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse DeleteUserResult) {
+        public DeleteUserResponseBody(Checkmary.CxSDKWebService.CxWSBasicRepsonse DeleteUserResult) {
             this.DeleteUserResult = DeleteUserResult;
         }
     }
@@ -8298,12 +8298,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class GetAllUsersRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetAllUsers", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.GetAllUsersRequestBody Body;
+        public Checkmary.CxSDKWebService.GetAllUsersRequestBody Body;
         
         public GetAllUsersRequest() {
         }
         
-        public GetAllUsersRequest(CheckmarxTool.CxSDKWebService.GetAllUsersRequestBody Body) {
+        public GetAllUsersRequest(Checkmary.CxSDKWebService.GetAllUsersRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -8332,12 +8332,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class GetAllUsersResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetAllUsersResponse", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.GetAllUsersResponseBody Body;
+        public Checkmary.CxSDKWebService.GetAllUsersResponseBody Body;
         
         public GetAllUsersResponse() {
         }
         
-        public GetAllUsersResponse(CheckmarxTool.CxSDKWebService.GetAllUsersResponseBody Body) {
+        public GetAllUsersResponse(Checkmary.CxSDKWebService.GetAllUsersResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -8349,12 +8349,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class GetAllUsersResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CheckmarxTool.CxSDKWebService.CxWSResponseUserData GetAllUsersResult;
+        public Checkmary.CxSDKWebService.CxWSResponseUserData GetAllUsersResult;
         
         public GetAllUsersResponseBody() {
         }
         
-        public GetAllUsersResponseBody(CheckmarxTool.CxSDKWebService.CxWSResponseUserData GetAllUsersResult) {
+        public GetAllUsersResponseBody(Checkmary.CxSDKWebService.CxWSResponseUserData GetAllUsersResult) {
             this.GetAllUsersResult = GetAllUsersResult;
         }
     }
@@ -8366,12 +8366,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class CreateScanReportRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="CreateScanReport", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.CreateScanReportRequestBody Body;
+        public Checkmary.CxSDKWebService.CreateScanReportRequestBody Body;
         
         public CreateScanReportRequest() {
         }
         
-        public CreateScanReportRequest(CheckmarxTool.CxSDKWebService.CreateScanReportRequestBody Body) {
+        public CreateScanReportRequest(Checkmary.CxSDKWebService.CreateScanReportRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -8386,12 +8386,12 @@ namespace CheckmarxTool.CxSDKWebService {
         public string sessionID;
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public CheckmarxTool.CxSDKWebService.CxWSReportRequest reportRequest;
+        public Checkmary.CxSDKWebService.CxWSReportRequest reportRequest;
         
         public CreateScanReportRequestBody() {
         }
         
-        public CreateScanReportRequestBody(string sessionID, CheckmarxTool.CxSDKWebService.CxWSReportRequest reportRequest) {
+        public CreateScanReportRequestBody(string sessionID, Checkmary.CxSDKWebService.CxWSReportRequest reportRequest) {
             this.sessionID = sessionID;
             this.reportRequest = reportRequest;
         }
@@ -8404,12 +8404,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class CreateScanReportResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="CreateScanReportResponse", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.CreateScanReportResponseBody Body;
+        public Checkmary.CxSDKWebService.CreateScanReportResponseBody Body;
         
         public CreateScanReportResponse() {
         }
         
-        public CreateScanReportResponse(CheckmarxTool.CxSDKWebService.CreateScanReportResponseBody Body) {
+        public CreateScanReportResponse(Checkmary.CxSDKWebService.CreateScanReportResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -8421,12 +8421,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class CreateScanReportResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CheckmarxTool.CxSDKWebService.CxWSCreateReportResponse CreateScanReportResult;
+        public Checkmary.CxSDKWebService.CxWSCreateReportResponse CreateScanReportResult;
         
         public CreateScanReportResponseBody() {
         }
         
-        public CreateScanReportResponseBody(CheckmarxTool.CxSDKWebService.CxWSCreateReportResponse CreateScanReportResult) {
+        public CreateScanReportResponseBody(Checkmary.CxSDKWebService.CxWSCreateReportResponse CreateScanReportResult) {
             this.CreateScanReportResult = CreateScanReportResult;
         }
     }
@@ -8438,12 +8438,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class GetScanReportStatusRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetScanReportStatus", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.GetScanReportStatusRequestBody Body;
+        public Checkmary.CxSDKWebService.GetScanReportStatusRequestBody Body;
         
         public GetScanReportStatusRequest() {
         }
         
-        public GetScanReportStatusRequest(CheckmarxTool.CxSDKWebService.GetScanReportStatusRequestBody Body) {
+        public GetScanReportStatusRequest(Checkmary.CxSDKWebService.GetScanReportStatusRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -8476,12 +8476,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class GetScanReportStatusResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetScanReportStatusResponse", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.GetScanReportStatusResponseBody Body;
+        public Checkmary.CxSDKWebService.GetScanReportStatusResponseBody Body;
         
         public GetScanReportStatusResponse() {
         }
         
-        public GetScanReportStatusResponse(CheckmarxTool.CxSDKWebService.GetScanReportStatusResponseBody Body) {
+        public GetScanReportStatusResponse(Checkmary.CxSDKWebService.GetScanReportStatusResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -8493,12 +8493,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class GetScanReportStatusResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CheckmarxTool.CxSDKWebService.CxWSReportStatusResponse GetScanReportStatusResult;
+        public Checkmary.CxSDKWebService.CxWSReportStatusResponse GetScanReportStatusResult;
         
         public GetScanReportStatusResponseBody() {
         }
         
-        public GetScanReportStatusResponseBody(CheckmarxTool.CxSDKWebService.CxWSReportStatusResponse GetScanReportStatusResult) {
+        public GetScanReportStatusResponseBody(Checkmary.CxSDKWebService.CxWSReportStatusResponse GetScanReportStatusResult) {
             this.GetScanReportStatusResult = GetScanReportStatusResult;
         }
     }
@@ -8510,12 +8510,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class GetScanReportRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetScanReport", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.GetScanReportRequestBody Body;
+        public Checkmary.CxSDKWebService.GetScanReportRequestBody Body;
         
         public GetScanReportRequest() {
         }
         
-        public GetScanReportRequest(CheckmarxTool.CxSDKWebService.GetScanReportRequestBody Body) {
+        public GetScanReportRequest(Checkmary.CxSDKWebService.GetScanReportRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -8548,12 +8548,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class GetScanReportResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetScanReportResponse", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.GetScanReportResponseBody Body;
+        public Checkmary.CxSDKWebService.GetScanReportResponseBody Body;
         
         public GetScanReportResponse() {
         }
         
-        public GetScanReportResponse(CheckmarxTool.CxSDKWebService.GetScanReportResponseBody Body) {
+        public GetScanReportResponse(Checkmary.CxSDKWebService.GetScanReportResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -8565,12 +8565,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class GetScanReportResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CheckmarxTool.CxSDKWebService.CxWSResponseScanResults GetScanReportResult;
+        public Checkmary.CxSDKWebService.CxWSResponseScanResults GetScanReportResult;
         
         public GetScanReportResponseBody() {
         }
         
-        public GetScanReportResponseBody(CheckmarxTool.CxSDKWebService.CxWSResponseScanResults GetScanReportResult) {
+        public GetScanReportResponseBody(Checkmary.CxSDKWebService.CxWSResponseScanResults GetScanReportResult) {
             this.GetScanReportResult = GetScanReportResult;
         }
     }
@@ -8582,12 +8582,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class ExecuteDataRetentionRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="ExecuteDataRetention", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.ExecuteDataRetentionRequestBody Body;
+        public Checkmary.CxSDKWebService.ExecuteDataRetentionRequestBody Body;
         
         public ExecuteDataRetentionRequest() {
         }
         
-        public ExecuteDataRetentionRequest(CheckmarxTool.CxSDKWebService.ExecuteDataRetentionRequestBody Body) {
+        public ExecuteDataRetentionRequest(Checkmary.CxSDKWebService.ExecuteDataRetentionRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -8602,12 +8602,12 @@ namespace CheckmarxTool.CxSDKWebService {
         public string SessionID;
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public CheckmarxTool.CxSDKWebService.CxDataRetentionConfiguration dataRetentionConfiguration;
+        public Checkmary.CxSDKWebService.CxDataRetentionConfiguration dataRetentionConfiguration;
         
         public ExecuteDataRetentionRequestBody() {
         }
         
-        public ExecuteDataRetentionRequestBody(string SessionID, CheckmarxTool.CxSDKWebService.CxDataRetentionConfiguration dataRetentionConfiguration) {
+        public ExecuteDataRetentionRequestBody(string SessionID, Checkmary.CxSDKWebService.CxDataRetentionConfiguration dataRetentionConfiguration) {
             this.SessionID = SessionID;
             this.dataRetentionConfiguration = dataRetentionConfiguration;
         }
@@ -8620,12 +8620,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class ExecuteDataRetentionResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="ExecuteDataRetentionResponse", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.ExecuteDataRetentionResponseBody Body;
+        public Checkmary.CxSDKWebService.ExecuteDataRetentionResponseBody Body;
         
         public ExecuteDataRetentionResponse() {
         }
         
-        public ExecuteDataRetentionResponse(CheckmarxTool.CxSDKWebService.ExecuteDataRetentionResponseBody Body) {
+        public ExecuteDataRetentionResponse(Checkmary.CxSDKWebService.ExecuteDataRetentionResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -8637,12 +8637,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class ExecuteDataRetentionResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse ExecuteDataRetentionResult;
+        public Checkmary.CxSDKWebService.CxWSBasicRepsonse ExecuteDataRetentionResult;
         
         public ExecuteDataRetentionResponseBody() {
         }
         
-        public ExecuteDataRetentionResponseBody(CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse ExecuteDataRetentionResult) {
+        public ExecuteDataRetentionResponseBody(Checkmary.CxSDKWebService.CxWSBasicRepsonse ExecuteDataRetentionResult) {
             this.ExecuteDataRetentionResult = ExecuteDataRetentionResult;
         }
     }
@@ -8654,12 +8654,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class StopDataRetentionRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="StopDataRetention", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.StopDataRetentionRequestBody Body;
+        public Checkmary.CxSDKWebService.StopDataRetentionRequestBody Body;
         
         public StopDataRetentionRequest() {
         }
         
-        public StopDataRetentionRequest(CheckmarxTool.CxSDKWebService.StopDataRetentionRequestBody Body) {
+        public StopDataRetentionRequest(Checkmary.CxSDKWebService.StopDataRetentionRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -8688,12 +8688,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class StopDataRetentionResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="StopDataRetentionResponse", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.StopDataRetentionResponseBody Body;
+        public Checkmary.CxSDKWebService.StopDataRetentionResponseBody Body;
         
         public StopDataRetentionResponse() {
         }
         
-        public StopDataRetentionResponse(CheckmarxTool.CxSDKWebService.StopDataRetentionResponseBody Body) {
+        public StopDataRetentionResponse(Checkmary.CxSDKWebService.StopDataRetentionResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -8705,12 +8705,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class StopDataRetentionResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse StopDataRetentionResult;
+        public Checkmary.CxSDKWebService.CxWSBasicRepsonse StopDataRetentionResult;
         
         public StopDataRetentionResponseBody() {
         }
         
-        public StopDataRetentionResponseBody(CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse StopDataRetentionResult) {
+        public StopDataRetentionResponseBody(Checkmary.CxSDKWebService.CxWSBasicRepsonse StopDataRetentionResult) {
             this.StopDataRetentionResult = StopDataRetentionResult;
         }
     }
@@ -8722,12 +8722,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class GetTeamLdapGroupsMappingRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetTeamLdapGroupsMapping", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.GetTeamLdapGroupsMappingRequestBody Body;
+        public Checkmary.CxSDKWebService.GetTeamLdapGroupsMappingRequestBody Body;
         
         public GetTeamLdapGroupsMappingRequest() {
         }
         
-        public GetTeamLdapGroupsMappingRequest(CheckmarxTool.CxSDKWebService.GetTeamLdapGroupsMappingRequestBody Body) {
+        public GetTeamLdapGroupsMappingRequest(Checkmary.CxSDKWebService.GetTeamLdapGroupsMappingRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -8760,12 +8760,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class GetTeamLdapGroupsMappingResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetTeamLdapGroupsMappingResponse", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.GetTeamLdapGroupsMappingResponseBody Body;
+        public Checkmary.CxSDKWebService.GetTeamLdapGroupsMappingResponseBody Body;
         
         public GetTeamLdapGroupsMappingResponse() {
         }
         
-        public GetTeamLdapGroupsMappingResponse(CheckmarxTool.CxSDKWebService.GetTeamLdapGroupsMappingResponseBody Body) {
+        public GetTeamLdapGroupsMappingResponse(Checkmary.CxSDKWebService.GetTeamLdapGroupsMappingResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -8777,12 +8777,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class GetTeamLdapGroupsMappingResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CheckmarxTool.CxSDKWebService.CxWSResponseTeamLdapGroupMappingData GetTeamLdapGroupsMappingResult;
+        public Checkmary.CxSDKWebService.CxWSResponseTeamLdapGroupMappingData GetTeamLdapGroupsMappingResult;
         
         public GetTeamLdapGroupsMappingResponseBody() {
         }
         
-        public GetTeamLdapGroupsMappingResponseBody(CheckmarxTool.CxSDKWebService.CxWSResponseTeamLdapGroupMappingData GetTeamLdapGroupsMappingResult) {
+        public GetTeamLdapGroupsMappingResponseBody(Checkmary.CxSDKWebService.CxWSResponseTeamLdapGroupMappingData GetTeamLdapGroupsMappingResult) {
             this.GetTeamLdapGroupsMappingResult = GetTeamLdapGroupsMappingResult;
         }
     }
@@ -8794,12 +8794,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class SetTeamLdapGroupsMappingRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="SetTeamLdapGroupsMapping", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.SetTeamLdapGroupsMappingRequestBody Body;
+        public Checkmary.CxSDKWebService.SetTeamLdapGroupsMappingRequestBody Body;
         
         public SetTeamLdapGroupsMappingRequest() {
         }
         
-        public SetTeamLdapGroupsMappingRequest(CheckmarxTool.CxSDKWebService.SetTeamLdapGroupsMappingRequestBody Body) {
+        public SetTeamLdapGroupsMappingRequest(Checkmary.CxSDKWebService.SetTeamLdapGroupsMappingRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -8817,12 +8817,12 @@ namespace CheckmarxTool.CxSDKWebService {
         public string teamId;
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public CheckmarxTool.CxSDKWebService.CxWSLdapGroupMapping[] ldapGroups;
+        public Checkmary.CxSDKWebService.CxWSLdapGroupMapping[] ldapGroups;
         
         public SetTeamLdapGroupsMappingRequestBody() {
         }
         
-        public SetTeamLdapGroupsMappingRequestBody(string sessionId, string teamId, CheckmarxTool.CxSDKWebService.CxWSLdapGroupMapping[] ldapGroups) {
+        public SetTeamLdapGroupsMappingRequestBody(string sessionId, string teamId, Checkmary.CxSDKWebService.CxWSLdapGroupMapping[] ldapGroups) {
             this.sessionId = sessionId;
             this.teamId = teamId;
             this.ldapGroups = ldapGroups;
@@ -8836,12 +8836,12 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class SetTeamLdapGroupsMappingResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="SetTeamLdapGroupsMappingResponse", Namespace="http://Checkmarx.com/v7", Order=0)]
-        public CheckmarxTool.CxSDKWebService.SetTeamLdapGroupsMappingResponseBody Body;
+        public Checkmary.CxSDKWebService.SetTeamLdapGroupsMappingResponseBody Body;
         
         public SetTeamLdapGroupsMappingResponse() {
         }
         
-        public SetTeamLdapGroupsMappingResponse(CheckmarxTool.CxSDKWebService.SetTeamLdapGroupsMappingResponseBody Body) {
+        public SetTeamLdapGroupsMappingResponse(Checkmary.CxSDKWebService.SetTeamLdapGroupsMappingResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -8853,23 +8853,23 @@ namespace CheckmarxTool.CxSDKWebService {
     public partial class SetTeamLdapGroupsMappingResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse SetTeamLdapGroupsMappingResult;
+        public Checkmary.CxSDKWebService.CxWSBasicRepsonse SetTeamLdapGroupsMappingResult;
         
         public SetTeamLdapGroupsMappingResponseBody() {
         }
         
-        public SetTeamLdapGroupsMappingResponseBody(CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse SetTeamLdapGroupsMappingResult) {
+        public SetTeamLdapGroupsMappingResponseBody(Checkmary.CxSDKWebService.CxWSBasicRepsonse SetTeamLdapGroupsMappingResult) {
             this.SetTeamLdapGroupsMappingResult = SetTeamLdapGroupsMappingResult;
         }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface CxSDKWebServiceSoapChannel : CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap, System.ServiceModel.IClientChannel {
+    public interface CxSDKWebServiceSoapChannel : Checkmary.CxSDKWebService.CxSDKWebServiceSoap, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class CxSDKWebServiceSoapClient : System.ServiceModel.ClientBase<CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap>, CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap {
+    public partial class CxSDKWebServiceSoapClient : System.ServiceModel.ClientBase<Checkmary.CxSDKWebService.CxSDKWebServiceSoap>, Checkmary.CxSDKWebService.CxSDKWebServiceSoap {
         
         public CxSDKWebServiceSoapClient() {
         }
@@ -8891,869 +8891,869 @@ namespace CheckmarxTool.CxSDKWebService {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        CheckmarxTool.CxSDKWebService.ScanResponse CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.Scan(CheckmarxTool.CxSDKWebService.ScanRequest request) {
+        Checkmary.CxSDKWebService.ScanResponse Checkmary.CxSDKWebService.CxSDKWebServiceSoap.Scan(Checkmary.CxSDKWebService.ScanRequest request) {
             return base.Channel.Scan(request);
         }
         
-        public CheckmarxTool.CxSDKWebService.CxWSResponseRunID Scan(string sessionId, CheckmarxTool.CxSDKWebService.CliScanArgs args) {
-            CheckmarxTool.CxSDKWebService.ScanRequest inValue = new CheckmarxTool.CxSDKWebService.ScanRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.ScanRequestBody();
+        public Checkmary.CxSDKWebService.CxWSResponseRunID Scan(string sessionId, Checkmary.CxSDKWebService.CliScanArgs args) {
+            Checkmary.CxSDKWebService.ScanRequest inValue = new Checkmary.CxSDKWebService.ScanRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.ScanRequestBody();
             inValue.Body.sessionId = sessionId;
             inValue.Body.args = args;
-            CheckmarxTool.CxSDKWebService.ScanResponse retVal = ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).Scan(inValue);
+            Checkmary.CxSDKWebService.ScanResponse retVal = ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).Scan(inValue);
             return retVal.Body.ScanResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.ScanResponse> CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.ScanAsync(CheckmarxTool.CxSDKWebService.ScanRequest request) {
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.ScanResponse> Checkmary.CxSDKWebService.CxSDKWebServiceSoap.ScanAsync(Checkmary.CxSDKWebService.ScanRequest request) {
             return base.Channel.ScanAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.ScanResponse> ScanAsync(string sessionId, CheckmarxTool.CxSDKWebService.CliScanArgs args) {
-            CheckmarxTool.CxSDKWebService.ScanRequest inValue = new CheckmarxTool.CxSDKWebService.ScanRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.ScanRequestBody();
+        public System.Threading.Tasks.Task<Checkmary.CxSDKWebService.ScanResponse> ScanAsync(string sessionId, Checkmary.CxSDKWebService.CliScanArgs args) {
+            Checkmary.CxSDKWebService.ScanRequest inValue = new Checkmary.CxSDKWebService.ScanRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.ScanRequestBody();
             inValue.Body.sessionId = sessionId;
             inValue.Body.args = args;
-            return ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).ScanAsync(inValue);
+            return ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).ScanAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        CheckmarxTool.CxSDKWebService.BranchProjectByIdResponse CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.BranchProjectById(CheckmarxTool.CxSDKWebService.BranchProjectByIdRequest request) {
+        Checkmary.CxSDKWebService.BranchProjectByIdResponse Checkmary.CxSDKWebService.CxSDKWebServiceSoap.BranchProjectById(Checkmary.CxSDKWebService.BranchProjectByIdRequest request) {
             return base.Channel.BranchProjectById(request);
         }
         
-        public CheckmarxTool.CxSDKWebService.CxWSResponseRunID BranchProjectById(string sessionId, long originProjectId, string newBranchProjectName) {
-            CheckmarxTool.CxSDKWebService.BranchProjectByIdRequest inValue = new CheckmarxTool.CxSDKWebService.BranchProjectByIdRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.BranchProjectByIdRequestBody();
+        public Checkmary.CxSDKWebService.CxWSResponseRunID BranchProjectById(string sessionId, long originProjectId, string newBranchProjectName) {
+            Checkmary.CxSDKWebService.BranchProjectByIdRequest inValue = new Checkmary.CxSDKWebService.BranchProjectByIdRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.BranchProjectByIdRequestBody();
             inValue.Body.sessionId = sessionId;
             inValue.Body.originProjectId = originProjectId;
             inValue.Body.newBranchProjectName = newBranchProjectName;
-            CheckmarxTool.CxSDKWebService.BranchProjectByIdResponse retVal = ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).BranchProjectById(inValue);
+            Checkmary.CxSDKWebService.BranchProjectByIdResponse retVal = ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).BranchProjectById(inValue);
             return retVal.Body.BranchProjectByIdResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.BranchProjectByIdResponse> CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.BranchProjectByIdAsync(CheckmarxTool.CxSDKWebService.BranchProjectByIdRequest request) {
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.BranchProjectByIdResponse> Checkmary.CxSDKWebService.CxSDKWebServiceSoap.BranchProjectByIdAsync(Checkmary.CxSDKWebService.BranchProjectByIdRequest request) {
             return base.Channel.BranchProjectByIdAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.BranchProjectByIdResponse> BranchProjectByIdAsync(string sessionId, long originProjectId, string newBranchProjectName) {
-            CheckmarxTool.CxSDKWebService.BranchProjectByIdRequest inValue = new CheckmarxTool.CxSDKWebService.BranchProjectByIdRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.BranchProjectByIdRequestBody();
+        public System.Threading.Tasks.Task<Checkmary.CxSDKWebService.BranchProjectByIdResponse> BranchProjectByIdAsync(string sessionId, long originProjectId, string newBranchProjectName) {
+            Checkmary.CxSDKWebService.BranchProjectByIdRequest inValue = new Checkmary.CxSDKWebService.BranchProjectByIdRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.BranchProjectByIdRequestBody();
             inValue.Body.sessionId = sessionId;
             inValue.Body.originProjectId = originProjectId;
             inValue.Body.newBranchProjectName = newBranchProjectName;
-            return ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).BranchProjectByIdAsync(inValue);
+            return ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).BranchProjectByIdAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        CheckmarxTool.CxSDKWebService.ScanWithOriginNameResponse CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.ScanWithOriginName(CheckmarxTool.CxSDKWebService.ScanWithOriginNameRequest request) {
+        Checkmary.CxSDKWebService.ScanWithOriginNameResponse Checkmary.CxSDKWebService.CxSDKWebServiceSoap.ScanWithOriginName(Checkmary.CxSDKWebService.ScanWithOriginNameRequest request) {
             return base.Channel.ScanWithOriginName(request);
         }
         
-        public CheckmarxTool.CxSDKWebService.CxWSResponseRunID ScanWithOriginName(string sessionId, CheckmarxTool.CxSDKWebService.CliScanArgs args, string origName) {
-            CheckmarxTool.CxSDKWebService.ScanWithOriginNameRequest inValue = new CheckmarxTool.CxSDKWebService.ScanWithOriginNameRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.ScanWithOriginNameRequestBody();
+        public Checkmary.CxSDKWebService.CxWSResponseRunID ScanWithOriginName(string sessionId, Checkmary.CxSDKWebService.CliScanArgs args, string origName) {
+            Checkmary.CxSDKWebService.ScanWithOriginNameRequest inValue = new Checkmary.CxSDKWebService.ScanWithOriginNameRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.ScanWithOriginNameRequestBody();
             inValue.Body.sessionId = sessionId;
             inValue.Body.args = args;
             inValue.Body.origName = origName;
-            CheckmarxTool.CxSDKWebService.ScanWithOriginNameResponse retVal = ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).ScanWithOriginName(inValue);
+            Checkmary.CxSDKWebService.ScanWithOriginNameResponse retVal = ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).ScanWithOriginName(inValue);
             return retVal.Body.ScanWithOriginNameResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.ScanWithOriginNameResponse> CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.ScanWithOriginNameAsync(CheckmarxTool.CxSDKWebService.ScanWithOriginNameRequest request) {
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.ScanWithOriginNameResponse> Checkmary.CxSDKWebService.CxSDKWebServiceSoap.ScanWithOriginNameAsync(Checkmary.CxSDKWebService.ScanWithOriginNameRequest request) {
             return base.Channel.ScanWithOriginNameAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.ScanWithOriginNameResponse> ScanWithOriginNameAsync(string sessionId, CheckmarxTool.CxSDKWebService.CliScanArgs args, string origName) {
-            CheckmarxTool.CxSDKWebService.ScanWithOriginNameRequest inValue = new CheckmarxTool.CxSDKWebService.ScanWithOriginNameRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.ScanWithOriginNameRequestBody();
+        public System.Threading.Tasks.Task<Checkmary.CxSDKWebService.ScanWithOriginNameResponse> ScanWithOriginNameAsync(string sessionId, Checkmary.CxSDKWebService.CliScanArgs args, string origName) {
+            Checkmary.CxSDKWebService.ScanWithOriginNameRequest inValue = new Checkmary.CxSDKWebService.ScanWithOriginNameRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.ScanWithOriginNameRequestBody();
             inValue.Body.sessionId = sessionId;
             inValue.Body.args = args;
             inValue.Body.origName = origName;
-            return ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).ScanWithOriginNameAsync(inValue);
+            return ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).ScanWithOriginNameAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        CheckmarxTool.CxSDKWebService.CancelScanResponse CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.CancelScan(CheckmarxTool.CxSDKWebService.CancelScanRequest request) {
+        Checkmary.CxSDKWebService.CancelScanResponse Checkmary.CxSDKWebService.CxSDKWebServiceSoap.CancelScan(Checkmary.CxSDKWebService.CancelScanRequest request) {
             return base.Channel.CancelScan(request);
         }
         
-        public CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse CancelScan(string sessionID, string RunId) {
-            CheckmarxTool.CxSDKWebService.CancelScanRequest inValue = new CheckmarxTool.CxSDKWebService.CancelScanRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.CancelScanRequestBody();
+        public Checkmary.CxSDKWebService.CxWSBasicRepsonse CancelScan(string sessionID, string RunId) {
+            Checkmary.CxSDKWebService.CancelScanRequest inValue = new Checkmary.CxSDKWebService.CancelScanRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.CancelScanRequestBody();
             inValue.Body.sessionID = sessionID;
             inValue.Body.RunId = RunId;
-            CheckmarxTool.CxSDKWebService.CancelScanResponse retVal = ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).CancelScan(inValue);
+            Checkmary.CxSDKWebService.CancelScanResponse retVal = ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).CancelScan(inValue);
             return retVal.Body.CancelScanResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.CancelScanResponse> CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.CancelScanAsync(CheckmarxTool.CxSDKWebService.CancelScanRequest request) {
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.CancelScanResponse> Checkmary.CxSDKWebService.CxSDKWebServiceSoap.CancelScanAsync(Checkmary.CxSDKWebService.CancelScanRequest request) {
             return base.Channel.CancelScanAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.CancelScanResponse> CancelScanAsync(string sessionID, string RunId) {
-            CheckmarxTool.CxSDKWebService.CancelScanRequest inValue = new CheckmarxTool.CxSDKWebService.CancelScanRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.CancelScanRequestBody();
+        public System.Threading.Tasks.Task<Checkmary.CxSDKWebService.CancelScanResponse> CancelScanAsync(string sessionID, string RunId) {
+            Checkmary.CxSDKWebService.CancelScanRequest inValue = new Checkmary.CxSDKWebService.CancelScanRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.CancelScanRequestBody();
             inValue.Body.sessionID = sessionID;
             inValue.Body.RunId = RunId;
-            return ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).CancelScanAsync(inValue);
+            return ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).CancelScanAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        CheckmarxTool.CxSDKWebService.DeleteProjectsResponse CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.DeleteProjects(CheckmarxTool.CxSDKWebService.DeleteProjectsRequest request) {
+        Checkmary.CxSDKWebService.DeleteProjectsResponse Checkmary.CxSDKWebService.CxSDKWebServiceSoap.DeleteProjects(Checkmary.CxSDKWebService.DeleteProjectsRequest request) {
             return base.Channel.DeleteProjects(request);
         }
         
-        public CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse DeleteProjects(string sessionID, CheckmarxTool.CxSDKWebService.ArrayOfLong projectIDs) {
-            CheckmarxTool.CxSDKWebService.DeleteProjectsRequest inValue = new CheckmarxTool.CxSDKWebService.DeleteProjectsRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.DeleteProjectsRequestBody();
+        public Checkmary.CxSDKWebService.CxWSBasicRepsonse DeleteProjects(string sessionID, Checkmary.CxSDKWebService.ArrayOfLong projectIDs) {
+            Checkmary.CxSDKWebService.DeleteProjectsRequest inValue = new Checkmary.CxSDKWebService.DeleteProjectsRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.DeleteProjectsRequestBody();
             inValue.Body.sessionID = sessionID;
             inValue.Body.projectIDs = projectIDs;
-            CheckmarxTool.CxSDKWebService.DeleteProjectsResponse retVal = ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).DeleteProjects(inValue);
+            Checkmary.CxSDKWebService.DeleteProjectsResponse retVal = ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).DeleteProjects(inValue);
             return retVal.Body.DeleteProjectsResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.DeleteProjectsResponse> CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.DeleteProjectsAsync(CheckmarxTool.CxSDKWebService.DeleteProjectsRequest request) {
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.DeleteProjectsResponse> Checkmary.CxSDKWebService.CxSDKWebServiceSoap.DeleteProjectsAsync(Checkmary.CxSDKWebService.DeleteProjectsRequest request) {
             return base.Channel.DeleteProjectsAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.DeleteProjectsResponse> DeleteProjectsAsync(string sessionID, CheckmarxTool.CxSDKWebService.ArrayOfLong projectIDs) {
-            CheckmarxTool.CxSDKWebService.DeleteProjectsRequest inValue = new CheckmarxTool.CxSDKWebService.DeleteProjectsRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.DeleteProjectsRequestBody();
+        public System.Threading.Tasks.Task<Checkmary.CxSDKWebService.DeleteProjectsResponse> DeleteProjectsAsync(string sessionID, Checkmary.CxSDKWebService.ArrayOfLong projectIDs) {
+            Checkmary.CxSDKWebService.DeleteProjectsRequest inValue = new Checkmary.CxSDKWebService.DeleteProjectsRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.DeleteProjectsRequestBody();
             inValue.Body.sessionID = sessionID;
             inValue.Body.projectIDs = projectIDs;
-            return ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).DeleteProjectsAsync(inValue);
+            return ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).DeleteProjectsAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        CheckmarxTool.CxSDKWebService.DeleteScansResponse CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.DeleteScans(CheckmarxTool.CxSDKWebService.DeleteScansRequest request) {
+        Checkmary.CxSDKWebService.DeleteScansResponse Checkmary.CxSDKWebService.CxSDKWebServiceSoap.DeleteScans(Checkmary.CxSDKWebService.DeleteScansRequest request) {
             return base.Channel.DeleteScans(request);
         }
         
-        public CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse DeleteScans(string sessionID, CheckmarxTool.CxSDKWebService.ArrayOfLong scanIDs) {
-            CheckmarxTool.CxSDKWebService.DeleteScansRequest inValue = new CheckmarxTool.CxSDKWebService.DeleteScansRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.DeleteScansRequestBody();
+        public Checkmary.CxSDKWebService.CxWSBasicRepsonse DeleteScans(string sessionID, Checkmary.CxSDKWebService.ArrayOfLong scanIDs) {
+            Checkmary.CxSDKWebService.DeleteScansRequest inValue = new Checkmary.CxSDKWebService.DeleteScansRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.DeleteScansRequestBody();
             inValue.Body.sessionID = sessionID;
             inValue.Body.scanIDs = scanIDs;
-            CheckmarxTool.CxSDKWebService.DeleteScansResponse retVal = ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).DeleteScans(inValue);
+            Checkmary.CxSDKWebService.DeleteScansResponse retVal = ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).DeleteScans(inValue);
             return retVal.Body.DeleteScansResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.DeleteScansResponse> CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.DeleteScansAsync(CheckmarxTool.CxSDKWebService.DeleteScansRequest request) {
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.DeleteScansResponse> Checkmary.CxSDKWebService.CxSDKWebServiceSoap.DeleteScansAsync(Checkmary.CxSDKWebService.DeleteScansRequest request) {
             return base.Channel.DeleteScansAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.DeleteScansResponse> DeleteScansAsync(string sessionID, CheckmarxTool.CxSDKWebService.ArrayOfLong scanIDs) {
-            CheckmarxTool.CxSDKWebService.DeleteScansRequest inValue = new CheckmarxTool.CxSDKWebService.DeleteScansRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.DeleteScansRequestBody();
+        public System.Threading.Tasks.Task<Checkmary.CxSDKWebService.DeleteScansResponse> DeleteScansAsync(string sessionID, Checkmary.CxSDKWebService.ArrayOfLong scanIDs) {
+            Checkmary.CxSDKWebService.DeleteScansRequest inValue = new Checkmary.CxSDKWebService.DeleteScansRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.DeleteScansRequestBody();
             inValue.Body.sessionID = sessionID;
             inValue.Body.scanIDs = scanIDs;
-            return ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).DeleteScansAsync(inValue);
+            return ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).DeleteScansAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        CheckmarxTool.CxSDKWebService.ScanWithSchedulingResponse CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.ScanWithScheduling(CheckmarxTool.CxSDKWebService.ScanWithSchedulingRequest request) {
+        Checkmary.CxSDKWebService.ScanWithSchedulingResponse Checkmary.CxSDKWebService.CxSDKWebServiceSoap.ScanWithScheduling(Checkmary.CxSDKWebService.ScanWithSchedulingRequest request) {
             return base.Channel.ScanWithScheduling(request);
         }
         
-        public CheckmarxTool.CxSDKWebService.CxWSResponseRunID ScanWithScheduling(string sessionId, CheckmarxTool.CxSDKWebService.CliScanArgs args, string schedulingData) {
-            CheckmarxTool.CxSDKWebService.ScanWithSchedulingRequest inValue = new CheckmarxTool.CxSDKWebService.ScanWithSchedulingRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.ScanWithSchedulingRequestBody();
+        public Checkmary.CxSDKWebService.CxWSResponseRunID ScanWithScheduling(string sessionId, Checkmary.CxSDKWebService.CliScanArgs args, string schedulingData) {
+            Checkmary.CxSDKWebService.ScanWithSchedulingRequest inValue = new Checkmary.CxSDKWebService.ScanWithSchedulingRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.ScanWithSchedulingRequestBody();
             inValue.Body.sessionId = sessionId;
             inValue.Body.args = args;
             inValue.Body.schedulingData = schedulingData;
-            CheckmarxTool.CxSDKWebService.ScanWithSchedulingResponse retVal = ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).ScanWithScheduling(inValue);
+            Checkmary.CxSDKWebService.ScanWithSchedulingResponse retVal = ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).ScanWithScheduling(inValue);
             return retVal.Body.ScanWithSchedulingResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.ScanWithSchedulingResponse> CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.ScanWithSchedulingAsync(CheckmarxTool.CxSDKWebService.ScanWithSchedulingRequest request) {
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.ScanWithSchedulingResponse> Checkmary.CxSDKWebService.CxSDKWebServiceSoap.ScanWithSchedulingAsync(Checkmary.CxSDKWebService.ScanWithSchedulingRequest request) {
             return base.Channel.ScanWithSchedulingAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.ScanWithSchedulingResponse> ScanWithSchedulingAsync(string sessionId, CheckmarxTool.CxSDKWebService.CliScanArgs args, string schedulingData) {
-            CheckmarxTool.CxSDKWebService.ScanWithSchedulingRequest inValue = new CheckmarxTool.CxSDKWebService.ScanWithSchedulingRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.ScanWithSchedulingRequestBody();
+        public System.Threading.Tasks.Task<Checkmary.CxSDKWebService.ScanWithSchedulingResponse> ScanWithSchedulingAsync(string sessionId, Checkmary.CxSDKWebService.CliScanArgs args, string schedulingData) {
+            Checkmary.CxSDKWebService.ScanWithSchedulingRequest inValue = new Checkmary.CxSDKWebService.ScanWithSchedulingRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.ScanWithSchedulingRequestBody();
             inValue.Body.sessionId = sessionId;
             inValue.Body.args = args;
             inValue.Body.schedulingData = schedulingData;
-            return ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).ScanWithSchedulingAsync(inValue);
+            return ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).ScanWithSchedulingAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        CheckmarxTool.CxSDKWebService.ScanWithSchedulingWithCronResponse CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.ScanWithSchedulingWithCron(CheckmarxTool.CxSDKWebService.ScanWithSchedulingWithCronRequest request) {
+        Checkmary.CxSDKWebService.ScanWithSchedulingWithCronResponse Checkmary.CxSDKWebService.CxSDKWebServiceSoap.ScanWithSchedulingWithCron(Checkmary.CxSDKWebService.ScanWithSchedulingWithCronRequest request) {
             return base.Channel.ScanWithSchedulingWithCron(request);
         }
         
-        public CheckmarxTool.CxSDKWebService.CxWSResponseRunID ScanWithSchedulingWithCron(string sessionId, CheckmarxTool.CxSDKWebService.CliScanArgs args, string cronString, long utcEpochStartTime, long utcEpochEndTime) {
-            CheckmarxTool.CxSDKWebService.ScanWithSchedulingWithCronRequest inValue = new CheckmarxTool.CxSDKWebService.ScanWithSchedulingWithCronRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.ScanWithSchedulingWithCronRequestBody();
+        public Checkmary.CxSDKWebService.CxWSResponseRunID ScanWithSchedulingWithCron(string sessionId, Checkmary.CxSDKWebService.CliScanArgs args, string cronString, long utcEpochStartTime, long utcEpochEndTime) {
+            Checkmary.CxSDKWebService.ScanWithSchedulingWithCronRequest inValue = new Checkmary.CxSDKWebService.ScanWithSchedulingWithCronRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.ScanWithSchedulingWithCronRequestBody();
             inValue.Body.sessionId = sessionId;
             inValue.Body.args = args;
             inValue.Body.cronString = cronString;
             inValue.Body.utcEpochStartTime = utcEpochStartTime;
             inValue.Body.utcEpochEndTime = utcEpochEndTime;
-            CheckmarxTool.CxSDKWebService.ScanWithSchedulingWithCronResponse retVal = ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).ScanWithSchedulingWithCron(inValue);
+            Checkmary.CxSDKWebService.ScanWithSchedulingWithCronResponse retVal = ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).ScanWithSchedulingWithCron(inValue);
             return retVal.Body.ScanWithSchedulingWithCronResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.ScanWithSchedulingWithCronResponse> CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.ScanWithSchedulingWithCronAsync(CheckmarxTool.CxSDKWebService.ScanWithSchedulingWithCronRequest request) {
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.ScanWithSchedulingWithCronResponse> Checkmary.CxSDKWebService.CxSDKWebServiceSoap.ScanWithSchedulingWithCronAsync(Checkmary.CxSDKWebService.ScanWithSchedulingWithCronRequest request) {
             return base.Channel.ScanWithSchedulingWithCronAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.ScanWithSchedulingWithCronResponse> ScanWithSchedulingWithCronAsync(string sessionId, CheckmarxTool.CxSDKWebService.CliScanArgs args, string cronString, long utcEpochStartTime, long utcEpochEndTime) {
-            CheckmarxTool.CxSDKWebService.ScanWithSchedulingWithCronRequest inValue = new CheckmarxTool.CxSDKWebService.ScanWithSchedulingWithCronRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.ScanWithSchedulingWithCronRequestBody();
+        public System.Threading.Tasks.Task<Checkmary.CxSDKWebService.ScanWithSchedulingWithCronResponse> ScanWithSchedulingWithCronAsync(string sessionId, Checkmary.CxSDKWebService.CliScanArgs args, string cronString, long utcEpochStartTime, long utcEpochEndTime) {
+            Checkmary.CxSDKWebService.ScanWithSchedulingWithCronRequest inValue = new Checkmary.CxSDKWebService.ScanWithSchedulingWithCronRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.ScanWithSchedulingWithCronRequestBody();
             inValue.Body.sessionId = sessionId;
             inValue.Body.args = args;
             inValue.Body.cronString = cronString;
             inValue.Body.utcEpochStartTime = utcEpochStartTime;
             inValue.Body.utcEpochEndTime = utcEpochEndTime;
-            return ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).ScanWithSchedulingWithCronAsync(inValue);
+            return ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).ScanWithSchedulingWithCronAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        CheckmarxTool.CxSDKWebService.UpdateScanCommentResponse CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.UpdateScanComment(CheckmarxTool.CxSDKWebService.UpdateScanCommentRequest request) {
+        Checkmary.CxSDKWebService.UpdateScanCommentResponse Checkmary.CxSDKWebService.CxSDKWebServiceSoap.UpdateScanComment(Checkmary.CxSDKWebService.UpdateScanCommentRequest request) {
             return base.Channel.UpdateScanComment(request);
         }
         
-        public CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse UpdateScanComment(string sessionID, long ScanID, string Comment) {
-            CheckmarxTool.CxSDKWebService.UpdateScanCommentRequest inValue = new CheckmarxTool.CxSDKWebService.UpdateScanCommentRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.UpdateScanCommentRequestBody();
+        public Checkmary.CxSDKWebService.CxWSBasicRepsonse UpdateScanComment(string sessionID, long ScanID, string Comment) {
+            Checkmary.CxSDKWebService.UpdateScanCommentRequest inValue = new Checkmary.CxSDKWebService.UpdateScanCommentRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.UpdateScanCommentRequestBody();
             inValue.Body.sessionID = sessionID;
             inValue.Body.ScanID = ScanID;
             inValue.Body.Comment = Comment;
-            CheckmarxTool.CxSDKWebService.UpdateScanCommentResponse retVal = ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).UpdateScanComment(inValue);
+            Checkmary.CxSDKWebService.UpdateScanCommentResponse retVal = ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).UpdateScanComment(inValue);
             return retVal.Body.UpdateScanCommentResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.UpdateScanCommentResponse> CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.UpdateScanCommentAsync(CheckmarxTool.CxSDKWebService.UpdateScanCommentRequest request) {
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.UpdateScanCommentResponse> Checkmary.CxSDKWebService.CxSDKWebServiceSoap.UpdateScanCommentAsync(Checkmary.CxSDKWebService.UpdateScanCommentRequest request) {
             return base.Channel.UpdateScanCommentAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.UpdateScanCommentResponse> UpdateScanCommentAsync(string sessionID, long ScanID, string Comment) {
-            CheckmarxTool.CxSDKWebService.UpdateScanCommentRequest inValue = new CheckmarxTool.CxSDKWebService.UpdateScanCommentRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.UpdateScanCommentRequestBody();
+        public System.Threading.Tasks.Task<Checkmary.CxSDKWebService.UpdateScanCommentResponse> UpdateScanCommentAsync(string sessionID, long ScanID, string Comment) {
+            Checkmary.CxSDKWebService.UpdateScanCommentRequest inValue = new Checkmary.CxSDKWebService.UpdateScanCommentRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.UpdateScanCommentRequestBody();
             inValue.Body.sessionID = sessionID;
             inValue.Body.ScanID = ScanID;
             inValue.Body.Comment = Comment;
-            return ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).UpdateScanCommentAsync(inValue);
+            return ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).UpdateScanCommentAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        CheckmarxTool.CxSDKWebService.GetPresetListResponse CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.GetPresetList(CheckmarxTool.CxSDKWebService.GetPresetListRequest request) {
+        Checkmary.CxSDKWebService.GetPresetListResponse Checkmary.CxSDKWebService.CxSDKWebServiceSoap.GetPresetList(Checkmary.CxSDKWebService.GetPresetListRequest request) {
             return base.Channel.GetPresetList(request);
         }
         
-        public CheckmarxTool.CxSDKWebService.CxWSResponsePresetList GetPresetList(string SessionID) {
-            CheckmarxTool.CxSDKWebService.GetPresetListRequest inValue = new CheckmarxTool.CxSDKWebService.GetPresetListRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.GetPresetListRequestBody();
+        public Checkmary.CxSDKWebService.CxWSResponsePresetList GetPresetList(string SessionID) {
+            Checkmary.CxSDKWebService.GetPresetListRequest inValue = new Checkmary.CxSDKWebService.GetPresetListRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.GetPresetListRequestBody();
             inValue.Body.SessionID = SessionID;
-            CheckmarxTool.CxSDKWebService.GetPresetListResponse retVal = ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetPresetList(inValue);
+            Checkmary.CxSDKWebService.GetPresetListResponse retVal = ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetPresetList(inValue);
             return retVal.Body.GetPresetListResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.GetPresetListResponse> CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.GetPresetListAsync(CheckmarxTool.CxSDKWebService.GetPresetListRequest request) {
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.GetPresetListResponse> Checkmary.CxSDKWebService.CxSDKWebServiceSoap.GetPresetListAsync(Checkmary.CxSDKWebService.GetPresetListRequest request) {
             return base.Channel.GetPresetListAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.GetPresetListResponse> GetPresetListAsync(string SessionID) {
-            CheckmarxTool.CxSDKWebService.GetPresetListRequest inValue = new CheckmarxTool.CxSDKWebService.GetPresetListRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.GetPresetListRequestBody();
+        public System.Threading.Tasks.Task<Checkmary.CxSDKWebService.GetPresetListResponse> GetPresetListAsync(string SessionID) {
+            Checkmary.CxSDKWebService.GetPresetListRequest inValue = new Checkmary.CxSDKWebService.GetPresetListRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.GetPresetListRequestBody();
             inValue.Body.SessionID = SessionID;
-            return ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetPresetListAsync(inValue);
+            return ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetPresetListAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        CheckmarxTool.CxSDKWebService.GetConfigurationSetListResponse CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.GetConfigurationSetList(CheckmarxTool.CxSDKWebService.GetConfigurationSetListRequest request) {
+        Checkmary.CxSDKWebService.GetConfigurationSetListResponse Checkmary.CxSDKWebService.CxSDKWebServiceSoap.GetConfigurationSetList(Checkmary.CxSDKWebService.GetConfigurationSetListRequest request) {
             return base.Channel.GetConfigurationSetList(request);
         }
         
-        public CheckmarxTool.CxSDKWebService.CxWSResponseConfigSetList GetConfigurationSetList(string SessionID) {
-            CheckmarxTool.CxSDKWebService.GetConfigurationSetListRequest inValue = new CheckmarxTool.CxSDKWebService.GetConfigurationSetListRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.GetConfigurationSetListRequestBody();
+        public Checkmary.CxSDKWebService.CxWSResponseConfigSetList GetConfigurationSetList(string SessionID) {
+            Checkmary.CxSDKWebService.GetConfigurationSetListRequest inValue = new Checkmary.CxSDKWebService.GetConfigurationSetListRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.GetConfigurationSetListRequestBody();
             inValue.Body.SessionID = SessionID;
-            CheckmarxTool.CxSDKWebService.GetConfigurationSetListResponse retVal = ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetConfigurationSetList(inValue);
+            Checkmary.CxSDKWebService.GetConfigurationSetListResponse retVal = ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetConfigurationSetList(inValue);
             return retVal.Body.GetConfigurationSetListResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.GetConfigurationSetListResponse> CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.GetConfigurationSetListAsync(CheckmarxTool.CxSDKWebService.GetConfigurationSetListRequest request) {
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.GetConfigurationSetListResponse> Checkmary.CxSDKWebService.CxSDKWebServiceSoap.GetConfigurationSetListAsync(Checkmary.CxSDKWebService.GetConfigurationSetListRequest request) {
             return base.Channel.GetConfigurationSetListAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.GetConfigurationSetListResponse> GetConfigurationSetListAsync(string SessionID) {
-            CheckmarxTool.CxSDKWebService.GetConfigurationSetListRequest inValue = new CheckmarxTool.CxSDKWebService.GetConfigurationSetListRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.GetConfigurationSetListRequestBody();
+        public System.Threading.Tasks.Task<Checkmary.CxSDKWebService.GetConfigurationSetListResponse> GetConfigurationSetListAsync(string SessionID) {
+            Checkmary.CxSDKWebService.GetConfigurationSetListRequest inValue = new Checkmary.CxSDKWebService.GetConfigurationSetListRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.GetConfigurationSetListRequestBody();
             inValue.Body.SessionID = SessionID;
-            return ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetConfigurationSetListAsync(inValue);
+            return ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetConfigurationSetListAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        CheckmarxTool.CxSDKWebService.GetProjectsDisplayDataResponse CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.GetProjectsDisplayData(CheckmarxTool.CxSDKWebService.GetProjectsDisplayDataRequest request) {
+        Checkmary.CxSDKWebService.GetProjectsDisplayDataResponse Checkmary.CxSDKWebService.CxSDKWebServiceSoap.GetProjectsDisplayData(Checkmary.CxSDKWebService.GetProjectsDisplayDataRequest request) {
             return base.Channel.GetProjectsDisplayData(request);
         }
         
-        public CheckmarxTool.CxSDKWebService.CxWSResponseProjectsDisplayData GetProjectsDisplayData(string sessionID) {
-            CheckmarxTool.CxSDKWebService.GetProjectsDisplayDataRequest inValue = new CheckmarxTool.CxSDKWebService.GetProjectsDisplayDataRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.GetProjectsDisplayDataRequestBody();
+        public Checkmary.CxSDKWebService.CxWSResponseProjectsDisplayData GetProjectsDisplayData(string sessionID) {
+            Checkmary.CxSDKWebService.GetProjectsDisplayDataRequest inValue = new Checkmary.CxSDKWebService.GetProjectsDisplayDataRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.GetProjectsDisplayDataRequestBody();
             inValue.Body.sessionID = sessionID;
-            CheckmarxTool.CxSDKWebService.GetProjectsDisplayDataResponse retVal = ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetProjectsDisplayData(inValue);
+            Checkmary.CxSDKWebService.GetProjectsDisplayDataResponse retVal = ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetProjectsDisplayData(inValue);
             return retVal.Body.GetProjectsDisplayDataResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.GetProjectsDisplayDataResponse> CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.GetProjectsDisplayDataAsync(CheckmarxTool.CxSDKWebService.GetProjectsDisplayDataRequest request) {
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.GetProjectsDisplayDataResponse> Checkmary.CxSDKWebService.CxSDKWebServiceSoap.GetProjectsDisplayDataAsync(Checkmary.CxSDKWebService.GetProjectsDisplayDataRequest request) {
             return base.Channel.GetProjectsDisplayDataAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.GetProjectsDisplayDataResponse> GetProjectsDisplayDataAsync(string sessionID) {
-            CheckmarxTool.CxSDKWebService.GetProjectsDisplayDataRequest inValue = new CheckmarxTool.CxSDKWebService.GetProjectsDisplayDataRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.GetProjectsDisplayDataRequestBody();
+        public System.Threading.Tasks.Task<Checkmary.CxSDKWebService.GetProjectsDisplayDataResponse> GetProjectsDisplayDataAsync(string sessionID) {
+            Checkmary.CxSDKWebService.GetProjectsDisplayDataRequest inValue = new Checkmary.CxSDKWebService.GetProjectsDisplayDataRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.GetProjectsDisplayDataRequestBody();
             inValue.Body.sessionID = sessionID;
-            return ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetProjectsDisplayDataAsync(inValue);
+            return ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetProjectsDisplayDataAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        CheckmarxTool.CxSDKWebService.GetProjectScannedDisplayDataResponse CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.GetProjectScannedDisplayData(CheckmarxTool.CxSDKWebService.GetProjectScannedDisplayDataRequest request) {
+        Checkmary.CxSDKWebService.GetProjectScannedDisplayDataResponse Checkmary.CxSDKWebService.CxSDKWebServiceSoap.GetProjectScannedDisplayData(Checkmary.CxSDKWebService.GetProjectScannedDisplayDataRequest request) {
             return base.Channel.GetProjectScannedDisplayData(request);
         }
         
-        public CheckmarxTool.CxSDKWebService.CxWSResponseProjectScannedDisplayData GetProjectScannedDisplayData(string sessionID) {
-            CheckmarxTool.CxSDKWebService.GetProjectScannedDisplayDataRequest inValue = new CheckmarxTool.CxSDKWebService.GetProjectScannedDisplayDataRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.GetProjectScannedDisplayDataRequestBody();
+        public Checkmary.CxSDKWebService.CxWSResponseProjectScannedDisplayData GetProjectScannedDisplayData(string sessionID) {
+            Checkmary.CxSDKWebService.GetProjectScannedDisplayDataRequest inValue = new Checkmary.CxSDKWebService.GetProjectScannedDisplayDataRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.GetProjectScannedDisplayDataRequestBody();
             inValue.Body.sessionID = sessionID;
-            CheckmarxTool.CxSDKWebService.GetProjectScannedDisplayDataResponse retVal = ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetProjectScannedDisplayData(inValue);
+            Checkmary.CxSDKWebService.GetProjectScannedDisplayDataResponse retVal = ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetProjectScannedDisplayData(inValue);
             return retVal.Body.GetProjectScannedDisplayDataResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.GetProjectScannedDisplayDataResponse> CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.GetProjectScannedDisplayDataAsync(CheckmarxTool.CxSDKWebService.GetProjectScannedDisplayDataRequest request) {
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.GetProjectScannedDisplayDataResponse> Checkmary.CxSDKWebService.CxSDKWebServiceSoap.GetProjectScannedDisplayDataAsync(Checkmary.CxSDKWebService.GetProjectScannedDisplayDataRequest request) {
             return base.Channel.GetProjectScannedDisplayDataAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.GetProjectScannedDisplayDataResponse> GetProjectScannedDisplayDataAsync(string sessionID) {
-            CheckmarxTool.CxSDKWebService.GetProjectScannedDisplayDataRequest inValue = new CheckmarxTool.CxSDKWebService.GetProjectScannedDisplayDataRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.GetProjectScannedDisplayDataRequestBody();
+        public System.Threading.Tasks.Task<Checkmary.CxSDKWebService.GetProjectScannedDisplayDataResponse> GetProjectScannedDisplayDataAsync(string sessionID) {
+            Checkmary.CxSDKWebService.GetProjectScannedDisplayDataRequest inValue = new Checkmary.CxSDKWebService.GetProjectScannedDisplayDataRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.GetProjectScannedDisplayDataRequestBody();
             inValue.Body.sessionID = sessionID;
-            return ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetProjectScannedDisplayDataAsync(inValue);
+            return ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetProjectScannedDisplayDataAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        CheckmarxTool.CxSDKWebService.GetProjectConfigurationResponse CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.GetProjectConfiguration(CheckmarxTool.CxSDKWebService.GetProjectConfigurationRequest request) {
+        Checkmary.CxSDKWebService.GetProjectConfigurationResponse Checkmary.CxSDKWebService.CxSDKWebServiceSoap.GetProjectConfiguration(Checkmary.CxSDKWebService.GetProjectConfigurationRequest request) {
             return base.Channel.GetProjectConfiguration(request);
         }
         
-        public CheckmarxTool.CxSDKWebService.CxWSResponseProjectConfig GetProjectConfiguration(string sessionID, long projectID) {
-            CheckmarxTool.CxSDKWebService.GetProjectConfigurationRequest inValue = new CheckmarxTool.CxSDKWebService.GetProjectConfigurationRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.GetProjectConfigurationRequestBody();
+        public Checkmary.CxSDKWebService.CxWSResponseProjectConfig GetProjectConfiguration(string sessionID, long projectID) {
+            Checkmary.CxSDKWebService.GetProjectConfigurationRequest inValue = new Checkmary.CxSDKWebService.GetProjectConfigurationRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.GetProjectConfigurationRequestBody();
             inValue.Body.sessionID = sessionID;
             inValue.Body.projectID = projectID;
-            CheckmarxTool.CxSDKWebService.GetProjectConfigurationResponse retVal = ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetProjectConfiguration(inValue);
+            Checkmary.CxSDKWebService.GetProjectConfigurationResponse retVal = ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetProjectConfiguration(inValue);
             return retVal.Body.GetProjectConfigurationResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.GetProjectConfigurationResponse> CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.GetProjectConfigurationAsync(CheckmarxTool.CxSDKWebService.GetProjectConfigurationRequest request) {
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.GetProjectConfigurationResponse> Checkmary.CxSDKWebService.CxSDKWebServiceSoap.GetProjectConfigurationAsync(Checkmary.CxSDKWebService.GetProjectConfigurationRequest request) {
             return base.Channel.GetProjectConfigurationAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.GetProjectConfigurationResponse> GetProjectConfigurationAsync(string sessionID, long projectID) {
-            CheckmarxTool.CxSDKWebService.GetProjectConfigurationRequest inValue = new CheckmarxTool.CxSDKWebService.GetProjectConfigurationRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.GetProjectConfigurationRequestBody();
+        public System.Threading.Tasks.Task<Checkmary.CxSDKWebService.GetProjectConfigurationResponse> GetProjectConfigurationAsync(string sessionID, long projectID) {
+            Checkmary.CxSDKWebService.GetProjectConfigurationRequest inValue = new Checkmary.CxSDKWebService.GetProjectConfigurationRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.GetProjectConfigurationRequestBody();
             inValue.Body.sessionID = sessionID;
             inValue.Body.projectID = projectID;
-            return ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetProjectConfigurationAsync(inValue);
+            return ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetProjectConfigurationAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        CheckmarxTool.CxSDKWebService.UpdateProjectIncrementalConfigurationResponse CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.UpdateProjectIncrementalConfiguration(CheckmarxTool.CxSDKWebService.UpdateProjectIncrementalConfigurationRequest request) {
+        Checkmary.CxSDKWebService.UpdateProjectIncrementalConfigurationResponse Checkmary.CxSDKWebService.CxSDKWebServiceSoap.UpdateProjectIncrementalConfiguration(Checkmary.CxSDKWebService.UpdateProjectIncrementalConfigurationRequest request) {
             return base.Channel.UpdateProjectIncrementalConfiguration(request);
         }
         
-        public CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse UpdateProjectIncrementalConfiguration(string sessionID, long projectID, CheckmarxTool.CxSDKWebService.ProjectConfiguration projectConfiguration) {
-            CheckmarxTool.CxSDKWebService.UpdateProjectIncrementalConfigurationRequest inValue = new CheckmarxTool.CxSDKWebService.UpdateProjectIncrementalConfigurationRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.UpdateProjectIncrementalConfigurationRequestBody();
+        public Checkmary.CxSDKWebService.CxWSBasicRepsonse UpdateProjectIncrementalConfiguration(string sessionID, long projectID, Checkmary.CxSDKWebService.ProjectConfiguration projectConfiguration) {
+            Checkmary.CxSDKWebService.UpdateProjectIncrementalConfigurationRequest inValue = new Checkmary.CxSDKWebService.UpdateProjectIncrementalConfigurationRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.UpdateProjectIncrementalConfigurationRequestBody();
             inValue.Body.sessionID = sessionID;
             inValue.Body.projectID = projectID;
             inValue.Body.projectConfiguration = projectConfiguration;
-            CheckmarxTool.CxSDKWebService.UpdateProjectIncrementalConfigurationResponse retVal = ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).UpdateProjectIncrementalConfiguration(inValue);
+            Checkmary.CxSDKWebService.UpdateProjectIncrementalConfigurationResponse retVal = ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).UpdateProjectIncrementalConfiguration(inValue);
             return retVal.Body.UpdateProjectIncrementalConfigurationResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.UpdateProjectIncrementalConfigurationResponse> CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.UpdateProjectIncrementalConfigurationAsync(CheckmarxTool.CxSDKWebService.UpdateProjectIncrementalConfigurationRequest request) {
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.UpdateProjectIncrementalConfigurationResponse> Checkmary.CxSDKWebService.CxSDKWebServiceSoap.UpdateProjectIncrementalConfigurationAsync(Checkmary.CxSDKWebService.UpdateProjectIncrementalConfigurationRequest request) {
             return base.Channel.UpdateProjectIncrementalConfigurationAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.UpdateProjectIncrementalConfigurationResponse> UpdateProjectIncrementalConfigurationAsync(string sessionID, long projectID, CheckmarxTool.CxSDKWebService.ProjectConfiguration projectConfiguration) {
-            CheckmarxTool.CxSDKWebService.UpdateProjectIncrementalConfigurationRequest inValue = new CheckmarxTool.CxSDKWebService.UpdateProjectIncrementalConfigurationRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.UpdateProjectIncrementalConfigurationRequestBody();
+        public System.Threading.Tasks.Task<Checkmary.CxSDKWebService.UpdateProjectIncrementalConfigurationResponse> UpdateProjectIncrementalConfigurationAsync(string sessionID, long projectID, Checkmary.CxSDKWebService.ProjectConfiguration projectConfiguration) {
+            Checkmary.CxSDKWebService.UpdateProjectIncrementalConfigurationRequest inValue = new Checkmary.CxSDKWebService.UpdateProjectIncrementalConfigurationRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.UpdateProjectIncrementalConfigurationRequestBody();
             inValue.Body.sessionID = sessionID;
             inValue.Body.projectID = projectID;
             inValue.Body.projectConfiguration = projectConfiguration;
-            return ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).UpdateProjectIncrementalConfigurationAsync(inValue);
+            return ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).UpdateProjectIncrementalConfigurationAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        CheckmarxTool.CxSDKWebService.LoginResponse CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.Login(CheckmarxTool.CxSDKWebService.LoginRequest request) {
+        Checkmary.CxSDKWebService.LoginResponse Checkmary.CxSDKWebService.CxSDKWebServiceSoap.Login(Checkmary.CxSDKWebService.LoginRequest request) {
             return base.Channel.Login(request);
         }
         
-        public CheckmarxTool.CxSDKWebService.CxWSResponseLoginData Login(CheckmarxTool.CxSDKWebService.Credentials applicationCredentials, int lcid) {
-            CheckmarxTool.CxSDKWebService.LoginRequest inValue = new CheckmarxTool.CxSDKWebService.LoginRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.LoginRequestBody();
+        public Checkmary.CxSDKWebService.CxWSResponseLoginData Login(Checkmary.CxSDKWebService.Credentials applicationCredentials, int lcid) {
+            Checkmary.CxSDKWebService.LoginRequest inValue = new Checkmary.CxSDKWebService.LoginRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.LoginRequestBody();
             inValue.Body.applicationCredentials = applicationCredentials;
             inValue.Body.lcid = lcid;
-            CheckmarxTool.CxSDKWebService.LoginResponse retVal = ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).Login(inValue);
+            Checkmary.CxSDKWebService.LoginResponse retVal = ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).Login(inValue);
             return retVal.Body.LoginResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.LoginResponse> CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.LoginAsync(CheckmarxTool.CxSDKWebService.LoginRequest request) {
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.LoginResponse> Checkmary.CxSDKWebService.CxSDKWebServiceSoap.LoginAsync(Checkmary.CxSDKWebService.LoginRequest request) {
             return base.Channel.LoginAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.LoginResponse> LoginAsync(CheckmarxTool.CxSDKWebService.Credentials applicationCredentials, int lcid) {
-            CheckmarxTool.CxSDKWebService.LoginRequest inValue = new CheckmarxTool.CxSDKWebService.LoginRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.LoginRequestBody();
+        public System.Threading.Tasks.Task<Checkmary.CxSDKWebService.LoginResponse> LoginAsync(Checkmary.CxSDKWebService.Credentials applicationCredentials, int lcid) {
+            Checkmary.CxSDKWebService.LoginRequest inValue = new Checkmary.CxSDKWebService.LoginRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.LoginRequestBody();
             inValue.Body.applicationCredentials = applicationCredentials;
             inValue.Body.lcid = lcid;
-            return ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).LoginAsync(inValue);
+            return ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).LoginAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        CheckmarxTool.CxSDKWebService.LoginWithTokenResponse CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.LoginWithToken(CheckmarxTool.CxSDKWebService.LoginWithTokenRequest request) {
+        Checkmary.CxSDKWebService.LoginWithTokenResponse Checkmary.CxSDKWebService.CxSDKWebServiceSoap.LoginWithToken(Checkmary.CxSDKWebService.LoginWithTokenRequest request) {
             return base.Channel.LoginWithToken(request);
         }
         
-        public CheckmarxTool.CxSDKWebService.CxWSResponseLoginData LoginWithToken(string token, int lcid) {
-            CheckmarxTool.CxSDKWebService.LoginWithTokenRequest inValue = new CheckmarxTool.CxSDKWebService.LoginWithTokenRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.LoginWithTokenRequestBody();
+        public Checkmary.CxSDKWebService.CxWSResponseLoginData LoginWithToken(string token, int lcid) {
+            Checkmary.CxSDKWebService.LoginWithTokenRequest inValue = new Checkmary.CxSDKWebService.LoginWithTokenRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.LoginWithTokenRequestBody();
             inValue.Body.token = token;
             inValue.Body.lcid = lcid;
-            CheckmarxTool.CxSDKWebService.LoginWithTokenResponse retVal = ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).LoginWithToken(inValue);
+            Checkmary.CxSDKWebService.LoginWithTokenResponse retVal = ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).LoginWithToken(inValue);
             return retVal.Body.LoginWithTokenResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.LoginWithTokenResponse> CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.LoginWithTokenAsync(CheckmarxTool.CxSDKWebService.LoginWithTokenRequest request) {
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.LoginWithTokenResponse> Checkmary.CxSDKWebService.CxSDKWebServiceSoap.LoginWithTokenAsync(Checkmary.CxSDKWebService.LoginWithTokenRequest request) {
             return base.Channel.LoginWithTokenAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.LoginWithTokenResponse> LoginWithTokenAsync(string token, int lcid) {
-            CheckmarxTool.CxSDKWebService.LoginWithTokenRequest inValue = new CheckmarxTool.CxSDKWebService.LoginWithTokenRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.LoginWithTokenRequestBody();
+        public System.Threading.Tasks.Task<Checkmary.CxSDKWebService.LoginWithTokenResponse> LoginWithTokenAsync(string token, int lcid) {
+            Checkmary.CxSDKWebService.LoginWithTokenRequest inValue = new Checkmary.CxSDKWebService.LoginWithTokenRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.LoginWithTokenRequestBody();
             inValue.Body.token = token;
             inValue.Body.lcid = lcid;
-            return ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).LoginWithTokenAsync(inValue);
+            return ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).LoginWithTokenAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        CheckmarxTool.CxSDKWebService.LogoutResponse CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.Logout(CheckmarxTool.CxSDKWebService.LogoutRequest request) {
+        Checkmary.CxSDKWebService.LogoutResponse Checkmary.CxSDKWebService.CxSDKWebServiceSoap.Logout(Checkmary.CxSDKWebService.LogoutRequest request) {
             return base.Channel.Logout(request);
         }
         
-        public CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse Logout(string sessionID) {
-            CheckmarxTool.CxSDKWebService.LogoutRequest inValue = new CheckmarxTool.CxSDKWebService.LogoutRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.LogoutRequestBody();
+        public Checkmary.CxSDKWebService.CxWSBasicRepsonse Logout(string sessionID) {
+            Checkmary.CxSDKWebService.LogoutRequest inValue = new Checkmary.CxSDKWebService.LogoutRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.LogoutRequestBody();
             inValue.Body.sessionID = sessionID;
-            CheckmarxTool.CxSDKWebService.LogoutResponse retVal = ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).Logout(inValue);
+            Checkmary.CxSDKWebService.LogoutResponse retVal = ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).Logout(inValue);
             return retVal.Body.LogoutResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.LogoutResponse> CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.LogoutAsync(CheckmarxTool.CxSDKWebService.LogoutRequest request) {
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.LogoutResponse> Checkmary.CxSDKWebService.CxSDKWebServiceSoap.LogoutAsync(Checkmary.CxSDKWebService.LogoutRequest request) {
             return base.Channel.LogoutAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.LogoutResponse> LogoutAsync(string sessionID) {
-            CheckmarxTool.CxSDKWebService.LogoutRequest inValue = new CheckmarxTool.CxSDKWebService.LogoutRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.LogoutRequestBody();
+        public System.Threading.Tasks.Task<Checkmary.CxSDKWebService.LogoutResponse> LogoutAsync(string sessionID) {
+            Checkmary.CxSDKWebService.LogoutRequest inValue = new Checkmary.CxSDKWebService.LogoutRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.LogoutRequestBody();
             inValue.Body.sessionID = sessionID;
-            return ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).LogoutAsync(inValue);
+            return ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).LogoutAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        CheckmarxTool.CxSDKWebService.GetAssociatedGroupsListResponse CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.GetAssociatedGroupsList(CheckmarxTool.CxSDKWebService.GetAssociatedGroupsListRequest request) {
+        Checkmary.CxSDKWebService.GetAssociatedGroupsListResponse Checkmary.CxSDKWebService.CxSDKWebServiceSoap.GetAssociatedGroupsList(Checkmary.CxSDKWebService.GetAssociatedGroupsListRequest request) {
             return base.Channel.GetAssociatedGroupsList(request);
         }
         
-        public CheckmarxTool.CxSDKWebService.CxWSResponseGroupList GetAssociatedGroupsList(string SessionID) {
-            CheckmarxTool.CxSDKWebService.GetAssociatedGroupsListRequest inValue = new CheckmarxTool.CxSDKWebService.GetAssociatedGroupsListRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.GetAssociatedGroupsListRequestBody();
+        public Checkmary.CxSDKWebService.CxWSResponseGroupList GetAssociatedGroupsList(string SessionID) {
+            Checkmary.CxSDKWebService.GetAssociatedGroupsListRequest inValue = new Checkmary.CxSDKWebService.GetAssociatedGroupsListRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.GetAssociatedGroupsListRequestBody();
             inValue.Body.SessionID = SessionID;
-            CheckmarxTool.CxSDKWebService.GetAssociatedGroupsListResponse retVal = ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetAssociatedGroupsList(inValue);
+            Checkmary.CxSDKWebService.GetAssociatedGroupsListResponse retVal = ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetAssociatedGroupsList(inValue);
             return retVal.Body.GetAssociatedGroupsListResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.GetAssociatedGroupsListResponse> CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.GetAssociatedGroupsListAsync(CheckmarxTool.CxSDKWebService.GetAssociatedGroupsListRequest request) {
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.GetAssociatedGroupsListResponse> Checkmary.CxSDKWebService.CxSDKWebServiceSoap.GetAssociatedGroupsListAsync(Checkmary.CxSDKWebService.GetAssociatedGroupsListRequest request) {
             return base.Channel.GetAssociatedGroupsListAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.GetAssociatedGroupsListResponse> GetAssociatedGroupsListAsync(string SessionID) {
-            CheckmarxTool.CxSDKWebService.GetAssociatedGroupsListRequest inValue = new CheckmarxTool.CxSDKWebService.GetAssociatedGroupsListRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.GetAssociatedGroupsListRequestBody();
+        public System.Threading.Tasks.Task<Checkmary.CxSDKWebService.GetAssociatedGroupsListResponse> GetAssociatedGroupsListAsync(string SessionID) {
+            Checkmary.CxSDKWebService.GetAssociatedGroupsListRequest inValue = new Checkmary.CxSDKWebService.GetAssociatedGroupsListRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.GetAssociatedGroupsListRequestBody();
             inValue.Body.SessionID = SessionID;
-            return ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetAssociatedGroupsListAsync(inValue);
+            return ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetAssociatedGroupsListAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        CheckmarxTool.CxSDKWebService.GetStatusOfSingleScanResponse CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.GetStatusOfSingleScan(CheckmarxTool.CxSDKWebService.GetStatusOfSingleScanRequest request) {
+        Checkmary.CxSDKWebService.GetStatusOfSingleScanResponse Checkmary.CxSDKWebService.CxSDKWebServiceSoap.GetStatusOfSingleScan(Checkmary.CxSDKWebService.GetStatusOfSingleScanRequest request) {
             return base.Channel.GetStatusOfSingleScan(request);
         }
         
-        public CheckmarxTool.CxSDKWebService.CxWSResponseScanStatus GetStatusOfSingleScan(string sessionID, string runId) {
-            CheckmarxTool.CxSDKWebService.GetStatusOfSingleScanRequest inValue = new CheckmarxTool.CxSDKWebService.GetStatusOfSingleScanRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.GetStatusOfSingleScanRequestBody();
+        public Checkmary.CxSDKWebService.CxWSResponseScanStatus GetStatusOfSingleScan(string sessionID, string runId) {
+            Checkmary.CxSDKWebService.GetStatusOfSingleScanRequest inValue = new Checkmary.CxSDKWebService.GetStatusOfSingleScanRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.GetStatusOfSingleScanRequestBody();
             inValue.Body.sessionID = sessionID;
             inValue.Body.runId = runId;
-            CheckmarxTool.CxSDKWebService.GetStatusOfSingleScanResponse retVal = ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetStatusOfSingleScan(inValue);
+            Checkmary.CxSDKWebService.GetStatusOfSingleScanResponse retVal = ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetStatusOfSingleScan(inValue);
             return retVal.Body.GetStatusOfSingleScanResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.GetStatusOfSingleScanResponse> CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.GetStatusOfSingleScanAsync(CheckmarxTool.CxSDKWebService.GetStatusOfSingleScanRequest request) {
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.GetStatusOfSingleScanResponse> Checkmary.CxSDKWebService.CxSDKWebServiceSoap.GetStatusOfSingleScanAsync(Checkmary.CxSDKWebService.GetStatusOfSingleScanRequest request) {
             return base.Channel.GetStatusOfSingleScanAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.GetStatusOfSingleScanResponse> GetStatusOfSingleScanAsync(string sessionID, string runId) {
-            CheckmarxTool.CxSDKWebService.GetStatusOfSingleScanRequest inValue = new CheckmarxTool.CxSDKWebService.GetStatusOfSingleScanRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.GetStatusOfSingleScanRequestBody();
+        public System.Threading.Tasks.Task<Checkmary.CxSDKWebService.GetStatusOfSingleScanResponse> GetStatusOfSingleScanAsync(string sessionID, string runId) {
+            Checkmary.CxSDKWebService.GetStatusOfSingleScanRequest inValue = new Checkmary.CxSDKWebService.GetStatusOfSingleScanRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.GetStatusOfSingleScanRequestBody();
             inValue.Body.sessionID = sessionID;
             inValue.Body.runId = runId;
-            return ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetStatusOfSingleScanAsync(inValue);
+            return ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetStatusOfSingleScanAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        CheckmarxTool.CxSDKWebService.GetScansDisplayDataForAllProjectsResponse CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.GetScansDisplayDataForAllProjects(CheckmarxTool.CxSDKWebService.GetScansDisplayDataForAllProjectsRequest request) {
+        Checkmary.CxSDKWebService.GetScansDisplayDataForAllProjectsResponse Checkmary.CxSDKWebService.CxSDKWebServiceSoap.GetScansDisplayDataForAllProjects(Checkmary.CxSDKWebService.GetScansDisplayDataForAllProjectsRequest request) {
             return base.Channel.GetScansDisplayDataForAllProjects(request);
         }
         
-        public CheckmarxTool.CxSDKWebService.CxWSResponseScansDisplayData GetScansDisplayDataForAllProjects(string sessionID) {
-            CheckmarxTool.CxSDKWebService.GetScansDisplayDataForAllProjectsRequest inValue = new CheckmarxTool.CxSDKWebService.GetScansDisplayDataForAllProjectsRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.GetScansDisplayDataForAllProjectsRequestBody();
+        public Checkmary.CxSDKWebService.CxWSResponseScansDisplayData GetScansDisplayDataForAllProjects(string sessionID) {
+            Checkmary.CxSDKWebService.GetScansDisplayDataForAllProjectsRequest inValue = new Checkmary.CxSDKWebService.GetScansDisplayDataForAllProjectsRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.GetScansDisplayDataForAllProjectsRequestBody();
             inValue.Body.sessionID = sessionID;
-            CheckmarxTool.CxSDKWebService.GetScansDisplayDataForAllProjectsResponse retVal = ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetScansDisplayDataForAllProjects(inValue);
+            Checkmary.CxSDKWebService.GetScansDisplayDataForAllProjectsResponse retVal = ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetScansDisplayDataForAllProjects(inValue);
             return retVal.Body.GetScansDisplayDataForAllProjectsResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.GetScansDisplayDataForAllProjectsResponse> CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.GetScansDisplayDataForAllProjectsAsync(CheckmarxTool.CxSDKWebService.GetScansDisplayDataForAllProjectsRequest request) {
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.GetScansDisplayDataForAllProjectsResponse> Checkmary.CxSDKWebService.CxSDKWebServiceSoap.GetScansDisplayDataForAllProjectsAsync(Checkmary.CxSDKWebService.GetScansDisplayDataForAllProjectsRequest request) {
             return base.Channel.GetScansDisplayDataForAllProjectsAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.GetScansDisplayDataForAllProjectsResponse> GetScansDisplayDataForAllProjectsAsync(string sessionID) {
-            CheckmarxTool.CxSDKWebService.GetScansDisplayDataForAllProjectsRequest inValue = new CheckmarxTool.CxSDKWebService.GetScansDisplayDataForAllProjectsRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.GetScansDisplayDataForAllProjectsRequestBody();
+        public System.Threading.Tasks.Task<Checkmary.CxSDKWebService.GetScansDisplayDataForAllProjectsResponse> GetScansDisplayDataForAllProjectsAsync(string sessionID) {
+            Checkmary.CxSDKWebService.GetScansDisplayDataForAllProjectsRequest inValue = new Checkmary.CxSDKWebService.GetScansDisplayDataForAllProjectsRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.GetScansDisplayDataForAllProjectsRequestBody();
             inValue.Body.sessionID = sessionID;
-            return ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetScansDisplayDataForAllProjectsAsync(inValue);
+            return ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetScansDisplayDataForAllProjectsAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        CheckmarxTool.CxSDKWebService.GetScanSummaryResponse CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.GetScanSummary(CheckmarxTool.CxSDKWebService.GetScanSummaryRequest request) {
+        Checkmary.CxSDKWebService.GetScanSummaryResponse Checkmary.CxSDKWebService.CxSDKWebServiceSoap.GetScanSummary(Checkmary.CxSDKWebService.GetScanSummaryRequest request) {
             return base.Channel.GetScanSummary(request);
         }
         
-        public CheckmarxTool.CxSDKWebService.CxWSResponseScanSummary GetScanSummary(string SessionID, long ScanID) {
-            CheckmarxTool.CxSDKWebService.GetScanSummaryRequest inValue = new CheckmarxTool.CxSDKWebService.GetScanSummaryRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.GetScanSummaryRequestBody();
+        public Checkmary.CxSDKWebService.CxWSResponseScanSummary GetScanSummary(string SessionID, long ScanID) {
+            Checkmary.CxSDKWebService.GetScanSummaryRequest inValue = new Checkmary.CxSDKWebService.GetScanSummaryRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.GetScanSummaryRequestBody();
             inValue.Body.SessionID = SessionID;
             inValue.Body.ScanID = ScanID;
-            CheckmarxTool.CxSDKWebService.GetScanSummaryResponse retVal = ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetScanSummary(inValue);
+            Checkmary.CxSDKWebService.GetScanSummaryResponse retVal = ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetScanSummary(inValue);
             return retVal.Body.GetScanSummaryResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.GetScanSummaryResponse> CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.GetScanSummaryAsync(CheckmarxTool.CxSDKWebService.GetScanSummaryRequest request) {
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.GetScanSummaryResponse> Checkmary.CxSDKWebService.CxSDKWebServiceSoap.GetScanSummaryAsync(Checkmary.CxSDKWebService.GetScanSummaryRequest request) {
             return base.Channel.GetScanSummaryAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.GetScanSummaryResponse> GetScanSummaryAsync(string SessionID, long ScanID) {
-            CheckmarxTool.CxSDKWebService.GetScanSummaryRequest inValue = new CheckmarxTool.CxSDKWebService.GetScanSummaryRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.GetScanSummaryRequestBody();
+        public System.Threading.Tasks.Task<Checkmary.CxSDKWebService.GetScanSummaryResponse> GetScanSummaryAsync(string SessionID, long ScanID) {
+            Checkmary.CxSDKWebService.GetScanSummaryRequest inValue = new Checkmary.CxSDKWebService.GetScanSummaryRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.GetScanSummaryRequestBody();
             inValue.Body.SessionID = SessionID;
             inValue.Body.ScanID = ScanID;
-            return ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetScanSummaryAsync(inValue);
+            return ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetScanSummaryAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        CheckmarxTool.CxSDKWebService.UpdateProjectConfigurationResponse CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.UpdateProjectConfiguration(CheckmarxTool.CxSDKWebService.UpdateProjectConfigurationRequest request) {
+        Checkmary.CxSDKWebService.UpdateProjectConfigurationResponse Checkmary.CxSDKWebService.CxSDKWebServiceSoap.UpdateProjectConfiguration(Checkmary.CxSDKWebService.UpdateProjectConfigurationRequest request) {
             return base.Channel.UpdateProjectConfiguration(request);
         }
         
-        public CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse UpdateProjectConfiguration(string sessionID, long projectID, CheckmarxTool.CxSDKWebService.ProjectConfiguration projectConfiguration) {
-            CheckmarxTool.CxSDKWebService.UpdateProjectConfigurationRequest inValue = new CheckmarxTool.CxSDKWebService.UpdateProjectConfigurationRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.UpdateProjectConfigurationRequestBody();
+        public Checkmary.CxSDKWebService.CxWSBasicRepsonse UpdateProjectConfiguration(string sessionID, long projectID, Checkmary.CxSDKWebService.ProjectConfiguration projectConfiguration) {
+            Checkmary.CxSDKWebService.UpdateProjectConfigurationRequest inValue = new Checkmary.CxSDKWebService.UpdateProjectConfigurationRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.UpdateProjectConfigurationRequestBody();
             inValue.Body.sessionID = sessionID;
             inValue.Body.projectID = projectID;
             inValue.Body.projectConfiguration = projectConfiguration;
-            CheckmarxTool.CxSDKWebService.UpdateProjectConfigurationResponse retVal = ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).UpdateProjectConfiguration(inValue);
+            Checkmary.CxSDKWebService.UpdateProjectConfigurationResponse retVal = ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).UpdateProjectConfiguration(inValue);
             return retVal.Body.UpdateProjectConfigurationResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.UpdateProjectConfigurationResponse> CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.UpdateProjectConfigurationAsync(CheckmarxTool.CxSDKWebService.UpdateProjectConfigurationRequest request) {
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.UpdateProjectConfigurationResponse> Checkmary.CxSDKWebService.CxSDKWebServiceSoap.UpdateProjectConfigurationAsync(Checkmary.CxSDKWebService.UpdateProjectConfigurationRequest request) {
             return base.Channel.UpdateProjectConfigurationAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.UpdateProjectConfigurationResponse> UpdateProjectConfigurationAsync(string sessionID, long projectID, CheckmarxTool.CxSDKWebService.ProjectConfiguration projectConfiguration) {
-            CheckmarxTool.CxSDKWebService.UpdateProjectConfigurationRequest inValue = new CheckmarxTool.CxSDKWebService.UpdateProjectConfigurationRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.UpdateProjectConfigurationRequestBody();
+        public System.Threading.Tasks.Task<Checkmary.CxSDKWebService.UpdateProjectConfigurationResponse> UpdateProjectConfigurationAsync(string sessionID, long projectID, Checkmary.CxSDKWebService.ProjectConfiguration projectConfiguration) {
+            Checkmary.CxSDKWebService.UpdateProjectConfigurationRequest inValue = new Checkmary.CxSDKWebService.UpdateProjectConfigurationRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.UpdateProjectConfigurationRequestBody();
             inValue.Body.sessionID = sessionID;
             inValue.Body.projectID = projectID;
             inValue.Body.projectConfiguration = projectConfiguration;
-            return ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).UpdateProjectConfigurationAsync(inValue);
+            return ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).UpdateProjectConfigurationAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        CheckmarxTool.CxSDKWebService.DeleteUserResponse CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.DeleteUser(CheckmarxTool.CxSDKWebService.DeleteUserRequest request) {
+        Checkmary.CxSDKWebService.DeleteUserResponse Checkmary.CxSDKWebService.CxSDKWebServiceSoap.DeleteUser(Checkmary.CxSDKWebService.DeleteUserRequest request) {
             return base.Channel.DeleteUser(request);
         }
         
-        public CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse DeleteUser(string sessionID, int userID) {
-            CheckmarxTool.CxSDKWebService.DeleteUserRequest inValue = new CheckmarxTool.CxSDKWebService.DeleteUserRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.DeleteUserRequestBody();
+        public Checkmary.CxSDKWebService.CxWSBasicRepsonse DeleteUser(string sessionID, int userID) {
+            Checkmary.CxSDKWebService.DeleteUserRequest inValue = new Checkmary.CxSDKWebService.DeleteUserRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.DeleteUserRequestBody();
             inValue.Body.sessionID = sessionID;
             inValue.Body.userID = userID;
-            CheckmarxTool.CxSDKWebService.DeleteUserResponse retVal = ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).DeleteUser(inValue);
+            Checkmary.CxSDKWebService.DeleteUserResponse retVal = ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).DeleteUser(inValue);
             return retVal.Body.DeleteUserResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.DeleteUserResponse> CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.DeleteUserAsync(CheckmarxTool.CxSDKWebService.DeleteUserRequest request) {
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.DeleteUserResponse> Checkmary.CxSDKWebService.CxSDKWebServiceSoap.DeleteUserAsync(Checkmary.CxSDKWebService.DeleteUserRequest request) {
             return base.Channel.DeleteUserAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.DeleteUserResponse> DeleteUserAsync(string sessionID, int userID) {
-            CheckmarxTool.CxSDKWebService.DeleteUserRequest inValue = new CheckmarxTool.CxSDKWebService.DeleteUserRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.DeleteUserRequestBody();
+        public System.Threading.Tasks.Task<Checkmary.CxSDKWebService.DeleteUserResponse> DeleteUserAsync(string sessionID, int userID) {
+            Checkmary.CxSDKWebService.DeleteUserRequest inValue = new Checkmary.CxSDKWebService.DeleteUserRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.DeleteUserRequestBody();
             inValue.Body.sessionID = sessionID;
             inValue.Body.userID = userID;
-            return ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).DeleteUserAsync(inValue);
+            return ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).DeleteUserAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        CheckmarxTool.CxSDKWebService.GetAllUsersResponse CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.GetAllUsers(CheckmarxTool.CxSDKWebService.GetAllUsersRequest request) {
+        Checkmary.CxSDKWebService.GetAllUsersResponse Checkmary.CxSDKWebService.CxSDKWebServiceSoap.GetAllUsers(Checkmary.CxSDKWebService.GetAllUsersRequest request) {
             return base.Channel.GetAllUsers(request);
         }
         
-        public CheckmarxTool.CxSDKWebService.CxWSResponseUserData GetAllUsers(string sessionID) {
-            CheckmarxTool.CxSDKWebService.GetAllUsersRequest inValue = new CheckmarxTool.CxSDKWebService.GetAllUsersRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.GetAllUsersRequestBody();
+        public Checkmary.CxSDKWebService.CxWSResponseUserData GetAllUsers(string sessionID) {
+            Checkmary.CxSDKWebService.GetAllUsersRequest inValue = new Checkmary.CxSDKWebService.GetAllUsersRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.GetAllUsersRequestBody();
             inValue.Body.sessionID = sessionID;
-            CheckmarxTool.CxSDKWebService.GetAllUsersResponse retVal = ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetAllUsers(inValue);
+            Checkmary.CxSDKWebService.GetAllUsersResponse retVal = ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetAllUsers(inValue);
             return retVal.Body.GetAllUsersResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.GetAllUsersResponse> CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.GetAllUsersAsync(CheckmarxTool.CxSDKWebService.GetAllUsersRequest request) {
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.GetAllUsersResponse> Checkmary.CxSDKWebService.CxSDKWebServiceSoap.GetAllUsersAsync(Checkmary.CxSDKWebService.GetAllUsersRequest request) {
             return base.Channel.GetAllUsersAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.GetAllUsersResponse> GetAllUsersAsync(string sessionID) {
-            CheckmarxTool.CxSDKWebService.GetAllUsersRequest inValue = new CheckmarxTool.CxSDKWebService.GetAllUsersRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.GetAllUsersRequestBody();
+        public System.Threading.Tasks.Task<Checkmary.CxSDKWebService.GetAllUsersResponse> GetAllUsersAsync(string sessionID) {
+            Checkmary.CxSDKWebService.GetAllUsersRequest inValue = new Checkmary.CxSDKWebService.GetAllUsersRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.GetAllUsersRequestBody();
             inValue.Body.sessionID = sessionID;
-            return ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetAllUsersAsync(inValue);
+            return ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetAllUsersAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        CheckmarxTool.CxSDKWebService.CreateScanReportResponse CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.CreateScanReport(CheckmarxTool.CxSDKWebService.CreateScanReportRequest request) {
+        Checkmary.CxSDKWebService.CreateScanReportResponse Checkmary.CxSDKWebService.CxSDKWebServiceSoap.CreateScanReport(Checkmary.CxSDKWebService.CreateScanReportRequest request) {
             return base.Channel.CreateScanReport(request);
         }
         
-        public CheckmarxTool.CxSDKWebService.CxWSCreateReportResponse CreateScanReport(string sessionID, CheckmarxTool.CxSDKWebService.CxWSReportRequest reportRequest) {
-            CheckmarxTool.CxSDKWebService.CreateScanReportRequest inValue = new CheckmarxTool.CxSDKWebService.CreateScanReportRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.CreateScanReportRequestBody();
+        public Checkmary.CxSDKWebService.CxWSCreateReportResponse CreateScanReport(string sessionID, Checkmary.CxSDKWebService.CxWSReportRequest reportRequest) {
+            Checkmary.CxSDKWebService.CreateScanReportRequest inValue = new Checkmary.CxSDKWebService.CreateScanReportRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.CreateScanReportRequestBody();
             inValue.Body.sessionID = sessionID;
             inValue.Body.reportRequest = reportRequest;
-            CheckmarxTool.CxSDKWebService.CreateScanReportResponse retVal = ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).CreateScanReport(inValue);
+            Checkmary.CxSDKWebService.CreateScanReportResponse retVal = ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).CreateScanReport(inValue);
             return retVal.Body.CreateScanReportResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.CreateScanReportResponse> CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.CreateScanReportAsync(CheckmarxTool.CxSDKWebService.CreateScanReportRequest request) {
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.CreateScanReportResponse> Checkmary.CxSDKWebService.CxSDKWebServiceSoap.CreateScanReportAsync(Checkmary.CxSDKWebService.CreateScanReportRequest request) {
             return base.Channel.CreateScanReportAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.CreateScanReportResponse> CreateScanReportAsync(string sessionID, CheckmarxTool.CxSDKWebService.CxWSReportRequest reportRequest) {
-            CheckmarxTool.CxSDKWebService.CreateScanReportRequest inValue = new CheckmarxTool.CxSDKWebService.CreateScanReportRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.CreateScanReportRequestBody();
+        public System.Threading.Tasks.Task<Checkmary.CxSDKWebService.CreateScanReportResponse> CreateScanReportAsync(string sessionID, Checkmary.CxSDKWebService.CxWSReportRequest reportRequest) {
+            Checkmary.CxSDKWebService.CreateScanReportRequest inValue = new Checkmary.CxSDKWebService.CreateScanReportRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.CreateScanReportRequestBody();
             inValue.Body.sessionID = sessionID;
             inValue.Body.reportRequest = reportRequest;
-            return ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).CreateScanReportAsync(inValue);
+            return ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).CreateScanReportAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        CheckmarxTool.CxSDKWebService.GetScanReportStatusResponse CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.GetScanReportStatus(CheckmarxTool.CxSDKWebService.GetScanReportStatusRequest request) {
+        Checkmary.CxSDKWebService.GetScanReportStatusResponse Checkmary.CxSDKWebService.CxSDKWebServiceSoap.GetScanReportStatus(Checkmary.CxSDKWebService.GetScanReportStatusRequest request) {
             return base.Channel.GetScanReportStatus(request);
         }
         
-        public CheckmarxTool.CxSDKWebService.CxWSReportStatusResponse GetScanReportStatus(string SessionID, long ReportID) {
-            CheckmarxTool.CxSDKWebService.GetScanReportStatusRequest inValue = new CheckmarxTool.CxSDKWebService.GetScanReportStatusRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.GetScanReportStatusRequestBody();
+        public Checkmary.CxSDKWebService.CxWSReportStatusResponse GetScanReportStatus(string SessionID, long ReportID) {
+            Checkmary.CxSDKWebService.GetScanReportStatusRequest inValue = new Checkmary.CxSDKWebService.GetScanReportStatusRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.GetScanReportStatusRequestBody();
             inValue.Body.SessionID = SessionID;
             inValue.Body.ReportID = ReportID;
-            CheckmarxTool.CxSDKWebService.GetScanReportStatusResponse retVal = ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetScanReportStatus(inValue);
+            Checkmary.CxSDKWebService.GetScanReportStatusResponse retVal = ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetScanReportStatus(inValue);
             return retVal.Body.GetScanReportStatusResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.GetScanReportStatusResponse> CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.GetScanReportStatusAsync(CheckmarxTool.CxSDKWebService.GetScanReportStatusRequest request) {
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.GetScanReportStatusResponse> Checkmary.CxSDKWebService.CxSDKWebServiceSoap.GetScanReportStatusAsync(Checkmary.CxSDKWebService.GetScanReportStatusRequest request) {
             return base.Channel.GetScanReportStatusAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.GetScanReportStatusResponse> GetScanReportStatusAsync(string SessionID, long ReportID) {
-            CheckmarxTool.CxSDKWebService.GetScanReportStatusRequest inValue = new CheckmarxTool.CxSDKWebService.GetScanReportStatusRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.GetScanReportStatusRequestBody();
+        public System.Threading.Tasks.Task<Checkmary.CxSDKWebService.GetScanReportStatusResponse> GetScanReportStatusAsync(string SessionID, long ReportID) {
+            Checkmary.CxSDKWebService.GetScanReportStatusRequest inValue = new Checkmary.CxSDKWebService.GetScanReportStatusRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.GetScanReportStatusRequestBody();
             inValue.Body.SessionID = SessionID;
             inValue.Body.ReportID = ReportID;
-            return ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetScanReportStatusAsync(inValue);
+            return ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetScanReportStatusAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        CheckmarxTool.CxSDKWebService.GetScanReportResponse CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.GetScanReport(CheckmarxTool.CxSDKWebService.GetScanReportRequest request) {
+        Checkmary.CxSDKWebService.GetScanReportResponse Checkmary.CxSDKWebService.CxSDKWebServiceSoap.GetScanReport(Checkmary.CxSDKWebService.GetScanReportRequest request) {
             return base.Channel.GetScanReport(request);
         }
         
-        public CheckmarxTool.CxSDKWebService.CxWSResponseScanResults GetScanReport(string SessionID, long ReportID) {
-            CheckmarxTool.CxSDKWebService.GetScanReportRequest inValue = new CheckmarxTool.CxSDKWebService.GetScanReportRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.GetScanReportRequestBody();
+        public Checkmary.CxSDKWebService.CxWSResponseScanResults GetScanReport(string SessionID, long ReportID) {
+            Checkmary.CxSDKWebService.GetScanReportRequest inValue = new Checkmary.CxSDKWebService.GetScanReportRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.GetScanReportRequestBody();
             inValue.Body.SessionID = SessionID;
             inValue.Body.ReportID = ReportID;
-            CheckmarxTool.CxSDKWebService.GetScanReportResponse retVal = ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetScanReport(inValue);
+            Checkmary.CxSDKWebService.GetScanReportResponse retVal = ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetScanReport(inValue);
             return retVal.Body.GetScanReportResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.GetScanReportResponse> CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.GetScanReportAsync(CheckmarxTool.CxSDKWebService.GetScanReportRequest request) {
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.GetScanReportResponse> Checkmary.CxSDKWebService.CxSDKWebServiceSoap.GetScanReportAsync(Checkmary.CxSDKWebService.GetScanReportRequest request) {
             return base.Channel.GetScanReportAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.GetScanReportResponse> GetScanReportAsync(string SessionID, long ReportID) {
-            CheckmarxTool.CxSDKWebService.GetScanReportRequest inValue = new CheckmarxTool.CxSDKWebService.GetScanReportRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.GetScanReportRequestBody();
+        public System.Threading.Tasks.Task<Checkmary.CxSDKWebService.GetScanReportResponse> GetScanReportAsync(string SessionID, long ReportID) {
+            Checkmary.CxSDKWebService.GetScanReportRequest inValue = new Checkmary.CxSDKWebService.GetScanReportRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.GetScanReportRequestBody();
             inValue.Body.SessionID = SessionID;
             inValue.Body.ReportID = ReportID;
-            return ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetScanReportAsync(inValue);
+            return ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetScanReportAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        CheckmarxTool.CxSDKWebService.ExecuteDataRetentionResponse CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.ExecuteDataRetention(CheckmarxTool.CxSDKWebService.ExecuteDataRetentionRequest request) {
+        Checkmary.CxSDKWebService.ExecuteDataRetentionResponse Checkmary.CxSDKWebService.CxSDKWebServiceSoap.ExecuteDataRetention(Checkmary.CxSDKWebService.ExecuteDataRetentionRequest request) {
             return base.Channel.ExecuteDataRetention(request);
         }
         
-        public CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse ExecuteDataRetention(string SessionID, CheckmarxTool.CxSDKWebService.CxDataRetentionConfiguration dataRetentionConfiguration) {
-            CheckmarxTool.CxSDKWebService.ExecuteDataRetentionRequest inValue = new CheckmarxTool.CxSDKWebService.ExecuteDataRetentionRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.ExecuteDataRetentionRequestBody();
+        public Checkmary.CxSDKWebService.CxWSBasicRepsonse ExecuteDataRetention(string SessionID, Checkmary.CxSDKWebService.CxDataRetentionConfiguration dataRetentionConfiguration) {
+            Checkmary.CxSDKWebService.ExecuteDataRetentionRequest inValue = new Checkmary.CxSDKWebService.ExecuteDataRetentionRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.ExecuteDataRetentionRequestBody();
             inValue.Body.SessionID = SessionID;
             inValue.Body.dataRetentionConfiguration = dataRetentionConfiguration;
-            CheckmarxTool.CxSDKWebService.ExecuteDataRetentionResponse retVal = ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).ExecuteDataRetention(inValue);
+            Checkmary.CxSDKWebService.ExecuteDataRetentionResponse retVal = ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).ExecuteDataRetention(inValue);
             return retVal.Body.ExecuteDataRetentionResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.ExecuteDataRetentionResponse> CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.ExecuteDataRetentionAsync(CheckmarxTool.CxSDKWebService.ExecuteDataRetentionRequest request) {
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.ExecuteDataRetentionResponse> Checkmary.CxSDKWebService.CxSDKWebServiceSoap.ExecuteDataRetentionAsync(Checkmary.CxSDKWebService.ExecuteDataRetentionRequest request) {
             return base.Channel.ExecuteDataRetentionAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.ExecuteDataRetentionResponse> ExecuteDataRetentionAsync(string SessionID, CheckmarxTool.CxSDKWebService.CxDataRetentionConfiguration dataRetentionConfiguration) {
-            CheckmarxTool.CxSDKWebService.ExecuteDataRetentionRequest inValue = new CheckmarxTool.CxSDKWebService.ExecuteDataRetentionRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.ExecuteDataRetentionRequestBody();
+        public System.Threading.Tasks.Task<Checkmary.CxSDKWebService.ExecuteDataRetentionResponse> ExecuteDataRetentionAsync(string SessionID, Checkmary.CxSDKWebService.CxDataRetentionConfiguration dataRetentionConfiguration) {
+            Checkmary.CxSDKWebService.ExecuteDataRetentionRequest inValue = new Checkmary.CxSDKWebService.ExecuteDataRetentionRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.ExecuteDataRetentionRequestBody();
             inValue.Body.SessionID = SessionID;
             inValue.Body.dataRetentionConfiguration = dataRetentionConfiguration;
-            return ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).ExecuteDataRetentionAsync(inValue);
+            return ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).ExecuteDataRetentionAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        CheckmarxTool.CxSDKWebService.StopDataRetentionResponse CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.StopDataRetention(CheckmarxTool.CxSDKWebService.StopDataRetentionRequest request) {
+        Checkmary.CxSDKWebService.StopDataRetentionResponse Checkmary.CxSDKWebService.CxSDKWebServiceSoap.StopDataRetention(Checkmary.CxSDKWebService.StopDataRetentionRequest request) {
             return base.Channel.StopDataRetention(request);
         }
         
-        public CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse StopDataRetention(string SessionID) {
-            CheckmarxTool.CxSDKWebService.StopDataRetentionRequest inValue = new CheckmarxTool.CxSDKWebService.StopDataRetentionRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.StopDataRetentionRequestBody();
+        public Checkmary.CxSDKWebService.CxWSBasicRepsonse StopDataRetention(string SessionID) {
+            Checkmary.CxSDKWebService.StopDataRetentionRequest inValue = new Checkmary.CxSDKWebService.StopDataRetentionRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.StopDataRetentionRequestBody();
             inValue.Body.SessionID = SessionID;
-            CheckmarxTool.CxSDKWebService.StopDataRetentionResponse retVal = ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).StopDataRetention(inValue);
+            Checkmary.CxSDKWebService.StopDataRetentionResponse retVal = ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).StopDataRetention(inValue);
             return retVal.Body.StopDataRetentionResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.StopDataRetentionResponse> CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.StopDataRetentionAsync(CheckmarxTool.CxSDKWebService.StopDataRetentionRequest request) {
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.StopDataRetentionResponse> Checkmary.CxSDKWebService.CxSDKWebServiceSoap.StopDataRetentionAsync(Checkmary.CxSDKWebService.StopDataRetentionRequest request) {
             return base.Channel.StopDataRetentionAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.StopDataRetentionResponse> StopDataRetentionAsync(string SessionID) {
-            CheckmarxTool.CxSDKWebService.StopDataRetentionRequest inValue = new CheckmarxTool.CxSDKWebService.StopDataRetentionRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.StopDataRetentionRequestBody();
+        public System.Threading.Tasks.Task<Checkmary.CxSDKWebService.StopDataRetentionResponse> StopDataRetentionAsync(string SessionID) {
+            Checkmary.CxSDKWebService.StopDataRetentionRequest inValue = new Checkmary.CxSDKWebService.StopDataRetentionRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.StopDataRetentionRequestBody();
             inValue.Body.SessionID = SessionID;
-            return ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).StopDataRetentionAsync(inValue);
+            return ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).StopDataRetentionAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        CheckmarxTool.CxSDKWebService.GetTeamLdapGroupsMappingResponse CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.GetTeamLdapGroupsMapping(CheckmarxTool.CxSDKWebService.GetTeamLdapGroupsMappingRequest request) {
+        Checkmary.CxSDKWebService.GetTeamLdapGroupsMappingResponse Checkmary.CxSDKWebService.CxSDKWebServiceSoap.GetTeamLdapGroupsMapping(Checkmary.CxSDKWebService.GetTeamLdapGroupsMappingRequest request) {
             return base.Channel.GetTeamLdapGroupsMapping(request);
         }
         
-        public CheckmarxTool.CxSDKWebService.CxWSResponseTeamLdapGroupMappingData GetTeamLdapGroupsMapping(string sessionId, string teamId) {
-            CheckmarxTool.CxSDKWebService.GetTeamLdapGroupsMappingRequest inValue = new CheckmarxTool.CxSDKWebService.GetTeamLdapGroupsMappingRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.GetTeamLdapGroupsMappingRequestBody();
+        public Checkmary.CxSDKWebService.CxWSResponseTeamLdapGroupMappingData GetTeamLdapGroupsMapping(string sessionId, string teamId) {
+            Checkmary.CxSDKWebService.GetTeamLdapGroupsMappingRequest inValue = new Checkmary.CxSDKWebService.GetTeamLdapGroupsMappingRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.GetTeamLdapGroupsMappingRequestBody();
             inValue.Body.sessionId = sessionId;
             inValue.Body.teamId = teamId;
-            CheckmarxTool.CxSDKWebService.GetTeamLdapGroupsMappingResponse retVal = ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetTeamLdapGroupsMapping(inValue);
+            Checkmary.CxSDKWebService.GetTeamLdapGroupsMappingResponse retVal = ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetTeamLdapGroupsMapping(inValue);
             return retVal.Body.GetTeamLdapGroupsMappingResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.GetTeamLdapGroupsMappingResponse> CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.GetTeamLdapGroupsMappingAsync(CheckmarxTool.CxSDKWebService.GetTeamLdapGroupsMappingRequest request) {
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.GetTeamLdapGroupsMappingResponse> Checkmary.CxSDKWebService.CxSDKWebServiceSoap.GetTeamLdapGroupsMappingAsync(Checkmary.CxSDKWebService.GetTeamLdapGroupsMappingRequest request) {
             return base.Channel.GetTeamLdapGroupsMappingAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.GetTeamLdapGroupsMappingResponse> GetTeamLdapGroupsMappingAsync(string sessionId, string teamId) {
-            CheckmarxTool.CxSDKWebService.GetTeamLdapGroupsMappingRequest inValue = new CheckmarxTool.CxSDKWebService.GetTeamLdapGroupsMappingRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.GetTeamLdapGroupsMappingRequestBody();
+        public System.Threading.Tasks.Task<Checkmary.CxSDKWebService.GetTeamLdapGroupsMappingResponse> GetTeamLdapGroupsMappingAsync(string sessionId, string teamId) {
+            Checkmary.CxSDKWebService.GetTeamLdapGroupsMappingRequest inValue = new Checkmary.CxSDKWebService.GetTeamLdapGroupsMappingRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.GetTeamLdapGroupsMappingRequestBody();
             inValue.Body.sessionId = sessionId;
             inValue.Body.teamId = teamId;
-            return ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetTeamLdapGroupsMappingAsync(inValue);
+            return ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).GetTeamLdapGroupsMappingAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        CheckmarxTool.CxSDKWebService.SetTeamLdapGroupsMappingResponse CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.SetTeamLdapGroupsMapping(CheckmarxTool.CxSDKWebService.SetTeamLdapGroupsMappingRequest request) {
+        Checkmary.CxSDKWebService.SetTeamLdapGroupsMappingResponse Checkmary.CxSDKWebService.CxSDKWebServiceSoap.SetTeamLdapGroupsMapping(Checkmary.CxSDKWebService.SetTeamLdapGroupsMappingRequest request) {
             return base.Channel.SetTeamLdapGroupsMapping(request);
         }
         
-        public CheckmarxTool.CxSDKWebService.CxWSBasicRepsonse SetTeamLdapGroupsMapping(string sessionId, string teamId, CheckmarxTool.CxSDKWebService.CxWSLdapGroupMapping[] ldapGroups) {
-            CheckmarxTool.CxSDKWebService.SetTeamLdapGroupsMappingRequest inValue = new CheckmarxTool.CxSDKWebService.SetTeamLdapGroupsMappingRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.SetTeamLdapGroupsMappingRequestBody();
+        public Checkmary.CxSDKWebService.CxWSBasicRepsonse SetTeamLdapGroupsMapping(string sessionId, string teamId, Checkmary.CxSDKWebService.CxWSLdapGroupMapping[] ldapGroups) {
+            Checkmary.CxSDKWebService.SetTeamLdapGroupsMappingRequest inValue = new Checkmary.CxSDKWebService.SetTeamLdapGroupsMappingRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.SetTeamLdapGroupsMappingRequestBody();
             inValue.Body.sessionId = sessionId;
             inValue.Body.teamId = teamId;
             inValue.Body.ldapGroups = ldapGroups;
-            CheckmarxTool.CxSDKWebService.SetTeamLdapGroupsMappingResponse retVal = ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).SetTeamLdapGroupsMapping(inValue);
+            Checkmary.CxSDKWebService.SetTeamLdapGroupsMappingResponse retVal = ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).SetTeamLdapGroupsMapping(inValue);
             return retVal.Body.SetTeamLdapGroupsMappingResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.SetTeamLdapGroupsMappingResponse> CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap.SetTeamLdapGroupsMappingAsync(CheckmarxTool.CxSDKWebService.SetTeamLdapGroupsMappingRequest request) {
+        System.Threading.Tasks.Task<Checkmary.CxSDKWebService.SetTeamLdapGroupsMappingResponse> Checkmary.CxSDKWebService.CxSDKWebServiceSoap.SetTeamLdapGroupsMappingAsync(Checkmary.CxSDKWebService.SetTeamLdapGroupsMappingRequest request) {
             return base.Channel.SetTeamLdapGroupsMappingAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CheckmarxTool.CxSDKWebService.SetTeamLdapGroupsMappingResponse> SetTeamLdapGroupsMappingAsync(string sessionId, string teamId, CheckmarxTool.CxSDKWebService.CxWSLdapGroupMapping[] ldapGroups) {
-            CheckmarxTool.CxSDKWebService.SetTeamLdapGroupsMappingRequest inValue = new CheckmarxTool.CxSDKWebService.SetTeamLdapGroupsMappingRequest();
-            inValue.Body = new CheckmarxTool.CxSDKWebService.SetTeamLdapGroupsMappingRequestBody();
+        public System.Threading.Tasks.Task<Checkmary.CxSDKWebService.SetTeamLdapGroupsMappingResponse> SetTeamLdapGroupsMappingAsync(string sessionId, string teamId, Checkmary.CxSDKWebService.CxWSLdapGroupMapping[] ldapGroups) {
+            Checkmary.CxSDKWebService.SetTeamLdapGroupsMappingRequest inValue = new Checkmary.CxSDKWebService.SetTeamLdapGroupsMappingRequest();
+            inValue.Body = new Checkmary.CxSDKWebService.SetTeamLdapGroupsMappingRequestBody();
             inValue.Body.sessionId = sessionId;
             inValue.Body.teamId = teamId;
             inValue.Body.ldapGroups = ldapGroups;
-            return ((CheckmarxTool.CxSDKWebService.CxSDKWebServiceSoap)(this)).SetTeamLdapGroupsMappingAsync(inValue);
+            return ((Checkmary.CxSDKWebService.CxSDKWebServiceSoap)(this)).SetTeamLdapGroupsMappingAsync(inValue);
         }
     }
 }

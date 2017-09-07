@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using CheckmarxTool.CxSDKWebService;
+using Checkmary.CxSDKWebService;
 
-namespace CheckmarxTool.Models
+namespace Checkmary.Models
 {
 	static class CxToModelMappingExtensions
 	{

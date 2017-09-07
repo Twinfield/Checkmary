@@ -1,10 +1,10 @@
 using System.Linq;
-using CheckmarxTool.CxSDKWebService;
-using CheckmarxTool.Models;
-using ConfigurationSet = CheckmarxTool.Models.ConfigurationSet;
-using Preset = CheckmarxTool.Models.Preset;
+using Checkmary.CxSDKWebService;
+using Checkmary.Models;
+using ConfigurationSet = Checkmary.Models.ConfigurationSet;
+using Preset = Checkmary.Models.Preset;
 
-namespace CheckmarxTool
+namespace Checkmary
 {
 	class CheckmarxProxy
 	{

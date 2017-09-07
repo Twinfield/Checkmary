@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Configuration;
 using System.Text.RegularExpressions;
-using CheckmarxTool.Models;
+using Checkmary.Models;
 
-namespace CheckmarxTool
+namespace Checkmary
 {
 	class Program
 	{

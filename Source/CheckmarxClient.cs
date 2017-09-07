@@ -1,10 +1,10 @@
 ﻿using System;
-using CheckmarxTool.CxSDKWebService;
-using CheckmarxTool.Models;
-using ConfigurationSet = CheckmarxTool.CxSDKWebService.ConfigurationSet;
-using Preset = CheckmarxTool.CxSDKWebService.Preset;
+using Checkmary.CxSDKWebService;
+using Checkmary.Models;
+using ConfigurationSet = Checkmary.CxSDKWebService.ConfigurationSet;
+using Preset = Checkmary.CxSDKWebService.Preset;
 
-namespace CheckmarxTool
+namespace Checkmary
 {
 	class CheckmarxClient
 	{

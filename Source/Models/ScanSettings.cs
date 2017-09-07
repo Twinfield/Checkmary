@@ -1,4 +1,4 @@
-﻿namespace CheckmarxTool.Models
+﻿namespace Checkmary.Models
 {
 	class ScanSettings
 	{

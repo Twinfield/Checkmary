@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CheckmarxTool.CxWsResolver {
+namespace Checkmary.CxWsResolver {
     using System.Runtime.Serialization;
     using System;
     
@@ -61,7 +61,7 @@ namespace CheckmarxTool.CxWsResolver {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="CxWSBasicRepsonse", Namespace="http://Checkmarx.com")]
     [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(CheckmarxTool.CxWsResolver.CxWSResponseDiscovery))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Checkmary.CxWsResolver.CxWSResponseDiscovery))]
     public partial class CxWSBasicRepsonse : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
@@ -122,7 +122,7 @@ namespace CheckmarxTool.CxWsResolver {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="CxWSResponseDiscovery", Namespace="http://Checkmarx.com")]
     [System.SerializableAttribute()]
-    public partial class CxWSResponseDiscovery : CheckmarxTool.CxWsResolver.CxWSBasicRepsonse {
+    public partial class CxWSResponseDiscovery : Checkmary.CxWsResolver.CxWSBasicRepsonse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string ServiceURLField;
@@ -147,10 +147,10 @@ namespace CheckmarxTool.CxWsResolver {
         
         // CODEGEN: Generating message contract since element name GetWebServiceUrlResult from namespace http://Checkmarx.com is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/GetWebServiceUrl", ReplyAction="*")]
-        CheckmarxTool.CxWsResolver.GetWebServiceUrlResponse GetWebServiceUrl(CheckmarxTool.CxWsResolver.GetWebServiceUrlRequest request);
+        Checkmary.CxWsResolver.GetWebServiceUrlResponse GetWebServiceUrl(Checkmary.CxWsResolver.GetWebServiceUrlRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://Checkmarx.com/GetWebServiceUrl", ReplyAction="*")]
-        System.Threading.Tasks.Task<CheckmarxTool.CxWsResolver.GetWebServiceUrlResponse> GetWebServiceUrlAsync(CheckmarxTool.CxWsResolver.GetWebServiceUrlRequest request);
+        System.Threading.Tasks.Task<Checkmary.CxWsResolver.GetWebServiceUrlResponse> GetWebServiceUrlAsync(Checkmary.CxWsResolver.GetWebServiceUrlRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -160,12 +160,12 @@ namespace CheckmarxTool.CxWsResolver {
     public partial class GetWebServiceUrlRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetWebServiceUrl", Namespace="http://Checkmarx.com", Order=0)]
-        public CheckmarxTool.CxWsResolver.GetWebServiceUrlRequestBody Body;
+        public Checkmary.CxWsResolver.GetWebServiceUrlRequestBody Body;
         
         public GetWebServiceUrlRequest() {
         }
         
-        public GetWebServiceUrlRequest(CheckmarxTool.CxWsResolver.GetWebServiceUrlRequestBody Body) {
+        public GetWebServiceUrlRequest(Checkmary.CxWsResolver.GetWebServiceUrlRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -177,7 +177,7 @@ namespace CheckmarxTool.CxWsResolver {
     public partial class GetWebServiceUrlRequestBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
-        public CheckmarxTool.CxWsResolver.CxClientType ClientType;
+        public Checkmary.CxWsResolver.CxClientType ClientType;
         
         [System.Runtime.Serialization.DataMemberAttribute(Order=1)]
         public int APIVersion;
@@ -185,7 +185,7 @@ namespace CheckmarxTool.CxWsResolver {
         public GetWebServiceUrlRequestBody() {
         }
         
-        public GetWebServiceUrlRequestBody(CheckmarxTool.CxWsResolver.CxClientType ClientType, int APIVersion) {
+        public GetWebServiceUrlRequestBody(Checkmary.CxWsResolver.CxClientType ClientType, int APIVersion) {
             this.ClientType = ClientType;
             this.APIVersion = APIVersion;
         }
@@ -198,12 +198,12 @@ namespace CheckmarxTool.CxWsResolver {
     public partial class GetWebServiceUrlResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetWebServiceUrlResponse", Namespace="http://Checkmarx.com", Order=0)]
-        public CheckmarxTool.CxWsResolver.GetWebServiceUrlResponseBody Body;
+        public Checkmary.CxWsResolver.GetWebServiceUrlResponseBody Body;
         
         public GetWebServiceUrlResponse() {
         }
         
-        public GetWebServiceUrlResponse(CheckmarxTool.CxWsResolver.GetWebServiceUrlResponseBody Body) {
+        public GetWebServiceUrlResponse(Checkmary.CxWsResolver.GetWebServiceUrlResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -215,23 +215,23 @@ namespace CheckmarxTool.CxWsResolver {
     public partial class GetWebServiceUrlResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CheckmarxTool.CxWsResolver.CxWSResponseDiscovery GetWebServiceUrlResult;
+        public Checkmary.CxWsResolver.CxWSResponseDiscovery GetWebServiceUrlResult;
         
         public GetWebServiceUrlResponseBody() {
         }
         
-        public GetWebServiceUrlResponseBody(CheckmarxTool.CxWsResolver.CxWSResponseDiscovery GetWebServiceUrlResult) {
+        public GetWebServiceUrlResponseBody(Checkmary.CxWsResolver.CxWSResponseDiscovery GetWebServiceUrlResult) {
             this.GetWebServiceUrlResult = GetWebServiceUrlResult;
         }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface CxWSResolverSoapChannel : CheckmarxTool.CxWsResolver.CxWSResolverSoap, System.ServiceModel.IClientChannel {
+    public interface CxWSResolverSoapChannel : Checkmary.CxWsResolver.CxWSResolverSoap, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class CxWSResolverSoapClient : System.ServiceModel.ClientBase<CheckmarxTool.CxWsResolver.CxWSResolverSoap>, CheckmarxTool.CxWsResolver.CxWSResolverSoap {
+    public partial class CxWSResolverSoapClient : System.ServiceModel.ClientBase<Checkmary.CxWsResolver.CxWSResolverSoap>, Checkmary.CxWsResolver.CxWSResolverSoap {
         
         public CxWSResolverSoapClient() {
         }
@@ -253,30 +253,30 @@ namespace CheckmarxTool.CxWsResolver {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        CheckmarxTool.CxWsResolver.GetWebServiceUrlResponse CheckmarxTool.CxWsResolver.CxWSResolverSoap.GetWebServiceUrl(CheckmarxTool.CxWsResolver.GetWebServiceUrlRequest request) {
+        Checkmary.CxWsResolver.GetWebServiceUrlResponse Checkmary.CxWsResolver.CxWSResolverSoap.GetWebServiceUrl(Checkmary.CxWsResolver.GetWebServiceUrlRequest request) {
             return base.Channel.GetWebServiceUrl(request);
         }
         
-        public CheckmarxTool.CxWsResolver.CxWSResponseDiscovery GetWebServiceUrl(CheckmarxTool.CxWsResolver.CxClientType ClientType, int APIVersion) {
-            CheckmarxTool.CxWsResolver.GetWebServiceUrlRequest inValue = new CheckmarxTool.CxWsResolver.GetWebServiceUrlRequest();
-            inValue.Body = new CheckmarxTool.CxWsResolver.GetWebServiceUrlRequestBody();
+        public Checkmary.CxWsResolver.CxWSResponseDiscovery GetWebServiceUrl(Checkmary.CxWsResolver.CxClientType ClientType, int APIVersion) {
+            Checkmary.CxWsResolver.GetWebServiceUrlRequest inValue = new Checkmary.CxWsResolver.GetWebServiceUrlRequest();
+            inValue.Body = new Checkmary.CxWsResolver.GetWebServiceUrlRequestBody();
             inValue.Body.ClientType = ClientType;
             inValue.Body.APIVersion = APIVersion;
-            CheckmarxTool.CxWsResolver.GetWebServiceUrlResponse retVal = ((CheckmarxTool.CxWsResolver.CxWSResolverSoap)(this)).GetWebServiceUrl(inValue);
+            Checkmary.CxWsResolver.GetWebServiceUrlResponse retVal = ((Checkmary.CxWsResolver.CxWSResolverSoap)(this)).GetWebServiceUrl(inValue);
             return retVal.Body.GetWebServiceUrlResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CheckmarxTool.CxWsResolver.GetWebServiceUrlResponse> CheckmarxTool.CxWsResolver.CxWSResolverSoap.GetWebServiceUrlAsync(CheckmarxTool.CxWsResolver.GetWebServiceUrlRequest request) {
+        System.Threading.Tasks.Task<Checkmary.CxWsResolver.GetWebServiceUrlResponse> Checkmary.CxWsResolver.CxWSResolverSoap.GetWebServiceUrlAsync(Checkmary.CxWsResolver.GetWebServiceUrlRequest request) {
             return base.Channel.GetWebServiceUrlAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CheckmarxTool.CxWsResolver.GetWebServiceUrlResponse> GetWebServiceUrlAsync(CheckmarxTool.CxWsResolver.CxClientType ClientType, int APIVersion) {
-            CheckmarxTool.CxWsResolver.GetWebServiceUrlRequest inValue = new CheckmarxTool.CxWsResolver.GetWebServiceUrlRequest();
-            inValue.Body = new CheckmarxTool.CxWsResolver.GetWebServiceUrlRequestBody();
+        public System.Threading.Tasks.Task<Checkmary.CxWsResolver.GetWebServiceUrlResponse> GetWebServiceUrlAsync(Checkmary.CxWsResolver.CxClientType ClientType, int APIVersion) {
+            Checkmary.CxWsResolver.GetWebServiceUrlRequest inValue = new Checkmary.CxWsResolver.GetWebServiceUrlRequest();
+            inValue.Body = new Checkmary.CxWsResolver.GetWebServiceUrlRequestBody();
             inValue.Body.ClientType = ClientType;
             inValue.Body.APIVersion = APIVersion;
-            return ((CheckmarxTool.CxWsResolver.CxWSResolverSoap)(this)).GetWebServiceUrlAsync(inValue);
+            return ((Checkmary.CxWsResolver.CxWSResolverSoap)(this)).GetWebServiceUrlAsync(inValue);
         }
     }
 }

@@ -1,4 +1,4 @@
-namespace CheckmarxTool
+namespace Checkmary
 {
 	class ScanRequest
 	{

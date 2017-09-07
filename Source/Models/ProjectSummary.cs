@@ -1,6 +1,6 @@
 using System;
 
-namespace CheckmarxTool.Models
+namespace Checkmary.Models
 {
 	class ProjectSummary
 	{

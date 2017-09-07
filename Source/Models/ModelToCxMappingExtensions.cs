@@ -1,6 +1,6 @@
-using CheckmarxTool.CxSDKWebService;
+using Checkmary.CxSDKWebService;
 
-namespace CheckmarxTool.Models
+namespace Checkmary.Models
 {
 	static class ModelToCxMappingExtensions
 	{
