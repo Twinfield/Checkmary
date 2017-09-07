@@ -6,6 +6,8 @@ Output/
 # Visual Studio cache/options directory
 .vs/
 
+# User specific files
+*.user
 
-# Temporarily exclude app.confug until secrets are moved out
-App.config
+# Nuget
+[Pp]ackages/

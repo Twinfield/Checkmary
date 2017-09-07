@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Configuration;
 using System.Text.RegularExpressions;
 using Checkmary.Models;
 
@@ -7,12 +6,13 @@ namespace Checkmary
 {
 	class Program
 	{
-		//TODO: Proper command line args
-		//TODO: Only scan if last scan more than x days ago
-		//TODO: Project path to configuration?
-		//TODO: Option to show queue?
+		static readonly Options Options = new Options();
+
 		static void Main(string[] args)
 		{
+			if (!CommandLine.Parser.Default.ParseArguments(args, Options))
+				return;
+
 			var scanRequest = new ScanRequest
 			{
 				ProjectName = "Twinfield-Basecone",
@@ -30,9 +30,7 @@ namespace Checkmary
 
 		static void Scan(ScanRequest scanRequest)
 		{
-			var proxySettings = GetProxySettings();
-			var proxy = new CheckmarxProxy(proxySettings);
-			Console.WriteLine($"Connect to Checkmarx at {proxySettings.ResolverUrl}");
+			var proxy = CreateCheckmarxProxy();
 			proxy.Initialize();
 
 			var scanSettings = new ScanSettings();
@@ -62,14 +60,14 @@ namespace Checkmary
 			//Console.WriteLine($"Scan of project with ID {scan.ProjectId} started with run ID {scan.RunId}.");
 		}
 
-		static ProxySettings GetProxySettings()
+		static CheckmarxProxy CreateCheckmarxProxy()
 		{
-			return new ProxySettings
+			return new CheckmarxProxy(new ProxySettings
 			{
-				Url = ConfigurationManager.AppSettings["CheckmarxApiUrl"],
-				Username = ConfigurationManager.AppSettings["CheckmarxUsername"],
-				Password = ConfigurationManager.AppSettings["CheckmarxPassword"]
-			};
+				Url = Options.CheckmarxApiUrl,
+				Username = Options.Username,
+				Password = Options.Password
+			});
 		}
 	}
 }
