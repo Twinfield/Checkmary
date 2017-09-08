@@ -15,17 +15,15 @@ namespace Checkmary
 
 			var scanRequest = new ScanRequest
 			{
-				ProjectName = "Twinfield-Basecone",
-				//NOTE: Can't find a way to retrieve the project path via the API
-				ProjectPath = @"CxServer\SP\Wolters Kluwer TAA\nl_twinfield\",
-				Preset = "All",
-				ConfigurationSet = "Default all languages",
-				SourceCodePath = @"D:\Source\CheckMarx\Basecone\"
+				ProjectName = Options.ProjectName,
+				ProjectPath =Options.ProjectPath,
+				Preset = Options.Preset,
+				ConfigurationSet = Options.ConfigurationSet,
+				SourceCodePath = Options.SourceCodePath
 			};
 
 			Scan(scanRequest);
 			Console.WriteLine("Finished");
-			Console.ReadLine();
 		}
 
 		static void Scan(ScanRequest scanRequest)
@@ -55,9 +53,16 @@ namespace Checkmary
 			scanSettings.ZipFileName = $"{scanRequest.ProjectName}.zip";
 			scanSettings.ZipFileContents = ZipHelper.ZipDirectoryToByteArray(scanRequest.SourceCodePath, f => !excludeFileFilter.IsMatch(f));
 
-			//Console.WriteLine("Start scan");
-			//var scan = proxy.StartScan(scanSettings);
-			//Console.WriteLine($"Scan of project with ID {scan.ProjectId} started with run ID {scan.RunId}.");
+			Console.WriteLine("Start scan");
+			if (Options.DryRun)
+			{
+				Console.WriteLine("Not starting scan, because dry run is enabled.");
+			}
+			else
+			{
+				var scan = proxy.StartScan(scanSettings);
+				Console.WriteLine($"Scan of project with ID {scan.ProjectId} started with run ID {scan.RunId}.");
+			}
 		}
 
 		static CheckmarxProxy CreateCheckmarxProxy()
