@@ -1,77 +1,60 @@
 ﻿using System;
-using System.Text.RegularExpressions;
-using Checkmary.Models;
 
 namespace Checkmary
 {
 	class Program
 	{
-		static readonly Options Options = new Options();
-
 		static void Main(string[] args)
 		{
-			if (!CommandLine.Parser.Default.ParseArguments(args, Options))
-				return;
+			CommandLine.Parser.Default.ParseArguments(args, new Options(), OnVerbCommand);
+		}
 
+		static void OnVerbCommand(string verb, object verbOptions)
+		{
+			switch (verbOptions)
+			{
+				case StartScanOptions startScanOptions:
+					OnStartScanCommand(startScanOptions);
+					break;
+				default:
+					OnUnknownCommand(verb);
+					break;
+			}
+		}
+
+		static void OnStartScanCommand(StartScanOptions options)
+		{
+			var proxy = Proxy(options);
+			var scanRequest = ScanRequest(options);
+			new Scanner(proxy).Scan(scanRequest);
+		}
+
+		static ScanRequest ScanRequest(StartScanOptions options)
+		{
 			var scanRequest = new ScanRequest
 			{
-				ProjectName = Options.ProjectName,
-				ProjectPath =Options.ProjectPath,
-				Preset = Options.Preset,
-				ConfigurationSet = Options.ConfigurationSet,
-				SourceCodePath = Options.SourceCodePath
+				ProjectName = options.ProjectName,
+				ProjectPath = options.ProjectPath,
+				Preset = options.Preset,
+				ConfigurationSet = options.ConfigurationSet,
+				SourceCodePath = options.SourceCodePath,
+				DryRun = options.DryRun
 			};
-
-			Scan(scanRequest);
-			Console.WriteLine("Finished");
+			return scanRequest;
 		}
 
-		static void Scan(ScanRequest scanRequest)
+		static void OnUnknownCommand(string verb)
 		{
-			var proxy = CreateCheckmarxProxy();
-			proxy.Initialize();
-
-			var scanSettings = new ScanSettings();
-			scanSettings.ProjectName = scanRequest.ProjectName;
-			scanSettings.ProjectPath = scanRequest.ProjectPath;
-
-			Console.WriteLine($"Resolve project {scanRequest.ProjectName}");
-			var project = proxy.FindProjectByName(scanRequest.ProjectName);
-			scanSettings.ProjectId = project.Id;
-			Console.WriteLine($"Project last scanned on {project.LastScanDate}");
-
-			Console.WriteLine($"Resolve preset {scanRequest.Preset}");
-			var preset = proxy.FindPresetByName(scanRequest.Preset);
-			scanSettings.PresetId = preset.Id;
-
-			Console.WriteLine($"Resolve configuration set {scanRequest.ConfigurationSet}");
-			var configurationSet = proxy.FindConfigurationSetByName(scanRequest.ConfigurationSet);
-			scanSettings.ConfigurationSetId = configurationSet.Id;
-
-			Console.WriteLine("Collect source code");
-			var excludeFileFilter = new Regex(@"[/\\](\.git|\.vs|\.nuget|output|packages|.*\.msi)([/\\]|^)", RegexOptions.Compiled | RegexOptions.IgnoreCase);
-			scanSettings.ZipFileName = $"{scanRequest.ProjectName}.zip";
-			scanSettings.ZipFileContents = ZipHelper.ZipDirectoryToByteArray(scanRequest.SourceCodePath, f => !excludeFileFilter.IsMatch(f));
-
-			Console.WriteLine("Start scan");
-			if (Options.DryRun)
-			{
-				Console.WriteLine("Not starting scan, because dry run is enabled.");
-			}
-			else
-			{
-				var scan = proxy.StartScan(scanSettings);
-				Console.WriteLine($"Scan of project with ID {scan.ProjectId} started with run ID {scan.RunId}.");
-			}
+			Console.WriteLine($"Unknow command '{verb}'.");
 		}
 
-		static CheckmarxProxy CreateCheckmarxProxy()
+		static CheckmarxProxy Proxy(CommonSubOptions options)
 		{
 			return new CheckmarxProxy(new ProxySettings
 			{
-				Url = Options.CheckmarxApiUrl,
-				Username = Options.Username,
-				Password = Options.Password
+				Url = options.CheckmarxApiUrl,
+				Username = options.Username,
+				Password = options.Password
 			});
 		}
 	}

@@ -1,4 +1,3 @@
-using System;
 using System.Linq;
 using CommandLine;
 using CommandLine.Text;
@@ -6,6 +5,49 @@ using CommandLine.Text;
 namespace Checkmary
 {
 	class Options
+	{
+		[ParserState]
+		public IParserState LastParserState { get; set; }
+
+		[VerbOption("StartScan", HelpText = "Collects source code and starts a Checkmarx scan.")]
+		public StartScanOptions StartScanVerb { get; set; }
+
+		[HelpOption]
+		public string GetUsage()
+		{
+			var help = HelpTextWithHeading();
+			AddParseErrors(help);
+			help.AddOptions(this);
+			return help;
+		}
+
+		static HelpText HelpTextWithHeading()
+		{
+			var help = new HelpText
+			{
+				Heading = new HeadingInfo("Checkmary, a command line tool to work with Checkmarx scans"),
+				AdditionalNewLineAfterOption = true,
+				AddDashesToOption = true
+			};
+			return help;
+		}
+
+		void AddParseErrors(HelpText help)
+		{
+			if (LastParserState?.Errors.Any() ?? false)
+			{
+				var errors = help.RenderParsingErrorsText(this, 2);
+
+				if (!string.IsNullOrEmpty(errors))
+				{
+					help.AddPreOptionsLine("ERROR(S):");
+					help.AddPreOptionsLine(errors);
+				}
+			}
+		}
+	}
+
+	class CommonSubOptions
 	{
 		[Option("Username", Required = true, HelpText = "Checkmarx username.")]
 		public string Username { get; set; }
@@ -16,6 +58,10 @@ namespace Checkmary
 		[Option("ApiUrl", Required = true, HelpText = "Checkmarx API URL. E.g. 'https://<your-server>/Cxwebinterface/'.")]
 		public string CheckmarxApiUrl { get; set; }
 
+	}
+
+	class StartScanOptions : CommonSubOptions
+	{
 		[Option("ProjectPath", Required = true)]
 		public string ProjectPath { get; set; }
 
@@ -33,34 +79,5 @@ namespace Checkmary
 
 		[Option("DryRun", DefaultValue = false, HelpText = "If set to true, no actual scan will be started.")]
 		public bool DryRun { get; set; }
-
-		[ParserState]
-		public IParserState LastParserState { get; set; }
-
-		[HelpOption]
-		public string GetUsage()
-		{
-			var help = new HelpText
-			{
-				Heading = new HeadingInfo("Checkmary, a command line tool to work with Checkmarx scans"),
-				AdditionalNewLineAfterOption = true,
-				AddDashesToOption = true
-			};
-
-			if (LastParserState?.Errors.Any() ?? false)
-			{
-				var errors = help.RenderParsingErrorsText(this, 2);
-
-				if (!string.IsNullOrEmpty(errors))
-				{
-					help.AddPreOptionsLine("");
-					help.AddPreOptionsLine("ERROR(S):");
-					help.AddPreOptionsLine(errors);
-				}
-			}
-
-			help.AddOptions(this);
-			return help;
-		}
 	}
 }

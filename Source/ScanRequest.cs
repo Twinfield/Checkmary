@@ -7,5 +7,6 @@ namespace Checkmary
 		public string Preset { get; set; }
 		public string ConfigurationSet { get; set; }
 		public string SourceCodePath { get; set; }
+		public bool DryRun { get; set; }
 	}
 }
