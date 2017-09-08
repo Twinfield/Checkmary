@@ -12,6 +12,16 @@ namespace Checkmary
 		[VerbOption("StartScan", HelpText = "Collects source code and starts a Checkmarx scan.")]
 		public StartScanOptions StartScanVerb { get; set; }
 
+		[VerbOption("GetProjects", HelpText = "")]
+		public GetProjectsOptions GetProjectsVerb { get; set; }
+
+
+		[VerbOption("GetPresets", HelpText = "")]
+		public GetPresetsOptions GetPresetsVerb { get; set; }
+
+		[VerbOption("GetConfigSets", HelpText = "")]
+		public GetConfigurationSetsOptions GetCongConfigurationSetsOptions { get; set; }
+
 		[HelpOption]
 		public string GetUsage()
 		{
@@ -47,7 +57,7 @@ namespace Checkmary
 		}
 	}
 
-	class CommonSubOptions
+	class CommonOptions
 	{
 		[Option("Username", Required = true, HelpText = "Checkmarx username.")]
 		public string Username { get; set; }
@@ -60,7 +70,7 @@ namespace Checkmary
 
 	}
 
-	class StartScanOptions : CommonSubOptions
+	class StartScanOptions : CommonOptions
 	{
 		[Option("ProjectPath", Required = true)]
 		public string ProjectPath { get; set; }
@@ -80,4 +90,13 @@ namespace Checkmary
 		[Option("DryRun", DefaultValue = false, HelpText = "If set to true, no actual scan will be started.")]
 		public bool DryRun { get; set; }
 	}
+
+	class GetProjectsOptions : CommonOptions
+	{ }
+
+	class GetPresetsOptions : CommonOptions
+	{ }
+
+	class GetConfigurationSetsOptions : CommonOptions
+	{ }
 }
