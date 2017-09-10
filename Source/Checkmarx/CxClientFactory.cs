@@ -1,7 +1,7 @@
 ﻿using Checkmary.CxSDKWebService;
 using Checkmary.CxWsResolver;
 
-namespace Checkmary
+namespace Checkmary.Checkmarx
 {
 	class CxClientFactory
 	{

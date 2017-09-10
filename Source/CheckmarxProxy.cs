@@ -1,4 +1,6 @@
+using System;
 using System.Linq;
+using Checkmary.Checkmarx;
 using Checkmary.CxSDKWebService;
 using Checkmary.Models;
 using ConfigurationSet = Checkmary.Models.ConfigurationSet;
@@ -8,32 +10,31 @@ namespace Checkmary
 {
 	class CheckmarxProxy
 	{
-		readonly ProxySettings settings;
-		readonly CheckmarxClient client = new CheckmarxClient();
-		string serviceUrl;
-		string sessionId;
+		readonly CheckmarxSoapClient soapClient;
+		readonly CheckmarxRestClient restClient;
 
 		public CheckmarxProxy(ProxySettings settings)
 		{
-			this.settings = settings;
+			soapClient = new CheckmarxSoapClient(settings);
+			restClient = new CheckmarxRestClient(settings);
 		}
 
 		public void Initialize()
 		{
-			serviceUrl = client.GetServiceUrl(settings.ResolverUrl);
-			sessionId = client.Login(serviceUrl, settings.Username, settings.Password);
+			soapClient.Login();
+			restClient.Login();
 		}
 
 		public ProjectSummary[] GetProjectSummaries()
 		{
-			return client.GetProjectsDisplayData(serviceUrl, sessionId)
+			return soapClient.GetProjectsDisplayData()
 				.ToProjectSummaries()
 				.ToArray();
 		}
 
 		public ProjectSummary FindProjectByName(string name)
 		{
-			var projects = client.GetProjectsDisplayData(serviceUrl, sessionId);
+			var projects = soapClient.GetProjectsDisplayData();
 			return projects
 				.FirstOrDefault(i => i.ProjectName == name)
 				.ToProjectSummary();
@@ -41,39 +42,47 @@ namespace Checkmary
 
 		public ProjectConfiguration GetProjectConfigurationById(long projectId)
 		{
-			return client.GetProjectConfiguration(serviceUrl, sessionId, projectId);
+			return soapClient.GetProjectConfiguration(projectId);
 		}
 
 		public Preset[] GetPresets()
 		{
-			return client.GetPresets(serviceUrl, sessionId)
+			return soapClient.GetPresets()
 				.ToPresets()
 				.ToArray();
 		}
 		public Preset FindPresetByName(string name)
 		{
-			return client.GetPresets(serviceUrl, sessionId)
+			return soapClient.GetPresets()
 				.FirstOrDefault(i => i.PresetName == name)
 				.ToPreset();
 		}
 
 		public ConfigurationSet[] GetConfigurationSets()
 		{
-			return client.GetConfigurationSets(serviceUrl, sessionId)
+			return soapClient.GetConfigurationSets()
 				.ToConfigurationSets()
 				.ToArray();
 		}
 
 		public ConfigurationSet FindConfigurationSetByName(string name)
 		{
-			return client.GetConfigurationSets(serviceUrl, sessionId)
+			return soapClient.GetConfigurationSets()
 				.FirstOrDefault(i => i.ConfigSetName == name)
 				.ToConfigurationSet();
 		}
 
 		public Scan StartScan(ScanSettings scanSettings)
 		{
-			return client.Scan(serviceUrl, sessionId, scanSettings.ToCliScanArgs());
+			return soapClient.Scan(scanSettings.ToCliScanArgs());
+		}
+
+		public QueuedScanRequest[] GetQueuedScans()
+		{
+			Console.WriteLine("Get queue...");
+			return restClient.GetScanRequests()
+				.Select(i => i.ToQueuedScanRequest())
+				.ToArray();
 		}
 	}
 }

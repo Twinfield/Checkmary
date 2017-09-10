@@ -15,12 +15,14 @@ namespace Checkmary
 		[VerbOption("GetProjects", HelpText = "")]
 		public GetProjectsOptions GetProjectsVerb { get; set; }
 
-
 		[VerbOption("GetPresets", HelpText = "")]
 		public GetPresetsOptions GetPresetsVerb { get; set; }
 
 		[VerbOption("GetConfigSets", HelpText = "")]
-		public GetConfigurationSetsOptions GetCongConfigurationSetsOptions { get; set; }
+		public GetConfigurationSetsOptions GetCongConfigurationSetsVerb { get; set; }
+
+		[VerbOption("GetQueue", HelpText = "")]
+		public GetQueueOptions GetQueueVerb { get; set; }
 
 		[HelpOption]
 		public string GetUsage()
@@ -65,9 +67,8 @@ namespace Checkmary
 		[Option("Password", Required = true, HelpText = "Checkmarx password.")]
 		public string Password { get; set; }
 
-		[Option("ApiUrl", Required = true, HelpText = "Checkmarx API URL. E.g. 'https://<your-server>/Cxwebinterface/'.")]
+		[Option("ApiUrl", Required = true, HelpText = "Checkmarx API URL. E.g. 'https://<your-server>'.")]
 		public string CheckmarxApiUrl { get; set; }
-
 	}
 
 	class StartScanOptions : CommonOptions
@@ -98,5 +99,8 @@ namespace Checkmary
 	{ }
 
 	class GetConfigurationSetsOptions : CommonOptions
+	{ }
+
+	class GetQueueOptions : CommonOptions
 	{ }
 }

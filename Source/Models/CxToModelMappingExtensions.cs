@@ -1,13 +1,14 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Checkmary.Checkmarx;
 using Checkmary.CxSDKWebService;
 
 namespace Checkmary.Models
 {
 	static class CxToModelMappingExtensions
 	{
-		public static ProjectSummary ToProjectSummary(this CxSDKWebService.ProjectDisplayData project)
+		public static ProjectSummary ToProjectSummary(this ProjectDisplayData project)
 		{
 			return project == null
 				? null
@@ -19,7 +20,7 @@ namespace Checkmary.Models
 				};
 		}
 
-		public static IEnumerable<ProjectSummary> ToProjectSummaries(this CxSDKWebService.ProjectDisplayData[] projects)
+		public static IEnumerable<ProjectSummary> ToProjectSummaries(this ProjectDisplayData[] projects)
 		{
 			return projects == null
 				? new ProjectSummary[0]
@@ -37,6 +38,7 @@ namespace Checkmary.Models
 					Name = preset.PresetName
 				};
 		}
+
 		public static IEnumerable<Preset> ToPresets(this CxSDKWebService.Preset[] presets)
 		{
 			return presets == null
@@ -69,6 +71,16 @@ namespace Checkmary.Models
 			return configurationSets == null
 				? new ConfigurationSet[0]
 				: configurationSets.Select(i => i.ToConfigurationSet());
+		}
+
+		public static QueuedScanRequest ToQueuedScanRequest(this SastScanRequestDTO request)
+		{
+			return new QueuedScanRequest
+			{
+				Id = request.id,
+				RunId = request.runId,
+				Stage = request.stage
+			};
 		}
 	}
 }

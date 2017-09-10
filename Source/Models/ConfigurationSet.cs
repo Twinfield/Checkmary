@@ -1,11 +1,8 @@
-using System;
-
 namespace Checkmary.Models
 {
-	class ProjectSummary
+	class ConfigurationSet
 	{
 		public long Id { get; set; }
 		public string Name { get; set; }
-		public DateTime LastScanDate { get; set; }
 	}
 }

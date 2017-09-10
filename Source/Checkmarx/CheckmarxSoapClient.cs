@@ -1,35 +1,43 @@
 ﻿using System;
 using Checkmary.CxSDKWebService;
-using Checkmary.Models;
-using ConfigurationSet = Checkmary.CxSDKWebService.ConfigurationSet;
-using Preset = Checkmary.CxSDKWebService.Preset;
 
-namespace Checkmary
+namespace Checkmary.Checkmarx
 {
-	class CheckmarxClient
+	class CheckmarxSoapClient
 	{
 		const int LanguageId = 1033;
 
+		readonly ProxySettings settings;
 		readonly CxClientFactory clientFactory = new CxClientFactory();
 
-		public string GetServiceUrl(string resolverUrl)
+		string serviceUrl;
+		string sessionId;
+
+		public CheckmarxSoapClient(ProxySettings settings)
 		{
-			var client = clientFactory.CreateResolverClient(resolverUrl);
-			var response = client.GetWebServiceUrl(CxWsResolver.CxClientType.SDK, 1);
-			GuardResponse(response);
-			return response.ServiceURL;
+			this.settings = settings;
 		}
 
-		public string Login(string serviceUrl, string username, string password)
+		public void Login()
 		{
+			ResolveServiceUrl();
+
 			var client = clientFactory.CreateServiceClient(serviceUrl);
-			var credentials = new Credentials { User = username, Pass = password };
+			var credentials = new Credentials { User = settings.Username, Pass = settings.Password };
 			var response = client.Login(credentials, LanguageId);
 			GuardResponse(response);
-			return response.SessionId;
+			sessionId = response.SessionId;
 		}
 
-		public ProjectDisplayData[] GetProjectsDisplayData(string serviceUrl, string sessionId)
+		void ResolveServiceUrl()
+		{
+			var client = clientFactory.CreateResolverClient(settings.SoapResolverUrl);
+			var rresponse = client.GetWebServiceUrl(CxWsResolver.CxClientType.SDK, 1);
+			GuardResponse(rresponse);
+			serviceUrl = rresponse.ServiceURL;
+		}
+
+		public ProjectDisplayData[] GetProjectsDisplayData()
 		{
 			var client = clientFactory.CreateServiceClient(serviceUrl);
 			var response = client.GetProjectsDisplayData(sessionId);
@@ -37,7 +45,7 @@ namespace Checkmary
 			return response.projectList;
 		}
 
-		public ProjectConfiguration GetProjectConfiguration(string serviceUrl, string sessionId, long projectId)
+		public ProjectConfiguration GetProjectConfiguration(long projectId)
 		{
 			var client = clientFactory.CreateServiceClient(serviceUrl);
 			var response = client.GetProjectConfiguration(sessionId, projectId);
@@ -45,7 +53,7 @@ namespace Checkmary
 			return response.ProjectConfig;
 		}
 
-		public Preset[] GetPresets(string serviceUrl, string sessionId)
+		public CxSDKWebService.Preset[] GetPresets()
 		{
 			var client = clientFactory.CreateServiceClient(serviceUrl);
 			var response = client.GetPresetList(sessionId);
@@ -53,7 +61,7 @@ namespace Checkmary
 			return response.PresetList;
 		}
 
-		public ConfigurationSet[] GetConfigurationSets(string serviceUrl, string sessionId)
+		public CxSDKWebService.ConfigurationSet[] GetConfigurationSets()
 		{
 			var client = clientFactory.CreateServiceClient(serviceUrl);
 			var response = client.GetConfigurationSetList(sessionId);
@@ -61,7 +69,7 @@ namespace Checkmary
 			return response.ConfigSetList;
 		}
 
-		public Scan Scan(string serviceUrl, string sessionId, CliScanArgs scanArgs)
+		public Scan Scan(CliScanArgs scanArgs)
 		{
 			var client = clientFactory.CreateServiceClient(serviceUrl);
 			var response = client.Scan(sessionId, scanArgs);
