@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using Checkmary.Models;
 
 namespace Checkmary
 {
@@ -44,16 +45,16 @@ namespace Checkmary
 
 		static ScanRequest ScanRequest(StartScanOptions options)
 		{
-			var scanRequest = new ScanRequest
+			return new ScanRequest
 			{
 				ProjectName = options.ProjectName,
 				ProjectPath = options.ProjectPath,
 				Preset = options.Preset,
 				ConfigurationSet = options.ConfigurationSet,
 				SourceCodePath = options.SourceCodePath,
+				DaysSinceLastScan = options.DaysSinceLastScan,
 				DryRun = options.DryRun
 			};
-			return scanRequest;
 		}
 
 		static void OnGetProjects(GetProjectsOptions options)

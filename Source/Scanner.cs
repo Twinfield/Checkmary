@@ -23,7 +23,13 @@ namespace Checkmary
 
 			var project = proxy.FindProjectByName(request.ProjectName);
 			scanSettings.ProjectId = project.Id;
-			Console.WriteLine($"Project last scanned on {project.LastScanDate}");
+			Console.WriteLine($"Project {request.ProjectName} last scanned on {project.LastScanDate}");
+
+			if (DateTime.Now - project.LastScanDate < TimeSpan.FromDays(request.DaysSinceLastScan))
+			{
+				Console.WriteLine($"The last scan was less than {request.DaysSinceLastScan} days ago. No new scan will be started.");
+				return;
+			}
 
 			var preset = proxy.FindPresetByName(request.Preset);
 			scanSettings.PresetId = preset.Id;

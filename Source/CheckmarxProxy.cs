@@ -34,8 +34,7 @@ namespace Checkmary
 
 		public ProjectSummary FindProjectByName(string name)
 		{
-			var projects = soapClient.GetProjectsDisplayData();
-			return projects
+			return soapClient.GetProjectsDisplayData()
 				.FirstOrDefault(i => i.ProjectName == name)
 				.ToProjectSummary();
 		}
@@ -79,7 +78,6 @@ namespace Checkmary
 
 		public QueuedScanRequest[] GetQueuedScans()
 		{
-			Console.WriteLine("Get queue...");
 			return restClient.GetScanRequests()
 				.Select(i => i.ToQueuedScanRequest())
 				.ToArray();

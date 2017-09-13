@@ -1,10 +1,13 @@
-namespace Checkmary.Checkmarx
+namespace Checkmary.Models
 {
-	class QueuedScanRequest
+	class ScanRequest
 	{
-		public long Id { get; set; }
-		public int RunId { get; set; }
-		//TODO: Convert to enum
-		public int Stage { get; set; }
+		public string ProjectName { get; set; }
+		public string ProjectPath { get; set; }
+		public string Preset { get; set; }
+		public string ConfigurationSet { get; set; }
+		public string SourceCodePath { get; set; }
+		public int DaysSinceLastScan { get; set; }
+		public bool DryRun { get; set; }
 	}
 }

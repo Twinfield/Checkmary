@@ -56,7 +56,7 @@
     <Compile Include="Checkmarx\CheckmarxSoapClient.cs" />
     <Compile Include="CheckmarxProxy.cs" />
     <Compile Include="Checkmarx\CheckmarxRestClient.cs" />
-    <Compile Include="Models\ScanRequest.cs" />
+    <Compile Include="Models\QueuedScanRequest.cs" />
     <Compile Include="Connected Services\CxSDKWebService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -82,7 +82,7 @@
     <Compile Include="Checkmarx\Scan.cs" />
     <Compile Include="Checkmarx\SastScanRequestDTO.cs" />
     <Compile Include="Scanner.cs" />
-    <Compile Include="ScanRequest.cs" />
+    <Compile Include="Models\ScanRequest.cs" />
     <Compile Include="ZipHelper.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -73,22 +73,25 @@ namespace Checkmary
 
 	class StartScanOptions : CommonOptions
 	{
-		[Option("ProjectPath", Required = true)]
+		[Option(Required = true)]
 		public string ProjectPath { get; set; }
 
-		[Option("ProjectName", Required = true)]
+		[Option(Required = true)]
 		public string ProjectName { get; set; }
 
-		[Option("Preset", DefaultValue = "All")]
+		[Option(DefaultValue = "All")]
 		public string Preset { get; set; }
 
-		[Option("ConfigSet", DefaultValue = "Default all languages")]
+		[Option(DefaultValue = "Default all languages")]
 		public string ConfigurationSet { get; set; }
 
-		[Option("SourceCodePath", Required = true)]
+		[Option(Required = true)]
 		public string SourceCodePath { get; set; }
 
-		[Option("DryRun", DefaultValue = false, HelpText = "If set to true, no actual scan will be started.")]
+		[Option(DefaultValue = 7, HelpText = "If the last scan was less than the specifield number of day ago, no scan will be started.")]
+		public int DaysSinceLastScan { get; set; }
+
+		[Option(DefaultValue = false, HelpText = "If set to true, no actual scan will be started.")]
 		public bool DryRun { get; set; }
 	}
 
