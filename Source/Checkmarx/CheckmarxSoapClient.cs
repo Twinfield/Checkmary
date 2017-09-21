@@ -53,7 +53,7 @@ namespace Checkmary.Checkmarx
 			return response.ProjectConfig;
 		}
 
-		public CxSDKWebService.Preset[] GetPresets()
+		public Preset[] GetPresets()
 		{
 			var client = clientFactory.CreateServiceClient(serviceUrl);
 			var response = client.GetPresetList(sessionId);
@@ -61,7 +61,7 @@ namespace Checkmary.Checkmarx
 			return response.PresetList;
 		}
 
-		public CxSDKWebService.ConfigurationSet[] GetConfigurationSets()
+		public ConfigurationSet[] GetConfigurationSets()
 		{
 			var client = clientFactory.CreateServiceClient(serviceUrl);
 			var response = client.GetConfigurationSetList(sessionId);

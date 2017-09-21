@@ -35,26 +35,24 @@ namespace Checkmary
 
 		static HelpText HelpTextWithHeading()
 		{
-			var help = new HelpText
+			return new HelpText
 			{
 				Heading = new HeadingInfo("Checkmary, a command line tool to work with Checkmarx scans"),
 				AdditionalNewLineAfterOption = true,
 				AddDashesToOption = true
 			};
-			return help;
 		}
 
 		void AddParseErrors(HelpText help)
 		{
-			if (LastParserState?.Errors.Any() ?? false)
-			{
-				var errors = help.RenderParsingErrorsText(this, 2);
+			if (!(LastParserState?.Errors.Any() ?? false)) return;
 
-				if (!string.IsNullOrEmpty(errors))
-				{
-					help.AddPreOptionsLine("ERROR(S):");
-					help.AddPreOptionsLine(errors);
-				}
+			var errors = help.RenderParsingErrorsText(this, 2);
+
+			if (!string.IsNullOrEmpty(errors))
+			{
+				help.AddPreOptionsLine("ERROR(S):");
+				help.AddPreOptionsLine(errors);
 			}
 		}
 	}
@@ -73,25 +71,25 @@ namespace Checkmary
 
 	class StartScanOptions : CommonOptions
 	{
-		[Option(Required = true)]
+		[Option("ProjectPath", Required = true)]
 		public string ProjectPath { get; set; }
 
-		[Option(Required = true)]
+		[Option("ProjectName", Required = true)]
 		public string ProjectName { get; set; }
 
-		[Option(DefaultValue = "All")]
+		[Option("Preset", DefaultValue = "All")]
 		public string Preset { get; set; }
 
-		[Option(DefaultValue = "Default all languages")]
+		[Option("ConfigurationSet", DefaultValue = "Default all languages")]
 		public string ConfigurationSet { get; set; }
 
-		[Option(Required = true)]
+		[Option("SourceCodePath", Required = true)]
 		public string SourceCodePath { get; set; }
 
-		[Option(DefaultValue = 7, HelpText = "If the last scan was less than the specifield number of day ago, no scan will be started.")]
+		[Option("DaysSinceLastScan", DefaultValue = 7, HelpText = "If the last scan was less than the specifield number of day ago, no scan will be started.")]
 		public int DaysSinceLastScan { get; set; }
 
-		[Option(DefaultValue = false, HelpText = "If set to true, no actual scan will be started.")]
+		[Option("DryRun", DefaultValue = false, HelpText = "If set to true, no actual scan will be started.")]
 		public bool DryRun { get; set; }
 	}
 

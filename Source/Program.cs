@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Linq;
 using Checkmary.Models;
 
@@ -6,9 +7,35 @@ namespace Checkmary
 {
 	class Program
 	{
-		static void Main(string[] args)
+		static readonly Options Options = new Options();
+
+		static int Main(string[] args)
 		{
-			CommandLine.Parser.Default.ParseArguments(args, new Options(), OnVerbCommand);
+			ConfigureExceptionHandler();
+
+			if (!args.Any())
+			{
+				Console.WriteLine(Options.GetUsage());
+				return (int)ExitCode.Success;
+			}
+
+			if (!CommandLine.Parser.Default.ParseArgumentsStrict(args, Options, OnVerbCommand, OnFail))
+			{
+				return (int)ExitCode.InvalidArgument;
+			}
+
+			return (int)ExitCode.Success;
+		}
+
+		static void OnFail()
+		{
+			Console.WriteLine(Options.GetUsage());
+		}
+
+		static void ConfigureExceptionHandler()
+		{
+			if (!Debugger.IsAttached)
+				AppDomain.CurrentDomain.UnhandledException += UnhandledExceptionEventHandler;
 		}
 
 		static void OnVerbCommand(string verb, object verbOptions)
@@ -29,9 +56,6 @@ namespace Checkmary
 					break;
 				case GetQueueOptions getQueueOptions:
 					OnGetQueue(getQueueOptions);
-					break;
-				default:
-					OnUnknownCommand(verb);
 					break;
 			}
 		}
@@ -99,11 +123,6 @@ namespace Checkmary
 				Console.WriteLine($"{queuedRequest.Id}");
 		}
 
-		static void OnUnknownCommand(string verb)
-		{
-			Console.WriteLine($"Unknow command '{verb}'.");
-		}
-
 		static CheckmarxProxy Proxy(CommonOptions options)
 		{
 			return new CheckmarxProxy(new ProxySettings
@@ -113,5 +132,20 @@ namespace Checkmary
 				Password = options.Password
 			});
 		}
+
+		static void UnhandledExceptionEventHandler(object sender, UnhandledExceptionEventArgs e)
+		{
+			var exception = (Exception)e.ExceptionObject;
+			Console.WriteLine(exception.Message);
+			Console.WriteLine(exception.StackTrace);
+			Environment.Exit((int)ExitCode.Error);
+		}
+	}
+
+	enum ExitCode
+	{
+		Success = 0,
+		Error = -1,
+		InvalidArgument = -2
 	}
 }
