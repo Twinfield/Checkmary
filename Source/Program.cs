@@ -72,7 +72,7 @@ namespace Checkmary
 			return new ScanRequest
 			{
 				ProjectName = options.ProjectName,
-				ProjectPath = options.ProjectPath,
+				TeamName = options.TeamName,
 				Preset = options.Preset,
 				ConfigurationSet = options.ConfigurationSet,
 				SourceCodePath = options.SourceCodePath,

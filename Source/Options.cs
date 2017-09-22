@@ -71,8 +71,8 @@ namespace Checkmary
 
 	class StartScanOptions : CommonOptions
 	{
-		[Option("ProjectPath", Required = true)]
-		public string ProjectPath { get; set; }
+		[Option("TeamName", Required = true)]
+		public string TeamName { get; set; }
 
 		[Option("ProjectName", Required = true)]
 		public string ProjectName { get; set; }

@@ -19,7 +19,7 @@ namespace Checkmary
 
 			var scanSettings = new ScanSettings();
 			scanSettings.ProjectName = request.ProjectName;
-			scanSettings.ProjectPath = request.ProjectPath;
+			scanSettings.TeamName = request.TeamName;
 
 			var project = proxy.FindProjectByName(request.ProjectName);
 			scanSettings.ProjectId = project.Id;

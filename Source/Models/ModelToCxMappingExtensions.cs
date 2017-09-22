@@ -11,7 +11,7 @@ namespace Checkmary.Models
 				PrjSettings = new ProjectSettings
 				{
 					projectID = scanSettings.ProjectId,
-					ProjectName = $@"{scanSettings.ProjectPath}\{scanSettings.ProjectName}",
+					ProjectName = $@"{scanSettings.TeamName}\{scanSettings.ProjectName}",
 					PresetID = scanSettings.PresetId,
 					ScanConfigurationID = scanSettings.ConfigurationSetId
 				},
