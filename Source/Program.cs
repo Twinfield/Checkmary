@@ -62,14 +62,7 @@ namespace Checkmary
 
 		static void OnStartScanCommand(StartScanOptions options)
 		{
-			var proxy = Proxy(options);
-			var scanRequest = ScanRequest(options);
-			new Scanner(proxy).Scan(scanRequest);
-		}
-
-		static ScanRequest ScanRequest(StartScanOptions options)
-		{
-			return new ScanRequest
+			new Scanner(Proxy(options)).Scan(new ScanRequest
 			{
 				ProjectName = options.ProjectName,
 				TeamName = options.TeamName,
@@ -78,7 +71,7 @@ namespace Checkmary
 				SourceCodePath = options.SourceCodePath,
 				DaysSinceLastScan = options.DaysSinceLastScan,
 				DryRun = options.DryRun
-			};
+			});
 		}
 
 		static void OnGetProjects(GetProjectsOptions options)

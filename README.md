@@ -9,18 +9,21 @@ The main advantage is that it just queues a scan and does not wait until the sca
 
 Each command reequires these common parameters
 
-* Username
-* Password
-* ApiUrl
+* Username, your Checkmarx username.
+* Password, your Checkmarx password.
+* ApiUrl, the URL of the Checkmarx server.
 
 ### Start a scan
 
 The `StartScan` command collects source code and starts a Checkmarx scan.
 
-    Checkmary.exe StartScan <common parameters> --TeamName=<team name> --ProjectName=<project name> --SourceCodePath=<source code path> [--DryRun] [--DaysSinceLastScan=<number>]
+#### Parameters
 
-* DryRun, If set to true, no actual scan will be started.
-* DaysSinceLastScan: If the last scan was less than the specifield number of day ago, no scan will be started.
+* TeamName, the full name of the team.
+* ProjectName, the project name.
+* SourceCodePath, the path to the source code.
+* DaysSinceLastScan: if the last scan was less than the specifield number of day ago, no scan will be started.
+* DryRun, if set to true, no actual scan will be started.
 
 #### Example
 
@@ -30,19 +33,17 @@ The `StartScan` command collects source code and starts a Checkmarx scan.
 
 The `GetProjects` command gets a list of projects.
 
-    Checkmary.exe GetProjects <common parameters>
+#### Example
+
+    Checkmary.exe GetProjects --Username=scanner --Password=*** --ApiUrl=https://myserver
 
 ### Get presets
 
 The `GetPresets` command gets a list of presets.
 
-    Checkmary.exe GetPresets <common parameters>
-
 ### Get configuration sets
 
 The `GetConfigSets` command gets a list of configuration sets.
-
-    Checkmary.exe GetConfigSets <common parameters>
 
 ## License
 
