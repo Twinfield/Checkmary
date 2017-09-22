@@ -69,6 +69,14 @@ namespace Checkmary.Checkmarx
 			return response.ConfigSetList;
 		}
 
+		public Group[] GetAssociatedGroups()
+		{
+			var client = clientFactory.CreateServiceClient(serviceUrl);
+			var response = client.GetAssociatedGroupsList(sessionId);
+			GuardResponse(response);
+			return response.GroupList;
+		}
+
 		public Scan Scan(CliScanArgs scanArgs)
 		{
 			var client = clientFactory.CreateServiceClient(serviceUrl);

@@ -88,7 +88,7 @@ namespace Checkmary
 			var projects = proxy.GetProjectSummaries();
 			Console.WriteLine($"Found {projects.Length} projects");
 			foreach (var project in projects.OrderBy(p => p.Name))
-				Console.WriteLine($"{project.Name}, last scanned on {project.LastScanDate}");
+				Console.WriteLine($"{project.TeamName}, {project.Name}, last scanned on {project.LastScanDate}");
 		}
 
 		static void OnGetPresets(GetPresetsOptions options)

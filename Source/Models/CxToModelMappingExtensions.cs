@@ -16,6 +16,7 @@ namespace Checkmary.Models
 				{
 					Id = project.projectID,
 					Name = project.ProjectName,
+					TeamName = project.Group,
 					LastScanDate = project.LastScanDate.ToDateTime()
 				};
 		}

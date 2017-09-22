@@ -1,4 +1,3 @@
-using System;
 using System.Linq;
 using Checkmary.Checkmarx;
 using Checkmary.CxSDKWebService;
