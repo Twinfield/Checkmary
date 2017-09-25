@@ -13,23 +13,10 @@ namespace Checkmary
 		{
 			ConfigureExceptionHandler();
 
-			if (!args.Any())
-			{
-				Console.WriteLine(Options.GetUsage());
-				return (int)ExitCode.Success;
-			}
-
-			if (!CommandLine.Parser.Default.ParseArgumentsStrict(args, Options, OnVerbCommand, OnFail))
-			{
-				return (int)ExitCode.InvalidArgument;
-			}
+			if (!CommandLine.Parser.Default.ParseArgumentsStrict(args, Options, OnVerbCommand))
+				return (int) ExitCode.InvalidArgument;
 
 			return (int)ExitCode.Success;
-		}
-
-		static void OnFail()
-		{
-			Console.WriteLine(Options.GetUsage());
 		}
 
 		static void ConfigureExceptionHandler()
@@ -64,8 +51,8 @@ namespace Checkmary
 		{
 			new Scanner(Proxy(options)).Scan(new ScanRequest
 			{
-				ProjectName = options.ProjectName,
-				TeamName = options.TeamName,
+				ProjectName = options.Project,
+				TeamName = options.Team,
 				Preset = options.Preset,
 				ConfigurationSet = options.ConfigurationSet,
 				SourceCodePath = options.SourceCodePath,

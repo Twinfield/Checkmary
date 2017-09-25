@@ -7,43 +7,43 @@ The main advantage is that it just queues a scan and does not wait until the sca
 
 ## Usage
 
-Each command reequires these common parameters
+Each command requires these common parameters
 
-* Username, your Checkmarx username.
-* Password, your Checkmarx password.
-* ApiUrl, the URL of the Checkmarx server.
+* username, your Checkmarx username.
+* password, your Checkmarx password.
+* apiurl, the URL of the Checkmarx server.
 
 ### Start a scan
 
-The `StartScan` command collects source code and starts a Checkmarx scan.
+The `startscan` command collects source code and starts a Checkmarx scan.
 
 #### Parameters
 
-* TeamName, the full name of the team.
-* ProjectName, the project name.
-* SourceCodePath, the path to the source code.
-* DaysSinceLastScan: if the last scan was less than the specifield number of day ago, no scan will be started.
-* DryRun, if set to true, no actual scan will be started.
+* team, the full name of the team.
+* project, the project name.
+* sourcecodepath, the path to the source code.
+* dayssincelastscan: if the last scan was less than the specifield number of day ago, no scan will be started.
+* dryrun, if set to true, no actual scan will be started.
 
 #### Example
 
-    Checkmary.exe StartScan --Username=scanner --Password=*** --ApiUrl=https://myserver --TeamName="My Company\My Team" --ProjectName="My Project" --SourceCodePath="C:\Source\MyProject"
+    Checkmary.exe startscan --username=scanner --password=*** --apiurl=https://myserver --team="My Company\My Team" --project="My Project" --sourcecodepath="C:\Source\MyProject"
 
 ### Get projects
 
-The `GetProjects` command gets a list of projects.
+The `getprojects` command gets a list of projects.
 
 #### Example
 
-    Checkmary.exe GetProjects --Username=scanner --Password=*** --ApiUrl=https://myserver
+    Checkmary.exe getprojects --Username=scanner --Password=*** --ApiUrl=https://myserver
 
 ### Get presets
 
-The `GetPresets` command gets a list of presets.
+The `getpresets` command gets a list of presets.
 
 ### Get configuration sets
 
-The `GetConfigSets` command gets a list of configuration sets.
+The `getconfigsets` command gets a list of configuration sets.
 
 ## License
 
