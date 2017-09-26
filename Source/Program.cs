@@ -41,9 +41,6 @@ namespace Checkmary
 				case GetConfigurationSetsOptions getConfigurationSetsOptions:
 					OnGetConfigurationSets(getConfigurationSetsOptions);
 					break;
-				case GetQueueOptions getQueueOptions:
-					OnGetQueue(getQueueOptions);
-					break;
 			}
 		}
 
@@ -89,17 +86,6 @@ namespace Checkmary
 			Console.WriteLine($"Found {configurationSets.Length} configuration sets");
 			foreach (var set in configurationSets.OrderBy(s => s.Name))
 				Console.WriteLine(set.Name);
-		}
-
-		static void OnGetQueue(GetQueueOptions options)
-		{
-			var proxy = Proxy(options);
-			proxy.Initialize();
-			var queuedScanRequests = proxy.GetQueuedScans();
-
-			Console.WriteLine($"Found {queuedScanRequests.Length} queued request.");
-			foreach (var queuedRequest in queuedScanRequests)
-				Console.WriteLine($"{queuedRequest.Id}");
 		}
 
 		static CheckmarxProxy Proxy(CommonOptions options)
