@@ -7,7 +7,6 @@ namespace Checkmary.Checkmarx
 {
 	class CheckmarxRestClient
 	{
-		const string CookieKey = "CxCookie";
 		const string TokenKey = "CXCSRFToken";
 
 		readonly ProxySettings settings;

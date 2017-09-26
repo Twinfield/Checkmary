@@ -8,38 +8,55 @@ namespace Checkmary
 {
 	public static class ZipHelper
 	{
-		public static byte[] ZipDirectoryToByteArray(string sourcePath, Func<string, bool> filter)
+		public static byte[] ZipDirectoryToByteArray(string path, Func<string, bool> filter)
 		{
-			var sourcePathLength = GetSourcePathLength(sourcePath);
-
-			using (var zipFileStream = new MemoryStream())
+			return WithinDirectory(path, () =>
 			{
-				using (var archive = new ZipArchive(zipFileStream, ZipArchiveMode.Create))
+				using (var zipFileStream = new MemoryStream())
 				{
-					foreach (var fileToAdd in FindFiles(sourcePath, filter))
-						archive.CreateEntryFromFile(fileToAdd, fileToAdd.Substring(sourcePathLength));
+					ZipCurrentDirectoryToStream(filter, zipFileStream);
+
+					return zipFileStream.ToArray();
 				}
-				return zipFileStream.ToArray();
+			});
+		}
+
+		static void ZipCurrentDirectoryToStream(Func<string, bool> filter, Stream zipFileStream)
+		{
+			using (var archive = new ZipArchive(zipFileStream, ZipArchiveMode.Create))
+			{
+				foreach (var file in FindFilesInCurrentDirectory(filter))
+					archive.CreateEntryFromFile(file, StripCurrentDirectory(file));
 			}
 		}
 
-		static IEnumerable<string> FindFiles(string path, Func<string, bool> filter)
+		static byte[] WithinDirectory(string path, Func<byte[]> func)
+		{
+			var oldDirectory = Directory.GetCurrentDirectory();
+
+			try
+			{
+				Directory.SetCurrentDirectory(path);
+
+				return func();
+			}
+			finally
+			{
+				Directory.SetCurrentDirectory(oldDirectory);
+			}
+		}
+
+		static string StripCurrentDirectory(string path)
+		{
+			// Strip leading .\ from relative path
+			return path.Substring(2);
+		}
+
+		static IEnumerable<string> FindFilesInCurrentDirectory(Func<string, bool> filter)
 		{
 			return Directory
-				.EnumerateFiles(path, "*", SearchOption.AllDirectories)
+				.EnumerateFiles(".", "*", SearchOption.AllDirectories)
 				.Where(filter);
-		}
-
-		static int GetSourcePathLength(string sourceFolder)
-		{
-			return sourceFolder.Length + (PathEndsWithDirectorySeparator(sourceFolder) ? 1 : 0);
-		}
-
-		static bool PathEndsWithDirectorySeparator(string sourceFolder)
-		{
-			var lastChar = sourceFolder[sourceFolder.Length - 1];
-			return lastChar != Path.DirectorySeparatorChar
-					 && lastChar != Path.AltDirectorySeparatorChar;
 		}
 	}
 }
