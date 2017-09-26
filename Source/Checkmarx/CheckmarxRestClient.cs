@@ -13,7 +13,6 @@ namespace Checkmary.Checkmarx
 		readonly ProxySettings settings;
 		readonly RestClient restClient;
 
-		string sessionCookie;
 		string tokenCookie;
 
 		public CheckmarxRestClient(ProxySettings settings)
@@ -40,7 +39,6 @@ namespace Checkmary.Checkmarx
 			GuardResponseOk(response);
 
 			var cookies = restClient.CookieContainer.GetCookies(new Uri(settings.RestApiUrl));
-			sessionCookie = cookies[CookieKey]?.Value;
 			tokenCookie = cookies[TokenKey]?.Value;
 		}
 

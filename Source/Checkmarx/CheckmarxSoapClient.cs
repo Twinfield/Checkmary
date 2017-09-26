@@ -25,7 +25,7 @@ namespace Checkmary.Checkmarx
 			var client = clientFactory.CreateServiceClient(serviceUrl);
 			var credentials = new Credentials { User = settings.Username, Pass = settings.Password };
 			var response = client.Login(credentials, LanguageId);
-			GuardResponse(response);
+			GuardResponseSuccessfull(response);
 			sessionId = response.SessionId;
 		}
 
@@ -33,7 +33,7 @@ namespace Checkmary.Checkmarx
 		{
 			var client = clientFactory.CreateResolverClient(settings.SoapResolverUrl);
 			var rresponse = client.GetWebServiceUrl(CxWsResolver.CxClientType.SDK, 1);
-			GuardResponse(rresponse);
+			GuardResponseSuccessfull(rresponse);
 			serviceUrl = rresponse.ServiceURL;
 		}
 
@@ -41,7 +41,7 @@ namespace Checkmary.Checkmarx
 		{
 			var client = clientFactory.CreateServiceClient(serviceUrl);
 			var response = client.GetProjectsDisplayData(sessionId);
-			GuardResponse(response);
+			GuardResponseSuccessfull(response);
 			return response.projectList;
 		}
 
@@ -49,7 +49,7 @@ namespace Checkmary.Checkmarx
 		{
 			var client = clientFactory.CreateServiceClient(serviceUrl);
 			var response = client.GetProjectConfiguration(sessionId, projectId);
-			GuardResponse(response);
+			GuardResponseSuccessfull(response);
 			return response.ProjectConfig;
 		}
 
@@ -57,7 +57,7 @@ namespace Checkmary.Checkmarx
 		{
 			var client = clientFactory.CreateServiceClient(serviceUrl);
 			var response = client.GetPresetList(sessionId);
-			GuardResponse(response);
+			GuardResponseSuccessfull(response);
 			return response.PresetList;
 		}
 
@@ -65,7 +65,7 @@ namespace Checkmary.Checkmarx
 		{
 			var client = clientFactory.CreateServiceClient(serviceUrl);
 			var response = client.GetConfigurationSetList(sessionId);
-			GuardResponse(response);
+			GuardResponseSuccessfull(response);
 			return response.ConfigSetList;
 		}
 
@@ -73,7 +73,7 @@ namespace Checkmary.Checkmarx
 		{
 			var client = clientFactory.CreateServiceClient(serviceUrl);
 			var response = client.GetAssociatedGroupsList(sessionId);
-			GuardResponse(response);
+			GuardResponseSuccessfull(response);
 			return response.GroupList;
 		}
 
@@ -81,7 +81,7 @@ namespace Checkmary.Checkmarx
 		{
 			var client = clientFactory.CreateServiceClient(serviceUrl);
 			var response = client.Scan(sessionId, scanArgs);
-			GuardResponse(response);
+			GuardResponseSuccessfull(response);
 			return new Scan
 			{
 				RunId = response.RunId,
@@ -89,13 +89,13 @@ namespace Checkmary.Checkmarx
 			};
 		}
 
-		static void GuardResponse(CxWsResolver.CxWSBasicRepsonse response)
+		static void GuardResponseSuccessfull(CxWsResolver.CxWSBasicRepsonse response)
 		{
 			if (!response.IsSuccesfull)
 				throw new Exception(response.ErrorMessage);
 		}
 
-		static void GuardResponse(CxSDKWebService.CxWSBasicRepsonse response)
+		static void GuardResponseSuccessfull(CxSDKWebService.CxWSBasicRepsonse response)
 		{
 			if (!response.IsSuccesfull)
 				throw new Exception(response.ErrorMessage);

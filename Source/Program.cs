@@ -96,7 +96,6 @@ namespace Checkmary
 			var proxy = Proxy(options);
 			proxy.Initialize();
 			var queuedScanRequests = proxy.GetQueuedScans();
-			Console.WriteLine("Get queued scans...");
 
 			Console.WriteLine($"Found {queuedScanRequests.Length} queued request.");
 			foreach (var queuedRequest in queuedScanRequests)
@@ -116,8 +115,8 @@ namespace Checkmary
 		static void UnhandledExceptionEventHandler(object sender, UnhandledExceptionEventArgs e)
 		{
 			var exception = (Exception)e.ExceptionObject;
-			Console.WriteLine(exception.Message);
-			Console.WriteLine(exception.StackTrace);
+			Console.Error.WriteLine(exception.Message);
+			Console.Error.WriteLine(exception.StackTrace);
 			Environment.Exit((int)ExitCode.Error);
 		}
 	}

@@ -18,30 +18,56 @@ namespace Checkmary
 			proxy.Initialize();
 
 			var scanSettings = new ScanSettings();
-			scanSettings.ProjectName = request.ProjectName;
-			scanSettings.TeamName = request.TeamName;
 
-			var project = proxy.FindProjectByName(request.ProjectName);
-			scanSettings.ProjectId = project.Id;
-			Console.WriteLine($"Project {request.ProjectName} last scanned on {project.LastScanDate}");
+			var project = ResolveProject(request, scanSettings);
 
+			Console.WriteLine($"Project {request.ProjectName} last scanned on {project.LastScanDate}.");
 			if (DateTime.Now - project.LastScanDate < TimeSpan.FromDays(request.DaysSinceLastScan))
 			{
 				Console.WriteLine($"The last scan was less than {request.DaysSinceLastScan} days ago. No new scan will be started.");
 				return;
 			}
 
-			var preset = proxy.FindPresetByName(request.Preset);
-			scanSettings.PresetId = preset.Id;
+			ResolvePreset(request, scanSettings);
+			ResolveConfigurationSet(request, scanSettings);
+			CollectSourceCode(request, scanSettings);
+			StartScan(request, scanSettings);
+		}
 
+		ProjectSummary ResolveProject(ScanRequest request, ScanSettings scanSettings)
+		{
+			var project = proxy.FindProjectByName(request.ProjectName);
+			scanSettings.ProjectId = project.Id;
+			scanSettings.ProjectName = request.ProjectName;
+			scanSettings.TeamName = request.TeamName;
+			return project;
+		}
+
+		void ResolveConfigurationSet(ScanRequest request, ScanSettings scanSettings)
+		{
 			var configurationSet = proxy.FindConfigurationSetByName(request.ConfigurationSet);
 			scanSettings.ConfigurationSetId = configurationSet.Id;
+		}
 
+		void ResolvePreset(ScanRequest request, ScanSettings scanSettings)
+		{
+			var preset = proxy.FindPresetByName(request.Preset);
+			scanSettings.PresetId = preset.Id;
+		}
+
+		static void CollectSourceCode(ScanRequest request, ScanSettings scanSettings)
+		{
 			Console.WriteLine("Collecting source code...");
-			var excludeFileFilter = new Regex(@"[/\\](\.git|\.vs|\.nuget|output|packages|.*\.msi)([/\\]|^)", RegexOptions.Compiled | RegexOptions.IgnoreCase);
+
+			var excludeFileFilter = new Regex(@"[/\\](\.git|\.vs|\.nuget|output|packages|.*\.msi)([/\\]|^)",
+				RegexOptions.Compiled | RegexOptions.IgnoreCase);
+
 			scanSettings.ZipFileName = $"{request.ProjectName}.zip";
 			scanSettings.ZipFileContents = ZipHelper.ZipDirectoryToByteArray(request.SourceCodePath, f => !excludeFileFilter.IsMatch(f));
+		}
 
+		void StartScan(ScanRequest request, ScanSettings scanSettings)
+		{
 			Console.WriteLine("Starting scan...");
 			if (request.DryRun)
 			{
@@ -53,6 +79,5 @@ namespace Checkmary
 				Console.WriteLine($"Scan of project with ID {scan.ProjectId} started with run ID {scan.RunId}.");
 			}
 		}
-
 	}
 }
