@@ -9,5 +9,12 @@ namespace Checkmary.Models
 		public string SourceCodePath { get; set; }
 		public int DaysSinceLastScan { get; set; }
 		public bool DryRun { get; set; }
-	}
+	    public SourceType SourceType { get; set; }
+    }
+
+    enum SourceType
+    {
+        SAST = 1,
+        OSA = 2
+    }
 }

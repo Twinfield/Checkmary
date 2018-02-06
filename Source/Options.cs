@@ -1,4 +1,5 @@
 using System.Linq;
+using Checkmary.Models;
 using CommandLine;
 using CommandLine.Text;
 
@@ -24,7 +25,10 @@ namespace Checkmary
 		[VerbOption("getqueue", HelpText = "Gets all queued scans.")]
 		public GetQueueOptions GetQueue { get; set; }
 
-		[HelpVerbOption]
+	    [VerbOption("downloadosareports", HelpText = "Downloads the OSA scan summary report.")]
+	    public DownloadReportsOptions DownloadReports { get; set; }
+
+        [HelpVerbOption]
 		public string GetUsage(string verb)
 		{
 			var help = HelpText.AutoBuild(this, verb);
@@ -80,7 +84,10 @@ namespace Checkmary
 
 		[Option("dryrun", DefaultValue = false, HelpText = "If set to true, no actual scan will be started.")]
 		public bool DryRun { get; set; }
-	}
+
+	    [Option("sourcetype", DefaultValue = 1, HelpText = "SAST = 1, OSA = 2")]
+	    public SourceType SourceType { get; set; }
+    }
 
 	class GetProjectsOptions : CommonOptions
 	{ }
@@ -93,4 +100,10 @@ namespace Checkmary
 
 	class GetQueueOptions : CommonOptions
 	{ }
+
+    class DownloadReportsOptions : CommonOptions
+    {
+        [Option("reportformat", DefaultValue = "html", HelpText = "html, pdf, json")]
+        public string ReportFormat { get; set; }
+    }
 }

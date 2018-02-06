@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using Checkmary.Checkmarx;
 using Checkmary.CxSDKWebService;
@@ -70,16 +71,33 @@ namespace Checkmary
 				.ToConfigurationSet();
 		}
 
-		public Scan StartScan(ScanSettings scanSettings)
+		public Scan StartSastScan(ScanSettings scanSettings)
 		{
 			return soapClient.Scan(scanSettings.ToCliScanArgs());
 		}
 
-		public QueuedScanRequest[] GetQueuedScans()
+	    public OsaScanResponse StartOsaScan(ScanSettings scanSettings)
+	    {
+	        var scanRestRequest = new OsaScanRequestDto
+	        {
+	            ProjectId = scanSettings.ProjectId,
+	            ZippedSource = scanSettings.ZipFileContents,
+                ProjectName = scanSettings.ProjectName
+	        };
+
+	        return restClient.Scan(scanRestRequest);
+	    }
+
+        public QueuedScanRequest[] GetQueuedScans()
 		{
 			return restClient.GetScanRequests()
 				.Select(i => i.ToQueuedScanRequest())
 				.ToArray();
 		}
-	}
+
+	    public void DownloadOsaScanReport(DownloadOsaScanReportDto reportDto)
+	    {
+	        restClient.DownloadOsaScanReport(reportDto);
+	    }
+    }
 }
