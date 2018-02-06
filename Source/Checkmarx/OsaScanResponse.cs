@@ -1,7 +1,7 @@
 ﻿namespace Checkmary.Checkmarx
 {
-    class OsaScanResponse
-    {
-        public string ScanId { get; set; }
-    }
+	class OsaScanResponse
+	{
+		public string ScanId { get; set; }
+	}
 }

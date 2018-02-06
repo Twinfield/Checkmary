@@ -1,5 +1,5 @@
-﻿using System;
-using Checkmary.CxSDKWebService;
+﻿using Checkmary.CxSDKWebService;
+using System;
 
 namespace Checkmary.Checkmarx
 {
