@@ -8,4 +8,5 @@ tab_width = 2
 
 [*.cs]
 indent_style = tab
+indent_size = 3
 tab_width = 3
