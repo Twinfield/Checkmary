@@ -4,7 +4,7 @@ namespace Checkmary.Models
 {
 	static class ModelToCxMappingExtensions
 	{
-		public static CliScanArgs ToCliScanArgs(this ScanSettings scanSettings)
+		public static CliScanArgs ToCliScanArgs(this SastScanSettings scanSettings)
 		{
 			return new CliScanArgs
 			{

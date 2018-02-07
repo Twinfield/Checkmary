@@ -1,7 +1,6 @@
-﻿using Checkmary.Checkmarx;
+using Checkmary.Checkmarx;
 using Checkmary.Models;
 using System;
-using System.Configuration;
 using System.Diagnostics;
 using System.Linq;
 
@@ -31,8 +30,11 @@ namespace Checkmary
 		{
 			switch (verbOptions)
 			{
-				case StartScanOptions startScanOptions:
-					OnStartScanCommand(startScanOptions);
+				case StartSastScanOptions startSastScanOptions:
+					OnStartSastScanCommand(startSastScanOptions);
+					break;
+				case StartOsaScanOptions startOsaScanOptions:
+					OnStartOsaScanCommand(startOsaScanOptions);
 					break;
 				case GetProjectsOptions getProjectOptions:
 					OnGetProjects(getProjectOptions);
@@ -49,9 +51,9 @@ namespace Checkmary
 			}
 		}
 
-		static void OnStartScanCommand(StartScanOptions options)
+		static void OnStartSastScanCommand(StartSastScanOptions options)
 		{
-			new Scanner(Proxy(options)).Scan(new ScanRequest
+			new Scanner(Proxy(options)).Scan(new SastScanRequest
 			{
 				ProjectName = options.Project,
 				TeamName = options.Team,
@@ -59,8 +61,19 @@ namespace Checkmary
 				ConfigurationSet = options.ConfigurationSet,
 				SourceCodePath = options.SourceCodePath,
 				DaysSinceLastScan = options.DaysSinceLastScan,
-				DryRun = options.DryRun,
-				SourceType = options.SourceType
+				DryRun = options.DryRun
+			});
+		}
+
+		static void OnStartOsaScanCommand(StartOsaScanOptions options)
+		{
+			new Scanner(Proxy(options)).Scan(new OsaScanRequest
+			{
+				ProjectName = options.Project,
+				TeamName = options.Team,
+				SourceCodePath = options.SourceCodePath,
+				ScanIdsFilePath = options.ScanIdsFilePath,
+				DryRun = options.DryRun
 			});
 		}
 
@@ -98,15 +111,15 @@ namespace Checkmary
 		{
 			var proxy = Proxy(options);
 			proxy.Initialize();
-			var scanIds = FileHelper.ReadFile(ConfigurationManager.AppSettings["ScanIdsFilePath"]);
-			foreach (var scanId in scanIds)
+			var projectScanDetails = ScanIdStore.ParseScanIds(options.ScanIdsFilePath);
+			foreach (var scanDetails in projectScanDetails)
 			{
-				var scanDetails = scanId.Split('\t');
 				var reportDto = new DownloadOsaScanReportDto
 				{
-					ScanId = scanDetails[1],
+					ScanId = scanDetails.ScanId,
 					ReportFormat = options.ReportFormat,
-					ProjectName = scanDetails[0]
+					ProjectName = scanDetails.ProjectName,
+					ReportsFolderPath = options.ReportsFolderPath
 				};
 
 				Console.WriteLine($"Downloading Osa scan report for project {reportDto.ProjectName}...");

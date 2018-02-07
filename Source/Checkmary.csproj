@@ -59,7 +59,7 @@
     <Compile Include="Checkmarx\DownloadOsaScanReportDto.cs" />
     <Compile Include="Checkmarx\OsaScanRequestDto.cs" />
     <Compile Include="Checkmarx\OsaScanResponse.cs" />
-    <Compile Include="FileHelper.cs" />
+    <Compile Include="ScanIdStore.cs" />
     <Compile Include="Models\QueuedScanRequest.cs" />
     <Compile Include="Connected Services\CxSDKWebService\Reference.cs">
       <AutoGen>True</AutoGen>

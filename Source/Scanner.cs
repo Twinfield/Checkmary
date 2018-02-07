@@ -1,6 +1,5 @@
 using Checkmary.Models;
 using System;
-using System.Configuration;
 using System.Text.RegularExpressions;
 
 namespace Checkmary
@@ -14,14 +13,13 @@ namespace Checkmary
 			this.proxy = proxy;
 		}
 
-		public void Scan(ScanRequest request)
+		public void Scan(SastScanRequest request)
 		{
 			proxy.Initialize();
 
-			var scanSettings = new ScanSettings();
+			var scanSettings = new SastScanSettings();
 
 			var project = ResolveProject(request, scanSettings);
-
 			if (project == null)
 			{
 				Console.WriteLine($"Project with name {request.ProjectName} does not exist on Checkmarx.");
@@ -38,7 +36,24 @@ namespace Checkmary
 			ResolvePreset(request, scanSettings);
 			ResolveConfigurationSet(request, scanSettings);
 			CollectSourceCode(request, scanSettings);
-			StartScan(request, scanSettings);
+			StartSastScan(request, scanSettings);
+		}
+
+		public void Scan(OsaScanRequest request)
+		{
+			proxy.Initialize();
+
+			var scanSettings = new OsaScanSettings();
+
+			var project = ResolveProject(request, scanSettings);
+			if (project == null)
+			{
+				Console.WriteLine($"Project with name {request.ProjectName} does not exist on Checkmarx.");
+				return;
+			}
+
+			CollectSourceCode(request, scanSettings);
+			StartOsaScan(request, scanSettings);
 		}
 
 		ProjectSummary ResolveProject(ScanRequest request, ScanSettings scanSettings)
@@ -53,13 +68,13 @@ namespace Checkmary
 			return project;
 		}
 
-		void ResolveConfigurationSet(ScanRequest request, ScanSettings scanSettings)
+		void ResolveConfigurationSet(SastScanRequest request, SastScanSettings scanSettings)
 		{
 			var configurationSet = proxy.FindConfigurationSetByName(request.ConfigurationSet);
 			scanSettings.ConfigurationSetId = configurationSet.Id;
 		}
 
-		void ResolvePreset(ScanRequest request, ScanSettings scanSettings)
+		void ResolvePreset(SastScanRequest request, SastScanSettings scanSettings)
 		{
 			var preset = proxy.FindPresetByName(request.Preset);
 			scanSettings.PresetId = preset.Id;
@@ -76,7 +91,7 @@ namespace Checkmary
 			scanSettings.ZipFileContents = ZipHelper.ZipDirectoryToByteArray(request.SourceCodePath, f => !excludeFileFilter.IsMatch(f));
 		}
 
-		void StartScan(ScanRequest request, ScanSettings scanSettings)
+		void StartSastScan(SastScanRequest request, SastScanSettings scanSettings)
 		{
 			Console.WriteLine("Starting scan...");
 			if (request.DryRun)
@@ -85,17 +100,25 @@ namespace Checkmary
 			}
 			else
 			{
-				if (request.SourceType == SourceType.SAST)
-				{
-					var scan = proxy.StartSastScan(scanSettings);
-					Console.WriteLine($"Scan of project with ID {scan.ProjectId} and Name { scanSettings.ProjectName} started with run ID {scan.RunId}.");
-				}
-				else if (request.SourceType == SourceType.OSA)
-				{
-					var scanResponse = proxy.StartOsaScan(scanSettings);
-					FileHelper.WriteToFile(ConfigurationManager.AppSettings["ScanIdsFilePath"], scanSettings.ProjectName, scanResponse.ScanId);
-					Console.WriteLine($"Scan of project with ID {scanSettings.ProjectId} and Name { scanSettings.ProjectName} started with run ID {scanResponse.ScanId}.");
-				}
+				var scan = proxy.StartSastScan(scanSettings);
+				Console.WriteLine(
+					$"Scan of project with ID {scan.ProjectId} and Name {scanSettings.ProjectName} started with run ID {scan.RunId}.");
+			}
+		}
+
+		void StartOsaScan(OsaScanRequest request, OsaScanSettings scanSettings)
+		{
+			Console.WriteLine("Starting scan...");
+			if (request.DryRun)
+			{
+				Console.WriteLine("Not starting scan, because dry run is enabled.");
+			}
+			else
+			{
+				var scanResponse = proxy.StartOsaScan(scanSettings);
+				ScanIdStore.WriteToFile(request.ScanIdsFilePath, scanSettings.ProjectName, scanResponse.ScanId);
+				Console.WriteLine(
+					$"Scan of project with ID {scanSettings.ProjectId} and Name {scanSettings.ProjectName} started with run ID {scanResponse.ScanId}.");
 			}
 		}
 	}

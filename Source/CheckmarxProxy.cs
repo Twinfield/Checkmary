@@ -70,7 +70,7 @@ namespace Checkmary
 				.ToConfigurationSet();
 		}
 
-		public Scan StartSastScan(ScanSettings scanSettings)
+		public Scan StartSastScan(SastScanSettings scanSettings)
 		{
 			return soapClient.Scan(scanSettings.ToCliScanArgs());
 		}

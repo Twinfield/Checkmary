@@ -1,7 +1,6 @@
 using RestSharp;
 using System;
 using System.Collections.Generic;
-using System.Configuration;
 using System.IO;
 using System.Net;
 
@@ -80,7 +79,7 @@ namespace Checkmary.Checkmarx
 
 			var response = restClient.Execute(request);
 			GuardResponseOk(response);
-			File.WriteAllBytes($"{ConfigurationManager.AppSettings["ReportsPath"]}\\{reportDto.ProjectName}_{reportDto.ScanId}.{reportDto.ReportFormat}", response.RawBytes);
+			File.WriteAllBytes($"{reportDto.ReportsFolderPath}\\{reportDto.ProjectName}_{reportDto.ScanId}.{reportDto.ReportFormat}", response.RawBytes);
 		}
 
 		static void GuardResponseOk(IRestResponse response)
