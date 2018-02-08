@@ -56,6 +56,10 @@
     <Compile Include="Checkmarx\CheckmarxSoapClient.cs" />
     <Compile Include="CheckmarxProxy.cs" />
     <Compile Include="Checkmarx\CheckmarxRestClient.cs" />
+    <Compile Include="Checkmarx\DownloadOsaScanReportDto.cs" />
+    <Compile Include="Checkmarx\OsaScanRequestDto.cs" />
+    <Compile Include="Checkmarx\OsaScanResponse.cs" />
+    <Compile Include="Persistence\ScanIdStore.cs" />
     <Compile Include="Models\QueuedScanRequest.cs" />
     <Compile Include="Connected Services\CxSDKWebService\Reference.cs">
       <AutoGen>True</AutoGen>
@@ -86,7 +90,9 @@
     <Compile Include="ZipHelper.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Connected Services\CxSDKWebService\Checkmary.CxSDKWebService.BranchProjectByIdResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>

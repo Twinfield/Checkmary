@@ -1,6 +1,6 @@
-using System.Linq;
 using CommandLine;
 using CommandLine.Text;
+using System.Linq;
 
 namespace Checkmary
 {
@@ -9,8 +9,11 @@ namespace Checkmary
 		[ParserState]
 		public IParserState LastParserState { get; set; }
 
-		[VerbOption("startscan", HelpText = "Collects source code and starts a Checkmarx scan.")]
-		public StartScanOptions StartScan { get; set; }
+		[VerbOption("startsastscan", HelpText = "Collects source code and starts a Checkmarx SAST scan.")]
+		public StartSastScanOptions StartSastScan { get; set; }
+
+		[VerbOption("startosascan", HelpText = "Collects source code and starts a Checkmarx OSA scan.")]
+		public StartOsaScanOptions StartOsaScan { get; set; }
 
 		[VerbOption("getprojects", HelpText = "Gets all projects.")]
 		public GetProjectsOptions GetProjects { get; set; }
@@ -23,6 +26,9 @@ namespace Checkmary
 
 		[VerbOption("getqueue", HelpText = "Gets all queued scans.")]
 		public GetQueueOptions GetQueue { get; set; }
+
+		[VerbOption("downloadosareports", HelpText = "Downloads the OSA scan summary report.")]
+		public DownloadReportsOptions DownloadReports { get; set; }
 
 		[HelpVerbOption]
 		public string GetUsage(string verb)
@@ -66,20 +72,29 @@ namespace Checkmary
 		[Option("project", Required = true)]
 		public string Project { get; set; }
 
+		[Option("sourcecodepath", Required = true)]
+		public string SourceCodePath { get; set; }
+
+		[Option("dryrun", DefaultValue = false, HelpText = "If set to true, no actual scan will be started.")]
+		public bool DryRun { get; set; }
+	}
+
+	class StartSastScanOptions : StartScanOptions
+	{
 		[Option("preset", DefaultValue = "All")]
 		public string Preset { get; set; }
 
 		[Option("configset", DefaultValue = "Default all languages")]
 		public string ConfigurationSet { get; set; }
 
-		[Option("sourcecodepath", Required = true)]
-		public string SourceCodePath { get; set; }
-
 		[Option("dayssincelastscan", DefaultValue = 7, HelpText = "If the last scan was less than the specifield number of day ago, no scan will be started.")]
 		public int DaysSinceLastScan { get; set; }
+	}
 
-		[Option("dryrun", DefaultValue = false, HelpText = "If set to true, no actual scan will be started.")]
-		public bool DryRun { get; set; }
+	class StartOsaScanOptions : StartScanOptions
+	{
+		[Option("scanidsfilepath")]
+		public string ScanIdsFilePath { get; set; }
 	}
 
 	class GetProjectsOptions : CommonOptions
@@ -93,4 +108,16 @@ namespace Checkmary
 
 	class GetQueueOptions : CommonOptions
 	{ }
+
+	class DownloadReportsOptions : CommonOptions
+	{
+		[Option("reportformat", DefaultValue = "html", HelpText = "html, pdf, json")]
+		public string ReportFormat { get; set; }
+
+		[Option("scanidsfilepath")]
+		public string ScanIdsFilePath { get; set; }
+
+		[Option("reportsfolderpath")]
+		public string ReportsFolderPath { get; set; }
+	}
 }

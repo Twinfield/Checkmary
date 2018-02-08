@@ -1,7 +1,9 @@
-﻿using System;
+using Checkmary.Checkmarx;
+using Checkmary.Models;
+using Checkmary.Persistence;
+using System;
 using System.Diagnostics;
 using System.Linq;
-using Checkmary.Models;
 
 namespace Checkmary
 {
@@ -14,7 +16,7 @@ namespace Checkmary
 			ConfigureExceptionHandler();
 
 			if (!CommandLine.Parser.Default.ParseArgumentsStrict(args, Options, OnVerbCommand))
-				return (int) ExitCode.InvalidArgument;
+				return (int)ExitCode.InvalidArgument;
 
 			return (int)ExitCode.Success;
 		}
@@ -29,8 +31,11 @@ namespace Checkmary
 		{
 			switch (verbOptions)
 			{
-				case StartScanOptions startScanOptions:
-					OnStartScanCommand(startScanOptions);
+				case StartSastScanOptions startSastScanOptions:
+					OnStartSastScanCommand(startSastScanOptions);
+					break;
+				case StartOsaScanOptions startOsaScanOptions:
+					OnStartOsaScanCommand(startOsaScanOptions);
 					break;
 				case GetProjectsOptions getProjectOptions:
 					OnGetProjects(getProjectOptions);
@@ -41,12 +46,15 @@ namespace Checkmary
 				case GetConfigurationSetsOptions getConfigurationSetsOptions:
 					OnGetConfigurationSets(getConfigurationSetsOptions);
 					break;
+				case DownloadReportsOptions downloadReportsOptions:
+					OnDownloadReports(downloadReportsOptions);
+					break;
 			}
 		}
 
-		static void OnStartScanCommand(StartScanOptions options)
+		static void OnStartSastScanCommand(StartSastScanOptions options)
 		{
-			new Scanner(Proxy(options)).Scan(new ScanRequest
+			new Scanner(Proxy(options)).Scan(new SastScanRequest
 			{
 				ProjectName = options.Project,
 				TeamName = options.Team,
@@ -54,6 +62,18 @@ namespace Checkmary
 				ConfigurationSet = options.ConfigurationSet,
 				SourceCodePath = options.SourceCodePath,
 				DaysSinceLastScan = options.DaysSinceLastScan,
+				DryRun = options.DryRun
+			});
+		}
+
+		static void OnStartOsaScanCommand(StartOsaScanOptions options)
+		{
+			new Scanner(Proxy(options)).Scan(new OsaScanRequest
+			{
+				ProjectName = options.Project,
+				TeamName = options.Team,
+				SourceCodePath = options.SourceCodePath,
+				ScanIdsFilePath = options.ScanIdsFilePath,
 				DryRun = options.DryRun
 			});
 		}
@@ -86,6 +106,28 @@ namespace Checkmary
 			Console.WriteLine($"Found {configurationSets.Length} configuration sets");
 			foreach (var set in configurationSets.OrderBy(s => s.Name))
 				Console.WriteLine(set.Name);
+		}
+
+		static void OnDownloadReports(DownloadReportsOptions options)
+		{
+			var proxy = Proxy(options);
+			proxy.Initialize();
+			var projectScanDetails = new ScanIdStore(options.ScanIdsFilePath).GetScanIds();
+			foreach (var scanDetails in projectScanDetails)
+			{
+				var reportDto = new DownloadOsaScanReportDto
+				{
+					ScanId = scanDetails.ScanId,
+					ReportFormat = options.ReportFormat,
+					ProjectName = scanDetails.ProjectName,
+					ReportsFolderPath = options.ReportsFolderPath
+				};
+
+				Console.WriteLine($"Downloading Osa scan report for project {reportDto.ProjectName}...");
+				proxy.DownloadOsaScanReport(reportDto);
+			}
+
+			Console.WriteLine($"Downloading Osa scan reports finished.");
 		}
 
 		static CheckmarxProxy Proxy(CommonOptions options)
