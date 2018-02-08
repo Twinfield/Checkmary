@@ -1,5 +1,6 @@
 using Checkmary.Checkmarx;
 using Checkmary.Models;
+using Checkmary.Persistence;
 using System;
 using System.Diagnostics;
 using System.Linq;
@@ -111,7 +112,7 @@ namespace Checkmary
 		{
 			var proxy = Proxy(options);
 			proxy.Initialize();
-			var projectScanDetails = ScanIdStore.ParseScanIds(options.ScanIdsFilePath);
+			var projectScanDetails = new ScanIdStore(options.ScanIdsFilePath).GetScanIds();
 			foreach (var scanDetails in projectScanDetails)
 			{
 				var reportDto = new DownloadOsaScanReportDto

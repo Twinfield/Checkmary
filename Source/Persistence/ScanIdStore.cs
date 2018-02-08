@@ -2,18 +2,25 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace Checkmary
+namespace Checkmary.Persistence
 {
-	public static class ScanIdStore
+	public class ScanIdStore
 	{
-		public static void WriteToFile(string filePath, string projectName, string scanId)
+		private readonly string _filePath;
+
+		public ScanIdStore(string filePath)
 		{
-			File.AppendAllLines(filePath, new[] { $"{projectName}\t{scanId}" });
+			_filePath = filePath;
 		}
 
-		public static List<ProjectScanDetails> ParseScanIds(string filePath)
+		public void Save(string projectName, string scanId)
 		{
-			var scanIds = File.ReadAllLines(filePath);
+			File.AppendAllLines(_filePath, new[] { $"{projectName}\t{scanId}" });
+		}
+
+		public List<ProjectScanDetails> GetScanIds()
+		{
+			var scanIds = File.ReadAllLines(_filePath);
 
 			return scanIds.Select(scanId => scanId.Split('\t'))
 				.Select(scanDetails => new ProjectScanDetails

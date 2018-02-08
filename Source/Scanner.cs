@@ -1,4 +1,5 @@
 using Checkmary.Models;
+using Checkmary.Persistence;
 using System;
 using System.Text.RegularExpressions;
 
@@ -116,7 +117,7 @@ namespace Checkmary
 			else
 			{
 				var scanResponse = proxy.StartOsaScan(scanSettings);
-				ScanIdStore.WriteToFile(request.ScanIdsFilePath, scanSettings.ProjectName, scanResponse.ScanId);
+				new ScanIdStore(request.ScanIdsFilePath).Save(scanSettings.ProjectName, scanResponse.ScanId);
 				Console.WriteLine(
 					$"Scan of project with ID {scanSettings.ProjectId} and Name {scanSettings.ProjectName} started with run ID {scanResponse.ScanId}.");
 			}
