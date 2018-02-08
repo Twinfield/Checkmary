@@ -6,21 +6,21 @@ namespace Checkmary.Persistence
 {
 	public class ScanIdStore
 	{
-		private readonly string _filePath;
+		readonly string filePath;
 
 		public ScanIdStore(string filePath)
 		{
-			_filePath = filePath;
+			this.filePath = filePath;
 		}
 
 		public void Save(string projectName, string scanId)
 		{
-			File.AppendAllLines(_filePath, new[] { $"{projectName}\t{scanId}" });
+			File.AppendAllLines(filePath, new[] { $"{projectName}\t{scanId}" });
 		}
 
 		public List<ProjectScanDetails> GetScanIds()
 		{
-			var scanIds = File.ReadAllLines(_filePath);
+			var scanIds = File.ReadAllLines(filePath);
 
 			return scanIds.Select(scanId => scanId.Split('\t'))
 				.Select(scanDetails => new ProjectScanDetails
