@@ -85,7 +85,7 @@ namespace Checkmary
 		{
 			Console.WriteLine("Collecting source code...");
 
-			var excludeFileFilter = new Regex(@"[/\\](\.git|\.vs|\.nuget|build|packages|.*\.msi)([/\\]|^)",
+			var excludeFileFilter = new Regex(@"[/\\](\.git|\.vs|\.nuget|build|packages|.*\.msi|.*\.exe)([/\\]|^)",
 				RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
 			scanSettings.ZipFileName = $"{request.ProjectName}.zip";
