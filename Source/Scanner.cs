@@ -1,6 +1,7 @@
 using Checkmary.Models;
 using Checkmary.Persistence;
 using System;
+using System.IO;
 using System.Text.RegularExpressions;
 
 namespace Checkmary
@@ -85,11 +86,14 @@ namespace Checkmary
 		{
 			Console.WriteLine("Collecting source code...");
 
-			var excludeFileFilter = new Regex(@"[/\\](\.git|\.vs|\.nuget|build|packages|.*\.msi|.*\.exe)([/\\]|^)",
+			var excludeFileFilter = new Regex(@"[/\\](\.git|\.vs|\.nuget|build|packages|.*\.msi|.*\.exe)([/\\]|$)",
 				RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
 			scanSettings.ZipFileName = $"{request.ProjectName}.zip";
 			scanSettings.ZipFileContents = ZipHelper.ZipDirectoryToByteArray(request.SourceCodePath, f => !excludeFileFilter.IsMatch(f));
+			var debugFileName = $@"D:\{request.ProjectName}-{DateTime.Now:yyyyMMdd-HHmmss}.zip";
+			Console.WriteLine($"{scanSettings.ZipFileContents.Length:N} bytes in {debugFileName}");
+			File.WriteAllBytes(debugFileName, scanSettings.ZipFileContents);
 		}
 
 		void StartSastScan(SastScanRequest request, SastScanSettings scanSettings)
