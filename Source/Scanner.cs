@@ -91,9 +91,6 @@ namespace Checkmary
 
 			scanSettings.ZipFileName = $"{request.ProjectName}.zip";
 			scanSettings.ZipFileContents = ZipHelper.ZipDirectoryToByteArray(request.SourceCodePath, f => !excludeFileFilter.IsMatch(f));
-			var debugFileName = $@"D:\{request.ProjectName}-{DateTime.Now:yyyyMMdd-HHmmss}.zip";
-			Console.WriteLine($"{scanSettings.ZipFileContents.Length:N} bytes in {debugFileName}");
-			File.WriteAllBytes(debugFileName, scanSettings.ZipFileContents);
 		}
 
 		void StartSastScan(SastScanRequest request, SastScanSettings scanSettings)
